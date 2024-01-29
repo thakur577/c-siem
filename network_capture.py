@@ -3,6 +3,21 @@ import pyshark
 import pytz
 from datetime import datetime
 import binascii
+import socket
+import json
+import configparser
+import sys
+
+config = configparser.ConfigParser()
+config.read('netflow.ini')
+
+# fetch tcp_host and tcp_port properties from netflow.ini file
+tcp_host = config['netflow']['tcp_host']
+tcp_port = config['netflow']['tcp_port']
+
+if tcp_host is None or tcp_host == "" or tcp_port is None or tcp_port == "":
+    print("Please populate 'tcp_host' and 'tcp_port' properties with values in 'netflow.ini' file.")
+    sys.exit(0)  # Exit with a status code (0 for success)
 
 def hex_dump_to_ascii(hex_dump):
     # Remove any spaces or other separators from the hex dump
@@ -17,6 +32,20 @@ def hex_dump_to_ascii(hex_dump):
         return "Invalid hex dump"
     except UnicodeDecodeError:
         return "Unable to decode as ASCII"
+
+def send_json_over_tcp(host, port, data):
+    try:
+        # Create a TCP socket
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            # Connect to the specified host and port
+            s.connect((host, int(port)))
+            # Convert the JSON data to a string
+            json_str = json.dumps(data)
+            # Send the JSON data
+            s.sendall(json_str.encode('utf-8'))
+            print(f"JSON data sent to {host}:{port}")
+    except Exception as e:
+        print(f"Error: {e}")
 
 def convert_utc_to_ist(utc_timestamp):
     # Convert UTC timestamp to a datetime object
@@ -86,6 +115,16 @@ def process_packet(packet):
                 timestamp = convert_utc_to_ist(timestamp)
 
             print(f"Source IP: {src_ip}, Destination IP: {dst_ip}, Source Port: {src_port}, Destination Port: {dst_port},Layer 3 Protocol Type: {protocol_type},Type of Service (ToS): {type_of_service},Ingress Interface: {packet.interface_captured},Timestamp: {timestamp},Number of Bytes: {num_bytes}, Number of Packets: {num_packets}")
+            udp_json = {
+                "src_ip":src_ip,
+                "dst_ip": dst_ip,
+                "src_port": src_port,
+                "dst_port": dst_port,
+                "protocol" : protocol_type,
+                "timestamp": str(timestamp)
+            }
+            # send json over tcp
+            send_json_over_tcp(tcp_host,tcp_port,udp_json)
 
             # Check if the payload is present
             if hasattr(packet.udp, 'payload'):
@@ -346,6 +385,15 @@ def process_packet(packet):
     else:
         print("'DATA' not in packet")
 
+    # Check if the packet has an IGMP layer
+    if 'IGMP' in packet:
+        # Access the IGMP layer
+        igmp_layer = packet.igmp
+        print("packet.igmp:", packet.igmp)
+        # print("dir() function on packet.igmp:", dir(packet.igmp))
+    else:
+        print("'IGMP' not in packet")
+
 
 # Get a list of available network interfaces
 available_interfaces = get_available_interfaces()
@@ -353,7 +401,7 @@ print("Available network interfaces:", available_interfaces)
 
 if available_interfaces:
     # Specify the network interface to capture traffic from
-    network_interface = available_interfaces[2]  # Choose the appropriate interface from the list
+    network_interface = available_interfaces[1]  # Choose the appropriate interface from the list
     # Capture NetFlow traffic
     capture = pyshark.LiveCapture(interface=network_interface)
     # Set a callback function to process each captured packet
