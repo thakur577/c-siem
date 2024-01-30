@@ -18,6 +18,9 @@ tcp_port = config['netflow']['tcp_port']
 if tcp_host is None or tcp_host == "" or tcp_port is None or tcp_port == "":
     print("Please populate 'tcp_host' and 'tcp_port' properties with values in 'netflow.ini' file.")
     sys.exit(0)  # Exit with a status code (0 for success)
+else:
+    print("tcp_host:"+str(tcp_host))
+    print("tcp_port:" + str(tcp_port))
 
 def hex_dump_to_ascii(hex_dump):
     # Remove any spaces or other separators from the hex dump
@@ -43,7 +46,7 @@ def send_json_over_tcp(host, port, data):
             json_str = json.dumps(data)
             # Send the JSON data
             s.sendall(json_str.encode('utf-8'))
-            print(f"JSON data sent to {host}:{port}")
+            print(f"JSON data sent to Socket: {host}:{port} : data sent: {json_str}")
     except Exception as e:
         print(f"Error: {e}")
 
@@ -89,7 +92,11 @@ def process_packet(packet):
         #print(""" if hasattr(packet, 'ip') and hasattr(packet.ip, 'src') and hasattr(packet.ip, 'dst') """)
         src_ip = packet.ip.src
         dst_ip = packet.ip.dst
-        num_bytes = int(packet.length)
+        # Access the IP layer
+        ip_layer = packet['IP']
+        # Access the 'len' field in the IP layer, which represents the total length of the IP packet
+        total_length = int(ip_layer.len)
+        print(f"IP Total Length: {total_length}")
 
         if hasattr(packet, 'udp') and hasattr(packet.udp, 'srcport') and hasattr(packet.udp, 'dstport'):
             #print(""" if hasattr(packet, 'udp') and hasattr(packet.udp, 'srcport') and hasattr(packet.udp, 'dstport'): """)
@@ -121,7 +128,8 @@ def process_packet(packet):
                 "src_port": src_port,
                 "dst_port": dst_port,
                 "protocol" : protocol_type,
-                "timestamp": str(timestamp)
+                "timestamp": str(timestamp),
+                "packet_length": total_length
             }
             # send json over tcp
             send_json_over_tcp(tcp_host,tcp_port,udp_json)
@@ -139,8 +147,27 @@ def process_packet(packet):
             #print(""" if hasattr(packet, 'tcp') and hasattr(packet.tcp, 'srcport') and hasattr(packet.tcp, 'dstport'): """)
             src_port = packet.tcp.srcport
             dst_port = packet.tcp.dstport
+            # Access the TCP layer
+            tcp_layer = packet['TCP']
+            # Access the 'flags' field in the TCP layer, which represents the TCP control flags
+            flags_value = int(tcp_layer.flags, 16)  # Convert the hexadecimal value to an integer
+            print("TCP Flag Value:"+str(flags_value))
 
-            type_of_service = ""
+            # Define TCP flag values
+            urg = (flags_value & 0x20) >> 5
+            print("TCP Flag urg:" + str(urg))
+            ack = (flags_value & 0x10) >> 4
+            print("TCP Flag ack:" + str(ack))
+            psh = (flags_value & 0x08) >> 3
+            print("TCP Flag psh:" + str(psh))
+            rst = (flags_value & 0x04) >> 2
+            print("TCP Flag rst:" + str(rst))
+            syn = (flags_value & 0x02) >> 1
+            print("TCP Flag syn:" + str(syn))
+            fin = flags_value & 0x01
+            print("TCP Flag fin:" + str(fin))
+
+
             num_bytes = ""
             num_packets = ""
             if hasattr(packet.ip, 'proto'):
@@ -159,6 +186,17 @@ def process_packet(packet):
                 timestamp = convert_utc_to_ist(timestamp)
 
             print(f"Source IP: {src_ip}, Destination IP: {dst_ip}, Source Port: {src_port}, Destination Port: {dst_port},Layer 3 Protocol Type: {protocol_type},Type of Service (ToS): {type_of_service},Ingress Interface: {packet.interface_captured},Timestamp: {timestamp},Number of Bytes: {num_bytes}, Number of Packets: {num_packets}")
+            tcp_json = {
+                "src_ip":src_ip,
+                "dst_ip": dst_ip,
+                "src_port": src_port,
+                "dst_port": dst_port,
+                "protocol" : protocol_type,
+                "timestamp": str(timestamp),
+                "packet_length": total_length
+            }
+            # send json over tcp
+            send_json_over_tcp(tcp_host,tcp_port,tcp_json)
 
             # Check if the payload is present
             if hasattr(packet.tcp, 'payload'):
@@ -401,7 +439,7 @@ print("Available network interfaces:", available_interfaces)
 
 if available_interfaces:
     # Specify the network interface to capture traffic from
-    network_interface = available_interfaces[1]  # Choose the appropriate interface from the list
+    network_interface = available_interfaces[2]  # Choose the appropriate interface from the list
     # Capture NetFlow traffic
     capture = pyshark.LiveCapture(interface=network_interface)
     # Set a callback function to process each captured packet

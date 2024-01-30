@@ -26,8 +26,6 @@ def start_server(tcp_host, tcp_port):
                 print(f"Connection from {client_address}")
                 # Receive data from the client
                 data = client_socket.recv(1024)
-                print("data: ",str(data))
-                print(f"utf-8 decoded data: {data.decode('utf-8')}")
                 if data:
                     print(f"Received data: {data.decode('utf-8')}")
                     # Send a response back to the client
