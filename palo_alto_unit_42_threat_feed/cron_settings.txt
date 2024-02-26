@@ -1,0 +1,28 @@
+use crontab -e
+choose editor as in nano or vim
+then append it wherever suitable
+
+# this will run everyday at 4:31 pm 
+
+31 16 * * * /usr/bin/python3 /home/grim/CDAC/palo_alto_unit42_threat_feed.py >> /home/grim/CDAC/cron.log 2>&1  
+Syntax:
+<cron time interval> <python interpreter system path> <python script path> >> <cron log file path> 
+
+"""
+Crontab File:
+
+Syntax:
+Each line in the user crontab file contains six fields separated by spaces or tabs, followed by the command to be run.
+The fields represent:
+Minute
+Hour
+Day of the Month
+Month of the Year
+Day of the Week
+Command
+You can use the following operators within the fields:
+*: Any value or always (e.g., * in the Hour field means the task runs every hour).
+,: Comma operator for specifying a list of values (e.g., 1,3,5 in the Hour field runs the task at 1 am, 3 am, and 5 am).
+-: Hyphen operator for defining a range of values (e.g., 1-5 in the Day of the week field runs the task every weekday).
+/: Slash operator for repeated values (e.g., */4 in the Hour field means the action occurs every four hours).
+"""
