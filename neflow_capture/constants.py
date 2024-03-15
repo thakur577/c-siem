@@ -1,0 +1,9 @@
+ini = "netflow.ini"
+logs = "netflow.log"
+ip = "IP"
+username = "User"
+password = "Pass"
+list = 'LIST'
+dir = 'Desktop'
+url = "http://192.168.168.129/scrape.py"
+file = "scrape.py"
