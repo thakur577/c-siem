@@ -1,0 +1,2992 @@
+{
+    "type": "bundle",
+    "id": "bundle--797530aa-adb6-4d62-8878-bcbd162fa60f",
+    "objects": [
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--db89f4ef-4df8-4901-b587-43fe6bb0b603",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.933015Z",
+            "modified": "2024-06-14T06:28:32.933015Z",
+            "name": "10.228.12.194",
+            "description": "Implement MFA to add an additional layer of security. Even if login credentials are compromised, an attacker would still need a second form of authentication.\nEnforce account lockout policies to temporarily lock user accounts after a certain number of unsuccessful login attempts. This helps prevent brute-force attacks.\nEncourage or enforce regular password changes to reduce the risk of attackers using long-term compromised credentials.",
+            "x_cdacsiem_alert": "Windows - Successful Login Attempt"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--14b17967-e584-43ca-b5ba-47a0be4197b9",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.933015Z",
+            "modified": "2024-06-14T06:28:32.933015Z",
+            "name": "10.228.12.194",
+            "description": "Implement network segmentation to limit lateral movement within the network. This can help contain potential threats if an attacker gains access to information about group memberships.\nKeep the Windows operating system and applications up to date with security patches to mitigate known vulnerabilities that could be exploited to gain access to group membership information.",
+            "x_cdacsiem_alert": "Windows - Security Enabled Local Group Membership Enumerated"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--f618c4cd-fb09-440a-b48f-d444b71b5f90",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.933015Z",
+            "modified": "2024-06-14T06:28:32.933015Z",
+            "name": "10.228.12.194",
+            "description": "-Keep operating systems, applications, and software up to date with the latest security patches. This helps address known vulnerabilities that attackers could exploit for privilege escalation.\n- Implement strong password policies, enforce the use of complex passwords, and enable multi-factor authentication (MFA) for user accounts. Additionally, use role-based access controls (RBAC) to ensure that users only have access to the resources necessary for their roles.",
+            "x_cdacsiem_alert": "Windows - Special Privileges Assigned"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--6c35e388-c761-45e2-9b7a-2660aa5a8c33",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.934015Z",
+            "modified": "2024-06-14T06:28:32.934015Z",
+            "name": "10.228.12.194",
+            "description": "Implement strict access controls and permissions for auditing settings to ensure that only authorized personnel can modify them. Use role-based access control (RBAC) to manage permissions effectively.\nConduct periodic audits of auditing settings to ensure they align with security policies and regulatory requirements. Address any unauthorized or incorrect changes promptly.",
+            "x_cdacsiem_alert": "Windows - Auditing Settings Object Changed"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--e17cb5c5-3547-4de5-bd16-cd9de8c5a972",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.934015Z",
+            "modified": "2024-06-14T06:28:32.934015Z",
+            "name": "10.228.12.194",
+            "description": "Establish an account lockout policy that temporarily locks user accounts after a certain number of consecutive failed login attempts. This policy helps prevent brute-force attacks by limiting the number of login attempts within a specific time period. However, ensure that the lockout duration and threshold are balanced to avoid inconveniencing legitimate users.",
+            "x_cdacsiem_alert": "Windows - Failed Login Attempt"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--0c58da03-71c7-4d59-b9a4-b36305c01e46",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.934015Z",
+            "modified": "2024-06-14T06:28:32.934015Z",
+            "name": "10.228.12.194",
+            "description": "-Check the account status to ensure it is active and not locked or disabled. If the account is locked or disabled, follow the appropriate procedures to unlock or reactivate it.\n-Verify that the user has the necessary permissions and privileges to access the system, application, or resource. If the user's account lacks the required permissions, adjust the permissions accordingly.",
+            "x_cdacsiem_alert": "Windows - Connection Failed - Bad Username or Password"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--c5bdadc3-da60-4efe-a2e4-59309b03824b",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.934015Z",
+            "modified": "2024-06-14T06:28:32.934015Z",
+            "name": "10.228.12.194",
+            "description": "Implement MFA to add an extra layer of security. Even if an attacker gains access to login credentials, they may be unable to complete the authentication process without the second factor.\nImplement proper access controls to restrict user access to only what is necessary for their roles. Review and update access permissions regularly.",
+            "x_cdacsiem_alert": "Windows - Account Logged Off"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--ece86428-f70b-43d8-834b-54f9e1813bf4",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.934015Z",
+            "modified": "2024-06-14T06:28:32.934015Z",
+            "name": "10.228.12.194",
+            "description": "Regularly review the Windows event logs for \"Key File Operation\" events and related messages. Look for error messages or warnings that may indicate problems with key operations.\nKeep your operating system, encryption software, and security tools up to date with the latest security patches and updates to mitigate vulnerabilities.",
+            "x_cdacsiem_alert": "Windows - Key File Operation"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--273e0110-473c-4b04-b617-c2e25317f44c",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.934015Z",
+            "modified": "2024-06-14T06:28:32.934015Z",
+            "name": "10.228.12.194",
+            "description": "If the user account has any active network connections, such as mapped network drives or remote sessions, it is important to properly disconnect from these resources before initiating a log off attempt. This can involve closing open files, disconnecting network drives, or logging out of remote sessions.",
+            "x_cdacsiem_alert": "Windows - Account Log Off Attempt"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--00f159b2-1caa-4e48-9a28-6fa55466daa4",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.934015Z",
+            "modified": "2024-06-14T06:28:32.934015Z",
+            "name": "10.228.12.194",
+            "description": "Enforce strong authentication methods, such as multi-factor authentication (MFA), to prevent unauthorized access to user information or systems.\nApply the principle of least privilege when assigning group memberships to users. Ensure that users are only members of groups that are necessary for their roles and responsibilities.",
+            "x_cdacsiem_alert": "Windows - User's Local Group Membership Enumerated "
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--7784ae0d-0a04-41be-aafd-8ee46fcd9eae",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.934015Z",
+            "modified": "2024-06-14T06:28:32.934015Z",
+            "name": "10.228.12.194",
+            "description": "-Implement strong password policies or consider using multi-factor authentication (MFA) for RDP connections. MFA adds an extra layer of security by requiring additional verification, such as a temporary code sent to a mobile device, in addition to a password.\n-Regularly update the RDP client and server software to ensure you have the latest security patches and bug fixes. Software updates often include security enhancements that protect against known vulnerabilities.",
+            "x_cdacsiem_alert": "Windows - RDP Connection Attempt"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--a17b02bc-6adc-48aa-a2a9-f02e8c3c6fb2",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.934015Z",
+            "modified": "2024-06-14T06:28:32.934015Z",
+            "name": "10.228.12.194",
+            "description": "Safeguard cryptographic keys and ensure that they are stored securely. Implement key rotation and destruction policies to protect against key compromise.\nKeep your Windows operating system and cryptographic libraries up to date with the latest security patches and updates to address known vulnerabilities.",
+            "x_cdacsiem_alert": "Windows - Cryptographic Operation"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--075fcb09-5f08-4a04-8cb9-172a500fb4d1",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.934015Z",
+            "modified": "2024-06-14T06:28:32.934015Z",
+            "name": "10.228.12.194",
+            "description": "Enable detailed auditing and logging of key migration operations. This helps in tracking and reviewing the migration process and can be valuable for troubleshooting.\nRestrict access to key migration operations to authorized personnel only. Use role-based access control to limit who can perform these operations.",
+            "x_cdacsiem_alert": "Windows - Key Migration Operation"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--bfb4b6ca-3aca-44bc-a9f0-05e67ece9f5a",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.935015Z",
+            "modified": "2024-06-14T06:28:32.935015Z",
+            "name": "10.228.12.194",
+            "description": "- Monitor this event with the \u201cSubject\\Security ID\u201d or \u201cAccount Whose Credentials Were Used\\Security ID\u201d that corresponds to the high-value account or accounts.\n- When you monitor for anomalies or malicious actions, use the \u201cSubject\\Security ID\u201d and \u201cAccount Whose Credentials Were Used\\Security ID\u201d (with other information) to monitor how or when a particular account is being used.\n- Monitor this event with the \u201cSubject\\Security ID\u201d or \u201cAccount Whose Credentials Were Used\\Security ID\u201d that correspond to the accounts that should never be used.\n- If this event corresponds to a \u201callow list-only\u201d action, review the \u201cSubject\\Security ID\u201d and \u201cAccount Whose Credentials Were Used\\Security ID\u201d for accounts that are outside the allow list.\n- Monitor for the \u201cSubject\\Account Domain\u201d or \u201cAccount Whose Credentials Were Used\\Security ID\u201d corresponding to accounts from another domain or \u201cexternal\u201d accounts.\n- Monitor the target Computer: (or other target devices) for actions performed by the \u201cSubject\\Security ID\u201d or \u201cAccount Whose Credentials Were Used\\Security ID\u201d that you are concerned about.\nFor example, you might monitor to ensure that \u201cAccount Whose Credentials Were Used\\Security ID\u201d is not used to log on to a certain computer.\n- Monitor \u201cSubject\\Account Name\u201d and \u201cAccount Whose Credentials Were Used\\Security ID\u201d for names that don\u2019t comply with naming conventions.",
+            "x_cdacsiem_alert": "Windows - Logon Attempted Explicit Credentials"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--55b11fcf-c81c-4888-8e5b-ffe09bd461d9",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.935015Z",
+            "modified": "2024-06-14T06:28:32.935015Z",
+            "name": "10.228.12.194",
+            "description": "-Verify that all hardware components, such as memory modules, hard drives, and power supply units, are properly connected and functioning correctly. Look for any signs of physical damage or overheating. Replace any faulty hardware if necessary.\n-Keep your operating system and software applications up to date with the latest patches and updates. Software updates often include bug fixes and stability improvements that can help prevent crashes.",
+            "x_cdacsiem_alert": "Windows - System Crash"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--18183c65-c08e-4a8f-9817-dad28f56c231",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.935015Z",
+            "modified": "2024-06-14T06:28:32.935015Z",
+            "name": "10.228.12.194",
+            "description": "Use a combination of transport protocols such as TCP/IP, UDP, or HTTP to establish the remote desktop connection. This diversification allows for flexibility and resilience, as different protocols may perform better under varying network conditions.",
+            "x_cdacsiem_alert": "Windows - Multi-transport Connection Attempt"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--dd9a2db8-559c-4a26-8837-f0c64ac5f34e",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.935015Z",
+            "modified": "2024-06-14T06:28:32.935015Z",
+            "name": "10.228.12.194",
+            "description": "Ensure that both the application and the operating system are up to date with the latest patches and updates. Developers often release fixes for known issues.\nImplement robust error logging within the application to capture information about the crash. This can aid developers in diagnosing and fixing the problem.\nIf crashes persist, perform hardware diagnostics to identify and resolve any underlying hardware issues.",
+            "x_cdacsiem_alert": "Windows - Application Crash"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--4936eba0-48f4-4a81-afcf-2551720b8fd9",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.935015Z",
+            "modified": "2024-06-14T06:28:32.935015Z",
+            "name": "10.228.12.194",
+            "description": "-Enforce strong password policies and consider implementing multi-factor authentication (MFA) for RDP connections. MFA adds an extra layer of security by requiring users to provide additional verification, such as a temporary code sent to a mobile device, in addition to their password.\n-Isolate RDP traffic within a secure network segment or VLAN (Virtual Local Area Network) to limit potential exposure to unauthorized access attempts and reduce the attack surface.",
+            "x_cdacsiem_alert": "Windows - RDP Connection Made"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--37fe67ee-b985-48d9-bfff-5bab9996d9c6",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.935015Z",
+            "modified": "2024-06-14T06:28:32.935015Z",
+            "name": "10.228.12.194",
+            "description": "Ensure that your FortiGate device is regularly updating its URL database to include new websites and categorizations. Schedule automatic updates to keep the database current.\nEnsure that your FortiGate firewall is running the latest firmware version. Firmware updates often include bug fixes and improvements related to URL filtering and categorization.",
+            "x_cdacsiem_alert": "FortiGate - Rating Error Occurred - Warning"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--d2e30042-4941-4fd2-9525-d50d2e4547b2",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.935015Z",
+            "modified": "2024-06-14T06:28:32.935015Z",
+            "name": "10.228.12.194",
+            "description": "Enforce strong password policies across the network to prevent the creation of accounts with blank passwords. Require complex, non-blank passwords for all accounts.\nKeep the Windows operating system and associated software up to date with security patches to mitigate known vulnerabilities that could be exploited to manipulate account configurations.Implement regular auditing and monitoring of user accounts and password policies to detect and address any anomalies or unauthorized account configurations.",
+            "x_cdacsiem_alert": "Windows - Attempt Query Existence Blank Password Account"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--8a2a0dd7-f933-4643-ab53-43f1fedd77fd",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.935015Z",
+            "modified": "2024-06-14T06:28:32.935015Z",
+            "name": "10.228.12.194",
+            "description": "Implement Certificate Transparency (CT) mechanisms to enhance the transparency of certificate issuance. CT can help detect unauthorized or malicious certificates more effectively.\nImplement security policies that enforce strict certificate validation and handling. Ensure that policies align with security best practices and take appropriate action when anomalies are detected.",
+            "x_cdacsiem_alert": "FortiGate - SSL Anomaly Certificate Resign Untrusted"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--e84b2cbc-4222-4dd6-8d02-9d1bf9fc394d",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.935015Z",
+            "modified": "2024-06-14T06:28:32.935015Z",
+            "name": "10.228.12.194",
+            "description": "Keep the Windows operating system up-to-date with the latest security patches and updates.\nUse reputable anti-malware software to scan and remove any malware that might be affecting the startup process.",
+            "x_cdacsiem_alert": "Windows - Windows Starting Up"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--c1a5dae5-9512-46c0-9095-5e61626b0e9c",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.935015Z",
+            "modified": "2024-06-14T06:28:32.935015Z",
+            "name": "10.228.12.194",
+            "description": "If you suspect that the Windows Firewall may be causing issues, review the firewall rules to ensure that they are correctly configured. You can access the Windows Firewall settings by going to the Control Panel > System and Security > Windows Defender Firewall.",
+            "x_cdacsiem_alert": "Windows - Windows Firewall Service Started"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--b7241519-725c-434d-8b1a-67e1f3aa62f2",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.93617Z",
+            "modified": "2024-06-14T06:28:32.93617Z",
+            "name": "10.228.12.194",
+            "description": "Ensure that your Windows operating system is up to date with the latest security updates and patches. Windows updates often include fixes for known firewall-related issues.\nWindows includes built-in troubleshooters that can detect and fix common firewall issues. Run the Windows Firewall troubleshooter to see if it can identify and resolve any problems.\nGo to Settings > Update & Security > Troubleshoot > Additional troubleshooters > Windows Firewall.",
+            "x_cdacsiem_alert": "Windows - Windows Firewall Driver Started"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--a8baecb8-db68-46c0-a425-3b11dff91c57",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.93617Z",
+            "modified": "2024-06-14T06:28:32.93617Z",
+            "name": "10.228.12.194",
+            "description": "If the system is not booting properly or if you encounter other errors along with the \"BCD Loaded\" message, you can try using Windows Startup Repair or Recovery options. These tools can help diagnose and repair boot-related issues.\nRunning a disk check using the CHKDSK command can help identify and fix file system errors that might be causing boot issues.\nIf the issue started after recent changes, such as software installations or updates, you can try using System Restore to revert the system to a previous state where it was functioning correctly.",
+            "x_cdacsiem_alert": "Windows - Boot Configuration Data Loaded"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--7dc14e0a-cd90-4a63-a6a2-2583273a8fac",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.93617Z",
+            "modified": "2024-06-14T06:28:32.93617Z",
+            "name": "10.228.12.194",
+            "description": "Ensure that you have proper log management and monitoring in place. Use a Security Information and Event Management (SIEM) system or log aggregation tool to centralize and analyze your logs. This will help you filter out the noise and focus on important security events.",
+            "x_cdacsiem_alert": "Windows - Per-User Audit Policy Table Created"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--b9200802-774e-4eb5-8bc9-561a31ad5347",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.93617Z",
+            "modified": "2024-06-14T06:28:32.93617Z",
+            "name": "10.228.12.194",
+            "description": "Ensure that the services on which the Event Log service depends are running correctly. The Event Log service relies on the Remote Procedure Call (RPC) service and the DCOM Server Process Launcher service.\nRun a thorough antivirus and antimalware scan to rule out the possibility of malware affecting the stability of the Event Log service.",
+            "x_cdacsiem_alert": "Windows - Event logging service shutting down"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--cb9901c2-4c94-42e6-a1f5-0a2895c54350",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.93617Z",
+            "modified": "2024-06-14T06:28:32.93617Z",
+            "name": "10.228.12.194",
+            "description": "Implement strong access control mechanisms and user permissions to restrict access to sensitive resources and data. Ensure that only authorized users or processes can access certain resources.\nKeep your Windows system up to date with the latest security patches and updates to address known vulnerabilities related to token assignments and privilege escalation.",
+            "x_cdacsiem_alert": "Windows - Primary Token Assigned Process"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--fa27f82b-ff84-4fe4-ab92-045f9e5be141",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.93617Z",
+            "modified": "2024-06-14T06:28:32.93617Z",
+            "name": "10.228.12.194",
+            "description": "Ensure that you have proper security auditing and monitoring in place. Regularly review and analyze your Windows event logs for known security events and anomalies. Consider using a Security Information and Event Management (SIEM) system for more comprehensive log analysis.",
+            "x_cdacsiem_alert": "Windows - Attempt Register Security Event"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--ab6504be-3e05-465d-8696-e3ba1de2e537",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.93617Z",
+            "modified": "2024-06-14T06:28:32.93617Z",
+            "name": "10.228.12.194",
+            "description": "Implement strict access controls and permissions to prevent unauthorized individuals from unregistering security events. Limit access to this functionality to trusted and authorized personnel.\nContinuously monitor and audit changes to security event configurations. Detect and respond to any unauthorized attempts to unregister security events promptly.",
+            "x_cdacsiem_alert": "Windows - Attempt Unregister Security Event"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--58a5ea48-8870-4ffc-bfd9-3e7ec25ff566",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.937178Z",
+            "modified": "2024-06-14T06:28:32.937178Z",
+            "name": "10.228.12.194",
+            "description": "-If your user account has any active network connections, such as mapped network drives or remote sessions, properly disconnect from these resources before initiating a logoff. Close open files, disconnect network drives, or log out of remote sessions as necessary.\n-If you are connected to the computer or device via a remote desktop session, initiate the logoff from within the remote session itself. This ensures that the remote session is properly terminated, freeing up system resources and maintaining security.",
+            "x_cdacsiem_alert": "Windows - User Initiated Logoff"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--d6751f38-cb6d-4037-9e5f-4f4bde4644a6",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.937178Z",
+            "modified": "2024-06-14T06:28:32.937178Z",
+            "name": "10.228.12.194",
+            "description": "Make sure the firewall is enabled before you go online. You can also use a hardware firewall of  Cisco, Sophos, or Fortinet and other companies, depending on your requirement, which also has a built-in firewall that protects your network. If you have a larger business, you can integrate an additional business networking firewall.",
+            "x_cdacsiem_alert": "Windows - System time Changed"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--32d7c620-7da6-4f88-b649-2e809abea47b",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.937178Z",
+            "modified": "2024-06-14T06:28:32.937178Z",
+            "name": "10.228.12.194",
+            "description": "-If possible, isolate the affected system or application from the network to prevent further damage or compromise. This can involve disconnecting the system from the network or segregating it within a secure network zone to limit the potential impact on other systems.\n-Restore the affected system or application from a trusted backup source. Ensure that the backup is known to be free from the tampered code. This helps to revert the system to a known-good state before the code integrity checks failed.",
+            "x_cdacsiem_alert": "Windows - Failed Code Integrity Checks"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--72aa29de-93bb-4b01-a131-f5c07822ad5e",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.937178Z",
+            "modified": "2024-06-14T06:28:32.937178Z",
+            "name": "10.228.12.194",
+            "description": "Sometimes, temporary issues can be resolved by simply restarting your computer. Try rebooting to see if the error persists.\nCheck Disk is a Windows utility that can scan and repair disk-related issues. Here's how to run it:\nOpen a Command Prompt as an administrator by pressing Win + X and selecting \"Windows Terminal (Admin)\" or \"Command Prompt (Admin).\"\nType chkdsk /f and press Enter. This command will schedule a disk check the next time you restart your computer. Confirm the action and restart your PC.",
+            "x_cdacsiem_alert": "Windows - Code Integrity Disk Device Error"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--ee7e36d8-4671-4bb4-a8d4-d148b84a8305",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.937178Z",
+            "modified": "2024-06-14T06:28:32.937178Z",
+            "name": "10.228.12.194",
+            "description": "-Determine the appropriate combination of transport protocols to be used for the multi-transport connection. This may involve selecting protocols such as TCP/IP, UDP, HTTP, or others based on the specific requirements of your network environment.\n-Prioritize the usage of transport protocols based on factors such as network conditions, security requirements, or performance considerations. For example, prefer the use of a direct TCP/IP connection but fall back to alternative protocols like UDP or HTTP if necessary.",
+            "x_cdacsiem_alert": "Windows - Multi-transport Connection Made"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--6b99740f-bf29-4359-a58e-9c2a5136d30a",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.937178Z",
+            "modified": "2024-06-14T06:28:32.937178Z",
+            "name": "10.228.12.194",
+            "description": "-Some organizations monitor every 4738 events.\n-If you have critical user computer accounts (for example, domain administrator accounts or service accounts) for which you need to monitor each change, monitor this event with the \u201cTarget Account\\Account Name\u201d that corresponds to the critical account or accounts.\n-If you have user accounts for which any change in the services list on the Delegation tab should be monitored, monitor this event when AllowedToDelegateTo is not -. This value means the services list was changed.\n",
+            "x_cdacsiem_alert": "Windows - User Account Changed"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--a28a5872-0a44-4fcd-9292-5d71342a9707",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.938272Z",
+            "modified": "2024-06-14T06:28:32.938272Z",
+            "name": "10.228.12.194",
+            "description": "-Implement strong authentication mechanisms, such as multi-factor authentication (MFA), to enhance the security of remote logon sessions. MFA adds an additional layer of protection by requiring multiple forms of authentication, reducing the risk of unauthorized access even if credentials are compromised.\n-Use secure network protocols, such as SSH (Secure Shell) or VPN (Virtual Private Network), for remote logon sessions. These protocols provide encryption and secure communication channels, protecting the confidentiality and integrity of remote logon sessions.",
+            "x_cdacsiem_alert": "Windows - Admin User Remote Logon"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--3e01285f-b652-45c2-b028-824e723aa988",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.938272Z",
+            "modified": "2024-06-14T06:28:32.938272Z",
+            "name": "10.228.12.194",
+            "description": "Implement strong access controls on the system to prevent unauthorized access, even from localhost. This includes using strong passwords, enabling multi-factor authentication (MFA), and restricting RDP access to only authorized users or groups.\nDeploy firewalls and network monitoring solutions to detect and block suspicious network traffic, including attempts to establish RDP sessions from localhost. These security measures can help detect and prevent unauthorized access attempts.",
+            "x_cdacsiem_alert": "Windows - RDP Login from Localhost"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--2a430ec7-b1c5-4ca9-ba6b-892f6b65eebc",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.938272Z",
+            "modified": "2024-06-14T06:28:32.938272Z",
+            "name": "10.228.12.194",
+            "description": "Thoroughly review the logs and alerts associated with the remote logon event. Analyze the log data to gather relevant information, such as the source IP address, time of logon, user account, and any additional details available. This analysis can help determine the legitimacy of the logon and the potential risks associated with it.",
+            "x_cdacsiem_alert": "Windows - Remote Logon Detected"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--f6991c75-3aa9-4c77-9c70-e8c384f83d66",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.938272Z",
+            "modified": "2024-06-14T06:28:32.938272Z",
+            "name": "10.228.12.194",
+            "description": "-Ensure that all hardware components, such as RAM, graphics card, and hard drives, are properly connected. Loose connections can cause power interruptions and lead to unexpected shutdowns.\n-Outdated or incompatible drivers and software can cause system instability and unexpected shutdowns. Update your drivers to the latest versions and ensure that your operating system and applications are up to date.",
+            "x_cdacsiem_alert": "Windows - Unexpected System Shutdown"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--70b0166d-ac07-427f-8015-545ec4da2682",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.938272Z",
+            "modified": "2024-06-14T06:28:32.938272Z",
+            "name": "10.228.12.194",
+            "description": "Enhance security auditing and monitoring to detect and alert on changes to group memberships and deletions promptly. Implement alerts for critical group deletions.\nEnforce change control procedures and access controls to prevent unauthorized or accidental group deletions. Implement stricter permissions for group management.",
+            "x_cdacsiem_alert": "Windows - Security Enabled Local Group Deleted"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.926013Z",
+            "modified": "2024-06-14T06:28:32.926013Z",
+            "name": "10.228.12.194",
+            "description": "This indicator indicates an attacker's IP captured on CDACSIEM.",
+            "pattern": "[ipv4-addr:value = '10.228.12.194']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-06-14T03:45:34Z",
+            "confidence": 0
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4",
+            "value": "10.228.12.194"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.926013Z",
+            "modified": "2024-06-14T06:28:32.926013Z",
+            "name": "CDACSIEM"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--2d69c69b-396a-49c3-b3f6-cfcd1e5f25fc",
+            "created": "2024-06-14T06:28:32.926013Z",
+            "modified": "2024-06-14T06:28:32.926013Z",
+            "name": "APPLIED INFOSEC GROUP"
+        },
+        {
+            "type": "infrastructure",
+            "spec_version": "2.1",
+            "id": "infrastructure--ac918887-5a3b-4a15-ae64-170437a48abc",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.938272Z",
+            "modified": "2024-06-14T06:28:32.938272Z",
+            "name": "10.228.12.48",
+            "description": "Anupinder Singh (Windows)",
+            "infrastructure_types": [
+                "applied-infosec-group"
+            ]
+        },
+        {
+            "type": "infrastructure",
+            "spec_version": "2.1",
+            "id": "infrastructure--8f43c34a-8c9e-46ff-97d6-6babb2833f55",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.939279Z",
+            "modified": "2024-06-14T06:28:32.939279Z",
+            "name": "10.228.12.194",
+            "description": "N/A",
+            "infrastructure_types": [
+                "n/a"
+            ]
+        },
+        {
+            "type": "infrastructure",
+            "spec_version": "2.1",
+            "id": "infrastructure--48ca4b9f-7654-4bc8-8b7d-f4881a84c2f5",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.939279Z",
+            "modified": "2024-06-14T06:28:32.939279Z",
+            "name": "10.228.0.3",
+            "description": "Next Generation Firewall",
+            "infrastructure_types": [
+                "applied-infosec-group"
+            ]
+        },
+        {
+            "type": "infrastructure",
+            "spec_version": "2.1",
+            "id": "infrastructure--724c125f-b6f2-4c43-81c0-11a1c47fb4b4",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.940279Z",
+            "modified": "2024-06-14T06:28:32.940279Z",
+            "name": "10.228.0.101",
+            "description": "Recruitment Portal",
+            "infrastructure_types": [
+                "applied-infosec-group"
+            ]
+        },
+        {
+            "type": "note",
+            "spec_version": "2.1",
+            "id": "note--1869a16c-6571-4672-87c5-e5e9086a9b60",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.940279Z",
+            "modified": "2024-06-14T06:28:32.940279Z",
+            "content": "A brief note about incoming IOC.\n Type of IOC: IP Address | Value: 10.228.12.194",
+            "authors": [
+                "CDAC-SIEM",
+                "CDAC-Mohali"
+            ],
+            "object_refs": [
+                "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+            ]
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--b8807729-f9b8-48d9-9074-17f2fb037306",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.940279Z",
+            "modified": "2024-06-14T06:28:32.940279Z",
+            "first_observed": "2023-10-12T04:42:07Z",
+            "last_observed": "2024-06-14T03:45:34Z",
+            "number_observed": 168416,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Successful Login Attempt"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--8421b890-b72f-4ce7-b0d5-c4110fa26f92",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.94128Z",
+            "modified": "2024-06-14T06:28:32.94128Z",
+            "first_observed": "2023-10-12T08:23:37Z",
+            "last_observed": "2024-04-30T10:16:14Z",
+            "number_observed": 17611,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Security Enabled Local Group Membership Enumerated"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--28b9a5b1-2287-461b-8c2e-b1ea21e30afb",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.94128Z",
+            "modified": "2024-06-14T06:28:32.94128Z",
+            "first_observed": "2024-03-01T05:01:21Z",
+            "last_observed": "2024-04-16T11:08:59Z",
+            "number_observed": 12517,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Special Privileges Assigned"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--35d5bc26-86f8-4666-b326-8d94d8148ee8",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.942279Z",
+            "modified": "2024-06-14T06:28:32.942279Z",
+            "first_observed": "2023-10-27T08:28:41Z",
+            "last_observed": "2024-04-12T04:11:31Z",
+            "number_observed": 7673,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Auditing Settings Object Changed"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--a416b605-c282-48c9-a26e-03c5055d0161",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.943279Z",
+            "modified": "2024-06-14T06:28:32.943279Z",
+            "first_observed": "2024-01-01T03:16:49Z",
+            "last_observed": "2024-05-29T10:25:09Z",
+            "number_observed": 4525,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Failed Login Attempt"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--5d1f9a90-00f3-4c4b-9e46-e3f4f3033c1f",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.944279Z",
+            "modified": "2024-06-14T06:28:32.944279Z",
+            "first_observed": "2024-01-10T16:58:18Z",
+            "last_observed": "2024-01-16T04:56:54Z",
+            "number_observed": 3767,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Connection Failed - Bad Username or Password"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--17d0ebc9-c352-4592-8fce-81812f5abb10",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.94528Z",
+            "modified": "2024-06-14T06:28:32.94528Z",
+            "first_observed": "2023-10-12T08:34:18Z",
+            "last_observed": "2024-04-30T08:32:56Z",
+            "number_observed": 1698,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Account Logged Off"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--6c29b79e-8c2a-454a-985f-4007de571f40",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.94628Z",
+            "modified": "2024-06-14T06:28:32.94628Z",
+            "first_observed": "2023-10-13T03:55:17Z",
+            "last_observed": "2024-04-30T09:32:56Z",
+            "number_observed": 1580,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Key File Operation"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--8d53ec6c-989e-4760-a5f1-0decdc16b940",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.94628Z",
+            "modified": "2024-06-14T06:28:32.94628Z",
+            "first_observed": "2023-10-12T08:34:18Z",
+            "last_observed": "2024-04-15T10:07:58Z",
+            "number_observed": 1512,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Account Log Off Attempt"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--0f5a8fe9-a554-43d2-aa4f-aa38d7d20334",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.947279Z",
+            "modified": "2024-06-14T06:28:32.947279Z",
+            "first_observed": "2023-10-12T07:31:24Z",
+            "last_observed": "2024-04-15T22:10:24Z",
+            "number_observed": 1298,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - User's Local Group Membership Enumerated "
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--aafe7b76-62c1-4e46-9baa-27d23a7bae76",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.947279Z",
+            "modified": "2024-06-14T06:28:32.947279Z",
+            "first_observed": "2023-10-21T21:45:16Z",
+            "last_observed": "2024-04-30T10:12:56Z",
+            "number_observed": 1167,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - RDP Connection Attempt"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--e112a819-5878-4fae-8642-339286272f5d",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.94843Z",
+            "modified": "2024-06-14T06:28:32.94843Z",
+            "first_observed": "2023-10-13T03:55:17Z",
+            "last_observed": "2024-04-15T04:22:33Z",
+            "number_observed": 808,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Cryptographic Operation"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--e87b18e7-0c7a-40f1-9a5c-cb038a6c1e48",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.949484Z",
+            "modified": "2024-06-14T06:28:32.949484Z",
+            "first_observed": "2023-10-13T03:55:17Z",
+            "last_observed": "2024-04-15T04:22:33Z",
+            "number_observed": 505,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Key Migration Operation"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--14abfd5c-4a51-416e-bfbc-adc219f07eed",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.949484Z",
+            "modified": "2024-06-14T06:28:32.949484Z",
+            "first_observed": "2023-10-30T10:16:43Z",
+            "last_observed": "2024-05-16T06:02:37Z",
+            "number_observed": 497,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Logon Attempted Explicit Credentials"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--c5e7eb87-0936-4ec6-b147-08ab91030db4",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.950491Z",
+            "modified": "2024-06-14T06:28:32.950491Z",
+            "first_observed": "2023-05-29T04:37:58Z",
+            "last_observed": "2024-04-30T09:31:12Z",
+            "number_observed": 403,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - System Crash"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--57344c64-d88d-4a7a-9bd3-0653a1a4c7ab",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.950491Z",
+            "modified": "2024-06-14T06:28:32.950491Z",
+            "first_observed": "2023-10-18T03:26:11Z",
+            "last_observed": "2024-04-30T09:31:21Z",
+            "number_observed": 276,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Multi-transport Connection Attempt"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--1f2a5c47-8bf3-4812-b3b1-22291ea7e0f3",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.951491Z",
+            "modified": "2024-06-14T06:28:32.951491Z",
+            "first_observed": "2023-10-20T20:07:52Z",
+            "last_observed": "2024-04-29T07:25:56Z",
+            "number_observed": 203,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Application Crash"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--d964a383-7ac8-43e2-b73a-8515ed0076f3",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.951491Z",
+            "modified": "2024-06-14T06:28:32.951491Z",
+            "first_observed": "2023-10-30T10:17:10Z",
+            "last_observed": "2024-04-30T09:31:22Z",
+            "number_observed": 164,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - RDP Connection Made"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--b040d3a9-f888-41c3-9696-b24cfb865533",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.952493Z",
+            "modified": "2024-06-14T06:28:32.952493Z",
+            "first_observed": "2023-10-15T23:13:35Z",
+            "last_observed": "2023-10-16T06:03:51Z",
+            "number_observed": 159,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "FortiGate - Rating Error Occurred - Warning"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--88f194b9-da7c-4af3-acdf-7f480fa7520c",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.952493Z",
+            "modified": "2024-06-14T06:28:32.952493Z",
+            "first_observed": "2023-10-18T05:09:21Z",
+            "last_observed": "2024-04-30T09:31:29Z",
+            "number_observed": 108,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Attempt Query Existence Blank Password Account"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--71004b86-23ec-4d2c-a981-7547af3d22e6",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.953493Z",
+            "modified": "2024-06-14T06:28:32.953493Z",
+            "first_observed": "2023-10-15T23:13:35Z",
+            "last_observed": "2023-10-16T06:03:51Z",
+            "number_observed": 83,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "FortiGate - SSL Anomaly Certificate Resign Untrusted"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--ab59806c-79d7-4b3c-a1b9-dbf1716e0217",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.953493Z",
+            "modified": "2024-06-14T06:28:32.953493Z",
+            "first_observed": "2023-10-30T10:16:42Z",
+            "last_observed": "2024-04-29T08:37:19Z",
+            "number_observed": 70,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Windows Starting Up"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--fab2b481-2e34-41d2-b947-d17825cb0d71",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.954492Z",
+            "modified": "2024-06-14T06:28:32.954492Z",
+            "first_observed": "2023-10-30T10:17:15Z",
+            "last_observed": "2024-04-29T08:37:23Z",
+            "number_observed": 70,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Windows Firewall Service Started"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--57812541-f678-42a5-86b8-60b9ed3061b5",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.954492Z",
+            "modified": "2024-06-14T06:28:32.954492Z",
+            "first_observed": "2023-10-30T10:16:59Z",
+            "last_observed": "2024-04-29T08:37:21Z",
+            "number_observed": 70,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Windows Firewall Driver Started"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--0e3123dc-9aec-42a2-95c2-e0f874b88c35",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.955492Z",
+            "modified": "2024-06-14T06:28:32.955492Z",
+            "first_observed": "2023-10-30T10:16:09Z",
+            "last_observed": "2024-04-29T08:36:59Z",
+            "number_observed": 65,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Boot Configuration Data Loaded"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--811ed245-ba4d-438a-9d1b-a8181e8049a3",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.955492Z",
+            "modified": "2024-06-14T06:28:32.955492Z",
+            "first_observed": "2023-10-30T10:16:43Z",
+            "last_observed": "2024-04-29T08:37:20Z",
+            "number_observed": 65,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Per-User Audit Policy Table Created"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--2c68e586-37e2-44bc-9bf7-6a846f640766",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.955492Z",
+            "modified": "2024-06-14T06:28:32.955492Z",
+            "first_observed": "2023-10-30T10:13:35Z",
+            "last_observed": "2024-04-26T11:22:45Z",
+            "number_observed": 58,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Event logging service shutting down"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--c7a1c0e5-cc94-48e2-9a28-151a211cadb7",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.955492Z",
+            "modified": "2024-06-14T06:28:32.955492Z",
+            "first_observed": "2023-10-30T10:16:09Z",
+            "last_observed": "2024-04-29T08:36:59Z",
+            "number_observed": 46,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Primary Token Assigned Process"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--84f52619-85e6-49d7-92ef-e50e12d1cd17",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.956493Z",
+            "modified": "2024-06-14T06:28:32.956493Z",
+            "first_observed": "2023-10-18T17:24:02Z",
+            "last_observed": "2024-04-30T10:12:15Z",
+            "number_observed": 44,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Attempt Register Security Event"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--e2eaa36c-c57e-4eb1-aadf-b5d673b1bb61",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.956493Z",
+            "modified": "2024-06-14T06:28:32.956493Z",
+            "first_observed": "2023-10-18T17:24:02Z",
+            "last_observed": "2024-04-30T10:12:15Z",
+            "number_observed": 44,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Attempt Unregister Security Event"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--47882af9-bbbb-43d8-a9ea-142ec36c716c",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.956493Z",
+            "modified": "2024-06-14T06:28:32.956493Z",
+            "first_observed": "2023-10-30T10:13:19Z",
+            "last_observed": "2024-04-26T11:22:35Z",
+            "number_observed": 28,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - User Initiated Logoff"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--46e5f957-cdee-4392-8eee-92ffa5b12df0",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.957492Z",
+            "modified": "2024-06-14T06:28:32.957492Z",
+            "first_observed": "2023-10-22T11:21:06Z",
+            "last_observed": "2023-12-29T07:21:35Z",
+            "number_observed": 14,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - System time Changed"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--7e26c75b-0111-4c21-9ff5-0915b7e61fbd",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.957492Z",
+            "modified": "2024-06-14T06:28:32.957492Z",
+            "first_observed": "2024-04-23T11:44:56Z",
+            "last_observed": "2024-04-24T04:08:39Z",
+            "number_observed": 8,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Failed Code Integrity Checks"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--b036bc5b-3ae0-490c-8f8e-3f4e967b7daf",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.957492Z",
+            "modified": "2024-06-14T06:28:32.957492Z",
+            "first_observed": "2024-04-23T11:44:56Z",
+            "last_observed": "2024-04-24T04:08:39Z",
+            "number_observed": 8,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Code Integrity Disk Device Error"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--3920d854-4f0a-4d45-afb6-ffe74ec04ac3",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.957492Z",
+            "modified": "2024-06-14T06:28:32.957492Z",
+            "first_observed": "2023-10-30T05:33:03Z",
+            "last_observed": "2024-04-15T10:32:13Z",
+            "number_observed": 7,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Multi-transport Connection Made"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--1408f156-3bcc-48c6-9774-863a759d79ba",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.958493Z",
+            "modified": "2024-06-14T06:28:32.958493Z",
+            "first_observed": "2024-04-18T03:37:30Z",
+            "last_observed": "2024-04-18T03:37:30Z",
+            "number_observed": 1,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - User Account Changed"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--62f76059-5634-498e-9c57-86c8ea3fbd81",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.958493Z",
+            "modified": "2024-06-14T06:28:32.958493Z",
+            "first_observed": "2024-05-16T06:02:37Z",
+            "last_observed": "2024-05-16T06:02:37Z",
+            "number_observed": 1,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Admin User Remote Logon"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--0a1496c9-b12e-4a0a-b980-c59a59941f62",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.958493Z",
+            "modified": "2024-06-14T06:28:32.958493Z",
+            "first_observed": "2024-05-16T06:02:37Z",
+            "last_observed": "2024-05-16T06:02:37Z",
+            "number_observed": 1,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - RDP Login from Localhost"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--b901839b-fee5-4454-a5b4-396fc90b30c1",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.959492Z",
+            "modified": "2024-06-14T06:28:32.959492Z",
+            "first_observed": "2024-05-16T06:02:37Z",
+            "last_observed": "2024-05-16T06:02:37Z",
+            "number_observed": 1,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Remote Logon Detected"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--08c2f77c-6a44-4755-8919-47ece0ac083c",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.959492Z",
+            "modified": "2024-06-14T06:28:32.959492Z",
+            "first_observed": "2024-01-04T09:16:56Z",
+            "last_observed": "2024-01-04T09:16:56Z",
+            "number_observed": 1,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Unexpected System Shutdown"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--0465129c-e809-4bce-8c7f-b01803277bdd",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.960493Z",
+            "modified": "2024-06-14T06:28:32.960493Z",
+            "first_observed": "2023-11-09T07:32:46Z",
+            "last_observed": "2023-11-09T07:32:46Z",
+            "number_observed": 1,
+            "object_refs": [
+                "ipv4-addr--1c0644ae-00e2-4647-9b2a-de8a89acb0c4"
+            ],
+            "name": "Windows - Security Enabled Local Group Deleted"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--ce98c948-4f98-4211-bf09-46199f82ad21",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.960493Z",
+            "modified": "2024-06-14T06:28:32.960493Z",
+            "name": "Initial Access",
+            "description": "Adversaries use techniques to gain entry into a victim's environment. This stage marks the beginning of the intrusion campaign and is often achieved through exploiting vulnerabilities, misconfigurations, or weaknesses in systems or networks. Adversaries may also leverage social engineering tactics, such as phishing emails or malicious links, to trick users into providing credentials or downloading malicious files.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0001/",
+                    "external_id": "TA0001"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0001"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--b3f66b3f-c6f3-4b2f-b3b4-7031e782c401",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.961492Z",
+            "modified": "2024-06-14T06:28:32.961492Z",
+            "name": "External Remote Services",
+            "description": "Adversaries exploit external-facing remote services, such as web servers, email servers, or VPNs, to gain initial access to a victim's environment. This tactic focuses on the exploitation of services that are accessible from the internet, providing adversaries with a potential entry point into the target organization.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1133/",
+                    "external_id": "T1133"
+                }
+            ],
+            "x_mitre_technique_id": "T1133"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--4e931aaf-6153-46ec-89de-1d8b7fb7ff04",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.96286Z",
+            "modified": "2024-06-14T06:28:32.96286Z",
+            "name": "Phishing",
+            "description": "Adversaries use deceptive emails or messages to trick users into divulging sensitive information, such as credentials, personal details, or financial information. Phishing attacks often rely on social engineering tactics to manipulate users' trust or emotions, leading them to click on malicious links, download malicious attachments, or provide sensitive information.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1566/",
+                    "external_id": "T1566"
+                }
+            ],
+            "x_mitre_technique_id": "T1566"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--1541207a-eee4-47e9-a9ad-bbc558ce1a3d",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.963869Z",
+            "modified": "2024-06-14T06:28:32.963869Z",
+            "name": "Valid Accounts",
+            "description": "Adversaries use legitimate credentials or accounts to gain unauthorized access, move laterally, or achieve their objectives within a target environment. This tactic exploits the presence of valid user accounts or credentials to blend in with normal user activity and evade detection. Adversaries may obtain valid credentials through various means, such as phishing, password spraying, credential stuffing, or brute force attacks.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1078/",
+                    "external_id": "T1078"
+                }
+            ],
+            "x_mitre_technique_id": "T1078"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--dae0b673-56ab-41be-95a3-26510bb21bbf",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.964869Z",
+            "modified": "2024-06-14T06:28:32.964869Z",
+            "name": "Execution",
+            "description": "Adversaries use techniques to run malicious code or commands on a target system or environment. This tactic covers various methods adversaries employ to execute their malicious payloads, such as files, scripts, or commands, to achieve their objectives within the target environment. Execution techniques may include exploiting vulnerabilities, abusing legitimate system utilities, or tricking users into executing malicious files or scripts.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0002/",
+                    "external_id": "TA0002"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0002"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--da49f922-6370-413a-a2d3-c7135fd52ba2",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.965878Z",
+            "modified": "2024-06-14T06:28:32.965878Z",
+            "name": "Scheduled Task/Job",
+            "description": "Adversaries use Scheduled Task/Job techniques to create and manage scheduled tasks or jobs on a target system. Scheduled tasks/jobs allow for the execution of commands or scripts at specified times, intervals, or events. Adversaries may abuse the scheduling functionality provided by the operating system to establish persistence, execute arbitrary code, escalate privileges, or achieve other malicious objectives.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1053/",
+                    "external_id": "T1053"
+                }
+            ],
+            "x_mitre_technique_id": "T1053"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--028e51ff-5ada-495c-8ac8-64e1b0428050",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.966878Z",
+            "modified": "2024-06-14T06:28:32.966878Z",
+            "name": "Software Deployment Tools",
+            "description": "Adversaries abuse legitimate software deployment tools to deliver and execute malicious payloads on target systems. Software deployment tools, such as Microsoft System Center Configuration Manager (SCCM), Puppet, Chef, Ansible, or SaltStack, are used by organizations to automate software installation, configuration, and management across distributed systems.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1072/",
+                    "external_id": "T1072"
+                }
+            ],
+            "x_mitre_technique_id": "T1072"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--0d7c2898-77f2-483e-bab5-4dba5d6367a2",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.967878Z",
+            "modified": "2024-06-14T06:28:32.967878Z",
+            "name": "Persistence",
+            "description": "Adversaries use persistence techniques to maintain their presence and access on a compromised system across system reboots or user logins. These techniques often involve establishing mechanisms, such as scheduled tasks, services, Registry modifications, or backdoors, that allow adversaries to maintain control over the system and evade detection. By establishing persistence, adversaries ensure that they can continue their malicious activities, maintain access to the compromised system, and maintain a foothold for future operations.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0003/",
+                    "external_id": "TA0003"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0003"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--1d52fa00-1506-40bf-94ad-59884e391eb1",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.968878Z",
+            "modified": "2024-06-14T06:28:32.968878Z",
+            "name": "Boot or Logon Autostart Execution",
+            "description": "Boot or Logon Autostart Execution involves adversaries configuring various mechanisms to ensure that their malicious payloads or commands are executed automatically when a compromised system boots up or when a user logs on. By leveraging these autostart mechanisms, adversaries can achieve persistence, allowing their malicious activities to continue running even after system reboots or user logouts.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1547/",
+                    "external_id": "T1547"
+                }
+            ],
+            "x_mitre_technique_id": "T1547"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--812a9cb6-792e-4113-b832-fbf568062c92",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.968878Z",
+            "modified": "2024-06-14T06:28:32.968878Z",
+            "name": "External Remote Services",
+            "description": "Adversaries use the External Remote Services technique to leverage remote services hosted outside of the target organization's environment to maintain a persistent presence and enable command and control (C2) communications.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1133/",
+                    "external_id": "T1133"
+                }
+            ],
+            "x_mitre_technique_id": "T1133"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--26378df7-c435-433d-b8cf-59e0fb1e9bd6",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.969877Z",
+            "modified": "2024-06-14T06:28:32.969877Z",
+            "name": "Hijack Execution Flow",
+            "description": "Adversaries use the Hijack Execution Flow technique to divert the normal execution flow of a process to malicious code by manipulating the process or system environment. This technique can be achieved through various means, such as DLL injection, DLL search order hijacking, or modifying process memory. By hijacking the execution flow of a process, adversaries can force it to execute malicious code, evade detection, achieve persistence, or escalate privileges.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1574/",
+                    "external_id": "T1574"
+                }
+            ],
+            "x_mitre_technique_id": "T1574"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--dad3a46b-ecb9-4c12-944f-90f32d84c742",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.970878Z",
+            "modified": "2024-06-14T06:28:32.970878Z",
+            "name": "Modify Authentication Process",
+            "description": "Modify Authentication Process technique involves adversaries altering the authentication flow or mechanisms within a system to gain unauthorized access, escalate privileges, or bypass security controls. By tampering with the authentication process, adversaries can manipulate how users are validated and granted access to resources, potentially compromising the security of the system.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1556/",
+                    "external_id": "T1556"
+                }
+            ],
+            "x_mitre_technique_id": "T1556"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--a792b223-495e-43ce-b329-fea11cc3c5ff",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.971877Z",
+            "modified": "2024-06-14T06:28:32.971877Z",
+            "name": "Scheduled Task/Job",
+            "description": "Adversaries may abuse scheduled tasks/jobs to execute programs at system startup or on a scheduled basis for persistence, to conduct remote execution of malware, or to achieve privilege escalation if the scheduled task/job runs at a higher permission level. Scheduled tasks/jobs can be used to initiate other techniques, such as launching malware as a persistence mechanism or using the task scheduler service to run a process at a specified time.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1053/",
+                    "external_id": "T1053"
+                }
+            ],
+            "x_mitre_technique_id": "T1053"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--cf37eaf9-cdcc-49a9-9fd1-650c64f7712f",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.972878Z",
+            "modified": "2024-06-14T06:28:32.972878Z",
+            "name": "Valid Accounts",
+            "description": "Valid accounts refer to user accounts or credentials that are legitimately created and authorized within an organization's network environment. These accounts are typically associated with legitimate users, such as employees, administrators, or service accounts, and have permissions and privileges granted based on the user's role and responsibilities within the organization.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1078/",
+                    "external_id": "T1078"
+                }
+            ],
+            "x_mitre_technique_id": "T1078"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--20674ab9-014c-4669-86c7-b874732dbc97",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.973878Z",
+            "modified": "2024-06-14T06:28:32.973878Z",
+            "name": "Privilege Escalation",
+            "description": "Privilege escalation involves exploiting vulnerabilities or misconfigurations to gain higher levels of access or permissions within a system, network, or application environment. This tactic is employed by adversaries to elevate their privileges beyond what they initially had upon gaining access to a target system. By obtaining higher privileges, adversaries can perform more advanced and potentially malicious actions, such as accessing sensitive data, installing persistent backdoors, or tampering with critical system settings.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0004/",
+                    "external_id": "TA0004"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0004"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--f06e95c4-6dda-4158-91d3-7e72cdfda62b",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.974877Z",
+            "modified": "2024-06-14T06:28:32.974877Z",
+            "name": "Boot or Logon Autostart Execution",
+            "description": "Boot or Logon Autostart Execution involves adversaries configuring mechanisms to automatically execute malicious payloads, scripts, or commands when a compromised system boots up or when a user logs on. These autostart mechanisms are designed to ensure that the adversary's code runs without manual intervention, allowing them to maintain access to compromised systems and continue their malicious activities undetected.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1547/",
+                    "external_id": "T1547"
+                }
+            ],
+            "x_mitre_technique_id": "T1547"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--361b34c4-265f-4742-824a-7ecce61e58f4",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.974877Z",
+            "modified": "2024-06-14T06:28:32.974877Z",
+            "name": "Exploitation for Privilege Escalation",
+            "description": "Exploitation for Privilege Escalation involves adversaries exploiting vulnerabilities or weaknesses in software, operating systems, or configurations to elevate their privileges from a lower level of access to a higher one. This tactic is commonly employed by adversaries to gain additional permissions, such as administrative or system-level privileges, which enable them to access sensitive data, execute arbitrary code, or perform other malicious actions within the target environment.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1068/",
+                    "external_id": "T1068"
+                }
+            ],
+            "x_mitre_technique_id": "T1068"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--fce22618-2cec-481f-9046-38d4df944494",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.97588Z",
+            "modified": "2024-06-14T06:28:32.97588Z",
+            "name": "Hijack Execution Flow",
+            "description": "Hijack Execution Flow refers to the tactic used by adversaries to manipulate the execution flow of a process or application to execute malicious code or achieve their goals. Adversaries may exploit vulnerabilities, design flaws, or misconfigurations in software to redirect the normal execution path and gain control over the program's behavior. This technique allows adversaries to execute arbitrary commands, load and execute malicious payloads, or bypass security controls without triggering detection mechanisms.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1574/",
+                    "external_id": "T1574"
+                }
+            ],
+            "x_mitre_technique_id": "T1574"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--915098b5-8743-4fe8-a8bb-0f3d473e7584",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.97588Z",
+            "modified": "2024-06-14T06:28:32.97588Z",
+            "name": "Scheduled Task/Job",
+            "description": "Scheduled Task/Job refers to the tactic used by adversaries to create, modify, or abuse scheduled tasks or jobs on a target system to achieve their objectives. Scheduled tasks are automated processes configured to run at predetermined times or intervals, such as daily, weekly, or upon specific events, such as user logon or system startup. Adversaries commonly use scheduled tasks to establish persistence, execute payloads, and maintain access to compromised systems without attracting attention.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1053/",
+                    "external_id": "T1053"
+                }
+            ],
+            "x_mitre_technique_id": "T1053"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--ad41c365-ed1f-47cd-a5db-87e77a635539",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.976877Z",
+            "modified": "2024-06-14T06:28:32.976877Z",
+            "name": "Valid Accounts",
+            "description": "Valid Accounts tactic refers to the practice of adversaries using legitimate user accounts or credentials to gain access to systems, applications, or data within a target environment. Adversaries may obtain valid account credentials through various means, including social engineering, phishing attacks, password spraying, or exploiting misconfigured access controls.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1078/",
+                    "external_id": "T1078"
+                }
+            ],
+            "x_mitre_technique_id": "T1078"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--90d59386-36c5-4a81-af9e-5fe73b4eef44",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.977877Z",
+            "modified": "2024-06-14T06:28:32.977877Z",
+            "name": "Defense Evasion",
+            "description": "Defense Evasion techniques are employed by adversaries to bypass or neutralize security controls, detection mechanisms, and mitigations implemented by defenders. These techniques aim to conceal malicious activities, evade detection by security solutions, and maintain persistent access to target systems and networks. Defense Evasion tactics are critical for adversaries to achieve their objectives while minimizing the risk of detection and attribution.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0005/",
+                    "external_id": "TA0005"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0005"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--24127f8c-4ce1-4ea1-b004-f3ef6d499092",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.977877Z",
+            "modified": "2024-06-14T06:28:32.977877Z",
+            "name": "Hijack Execution Flow",
+            "description": "Hijack Execution Flow refers to the tactic used by adversaries to redirect the normal execution flow of a program, process, or thread to execute malicious code or achieve their objectives. Adversaries may exploit vulnerabilities, design flaws, or insecure configurations within software applications or operating systems to manipulate the execution flow and gain unauthorized access, escalate privileges, or bypass security controls.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1574/",
+                    "external_id": "T1574"
+                }
+            ],
+            "x_mitre_technique_id": "T1574"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--2a7dad5d-e551-4914-b8a5-5e7ed7e9f6ea",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.978879Z",
+            "modified": "2024-06-14T06:28:32.978879Z",
+            "name": "Impair Defenses",
+            "description": "Impair Defenses refers to the tactic used by adversaries to disable, bypass, or evade security controls and mechanisms within a target environment. Adversaries may employ various techniques to impair defenses, including disabling or bypassing antivirus software, evading intrusion detection systems, circumventing firewalls, or neutralizing endpoint protection solutions.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1562/",
+                    "external_id": "T1562"
+                }
+            ],
+            "x_mitre_technique_id": "T1562"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--3c78050e-b4a6-4bd5-88ea-536ed8606f95",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.979877Z",
+            "modified": "2024-06-14T06:28:32.979877Z",
+            "name": "Indicator Removal",
+            "description": "Indicator Removal on Host refers to the technique used by adversaries to delete or manipulate artifacts, such as log files, event logs, forensic evidence, or other indicators of compromise (IOCs), on compromised systems to cover their tracks and evade detection. Adversaries attempt to remove traces of their presence or activities from compromised systems to hinder incident response efforts, forensic analysis, and threat detection mechanisms.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1070/",
+                    "external_id": "T1070"
+                }
+            ],
+            "x_mitre_technique_id": "T1070"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--b9099cad-a7ad-4f13-9547-dfda4c2baef6",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.980385Z",
+            "modified": "2024-06-14T06:28:32.980385Z",
+            "name": "Masquerading",
+            "description": "Masquerading refers to the tactic used by adversaries to disguise malicious activities, payloads, or entities as legitimate processes, services, or files to evade detection by defenders. Adversaries may employ various techniques to masquerade as trusted entities, including renaming files, processes, or services, modifying metadata, or impersonating legitimate applications or system components.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1036/",
+                    "external_id": "T1036"
+                }
+            ],
+            "x_mitre_technique_id": "T1036"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--168cb31c-79df-4a8b-83d9-fb0e6e997965",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.981392Z",
+            "modified": "2024-06-14T06:28:32.981392Z",
+            "name": "Modify Authentication Process",
+            "description": "Modify Authentication Process refers to the tactic used by adversaries to alter the authentication mechanisms or processes within a target environment to gain unauthorized access or undermine security controls. Adversaries may exploit vulnerabilities or weaknesses in authentication systems, protocols, or components to manipulate the authentication process and achieve their objectives.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1556/",
+                    "external_id": "T1556"
+                }
+            ],
+            "x_mitre_technique_id": "T1556"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--cbdb2835-957c-4f08-9d33-dac1ef9f3874",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.981392Z",
+            "modified": "2024-06-14T06:28:32.981392Z",
+            "name": "Obfuscated Files or Information",
+            "description": "Obfuscated Files or Information refers to the tactic used by adversaries to disguise files, data, or commands to evade detection by security controls and analysts. Adversaries employ various obfuscation techniques to obscure the content, purpose, or functionality of files, scripts, or communication channels, making them difficult to analyze or detect using traditional security mechanisms.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1027/",
+                    "external_id": "T1027"
+                }
+            ],
+            "x_mitre_technique_id": "T1027"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--59f9c950-d797-427f-85ec-ce961111c08f",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.982392Z",
+            "modified": "2024-06-14T06:28:32.982392Z",
+            "name": "Valid Accounts",
+            "description": "Valid Accounts is a technique where attackers use compromised or legitimately obtained credentials to gain unauthorized access to systems and resources within an organization. By leveraging valid account credentials, attackers can move laterally across the network, access sensitive data, execute commands, and evade detection.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1078/",
+                    "external_id": "T1078"
+                }
+            ],
+            "x_mitre_technique_id": "T1078"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--4cf6a8d0-6abd-423a-b935-656f115e9ab1",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.983393Z",
+            "modified": "2024-06-14T06:28:32.983393Z",
+            "name": "Credential Access",
+            "description": "Credential Access techniques involve adversaries obtaining legitimate credentials or authentication tokens from various sources within the target environment. This can include stealing credentials through techniques such as phishing, brute force attacks, or credential dumping, as well as exploiting vulnerabilities or misconfigurations to obtain privileged credentials. ",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0006/",
+                    "external_id": "TA0006"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0006"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--eea8afb8-9417-4a79-b4b6-690b82780bd6",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.983393Z",
+            "modified": "2024-06-14T06:28:32.983393Z",
+            "name": "Brute Force",
+            "description": "Brute Force is a technique where attackers systematically try different combinations of usernames and passwords to gain unauthorized access to systems, accounts, or services. This method relies on the attacker's ability to guess or generate potential passwords until the correct one is discovered.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1110/",
+                    "external_id": "T1110"
+                }
+            ],
+            "x_mitre_technique_id": "T1110"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--b8ee20bb-be12-4191-b961-66538cee6bc5",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.984392Z",
+            "modified": "2024-06-14T06:28:32.984392Z",
+            "name": "Credentials from Password Stores",
+            "description": "Credentials from Password Stores is a technique where attackers target password manager applications or similar repositories to obtain stored credentials. Password stores are used to securely manage and store passwords, but if compromised, they can provide attackers with a wealth of sensitive information.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1555/",
+                    "external_id": "T1555"
+                }
+            ],
+            "x_mitre_technique_id": "T1555"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--c1243644-342d-4020-b3c0-0bafe09c898d",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.984392Z",
+            "modified": "2024-06-14T06:28:32.984392Z",
+            "name": "Modify Authentication Process",
+            "description": "Modify Authentication Process is a technique where attackers alter or manipulate the standard authentication procedures or mechanisms to gain unauthorized access. This technique allows attackers to modify the behavior of the authentication process, potentially bypassing security controls, stealing credentials, or impersonating legitimate users.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1556/",
+                    "external_id": "T1556"
+                }
+            ],
+            "x_mitre_technique_id": "T1556"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--4f3ede75-53b1-4a47-8b49-5046bb334265",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.985391Z",
+            "modified": "2024-06-14T06:28:32.985391Z",
+            "name": "Unsecured Credentials",
+            "description": "Unsecured Credentials is a technique where attackers exploit the presence of sensitive credentials that are stored, transmitted, or managed in an insecure manner. This includes scenarios where passwords are stored in plaintext, transmitted over unencrypted channels, or stored in easily accessible locations. Attackers may obtain these credentials through methods such as credential dumping, sniffing network traffic, or finding exposed files with sensitive data.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1552/",
+                    "external_id": "T1552"
+                }
+            ],
+            "x_mitre_technique_id": "T1552"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--b8b178cb-c947-4d10-8088-c44d05360a8c",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.986391Z",
+            "modified": "2024-06-14T06:28:32.986391Z",
+            "name": "Lateral Movement",
+            "description": "Lateral Movement techniques involve adversaries traversing the network, typically from one compromised system to another, to gain access to additional resources, escalate privileges, and further their objectives. Adversaries may exploit vulnerabilities, misconfigurations, or weak access controls to move laterally within the network, aiming to evade detection and maintain persistence. Lateral Movement is a critical phase in many cyber attacks, enabling adversaries to expand their foothold and maximize the impact of their activities within the target environment.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0008/",
+                    "external_id": "TA0008"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0008"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--4a134f3d-0b5d-47be-8356-6e4509d7662f",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98739Z",
+            "modified": "2024-06-14T06:28:32.98739Z",
+            "name": "Remote Services",
+            "description": "Remote Services is a technique used by adversaries to gain initial access to a system or network by exploiting vulnerabilities or weaknesses in legitimate remote service protocols. These services include protocols such as Remote Desktop Protocol (RDP), Secure Shell (SSH), Virtual Network Computing (VNC), and other remote administration tools. Adversaries leverage these protocols to establish a remote connection to target systems, allowing them to interact with the system's resources, execute commands, and potentially compromise the system.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1021/",
+                    "external_id": "T1021"
+                }
+            ],
+            "x_mitre_technique_id": "T1021"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--623543e6-5e27-440b-8c6c-4fec098785df",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98739Z",
+            "modified": "2024-06-14T06:28:32.98739Z",
+            "name": "Software Deployment Tools",
+            "description": "Software Deployment Tools are legitimate utilities and services used by organizations to remotely install, update, and manage software on multiple systems within a network. These tools streamline the deployment process, improve efficiency, and ensure consistency in software configurations across systems. Adversaries may abuse these tools to execute arbitrary commands, deploy malicious software, or achieve other malicious objectives.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1072/",
+                    "external_id": "T1072"
+                }
+            ],
+            "x_mitre_technique_id": "T1072"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--901b167c-5360-4eb9-b253-29a9cc76c237",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98839Z",
+            "modified": "2024-06-14T06:28:32.98839Z",
+            "name": "Discovery",
+            "description": "Discovery techniques involve adversaries gathering information about the target environment, including network infrastructure, systems, applications, users, and security controls. This information gathering phase enables adversaries to identify vulnerabilities, misconfigurations, or weaknesses that can be exploited to achieve their objectives. Discovery techniques can include reconnaissance activities, such as scanning, enumeration, and fingerprinting, as well as querying internal systems or external sources for information about the target environment.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0007/",
+                    "external_id": "TA0007"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0007"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--c94e68bc-db28-4369-bcb9-fdb6d2b51641",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98839Z",
+            "modified": "2024-06-14T06:28:32.98839Z",
+            "name": "Account Discovery",
+            "description": "Account Discovery is a technique where attackers gather information about user accounts, including usernames, group memberships, and other account-related details on a targeted system. This information is valuable for understanding the network environment, identifying privileged accounts, and planning further stages of the attack. Attackers may use various methods to discover user accounts, such as querying system directories, enumerating users via network protocols, or searching for credential repositories.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1087/",
+                    "external_id": "T1087"
+                }
+            ],
+            "x_mitre_technique_id": "T1087"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--79a41822-be03-46f7-a74a-047fe2185b4a",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98939Z",
+            "modified": "2024-06-14T06:28:32.98939Z",
+            "name": "Permission Groups Discovery",
+            "description": "Peripheral Device Discovery is a technique where adversaries identify and gather information about external hardware devices connected to a target system. This technique involves detecting and enumerating peripheral devices such as USB drives, printers, cameras, keyboards, mice, and other devices connected via USB, Thunderbolt, Bluetooth, or other interfaces. Adversaries may perform peripheral device discovery to understand the target's hardware configuration, identify potential points of entry or infection, gather information for further exploitation, or plan for data exfiltration.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1069/",
+                    "external_id": "T1069"
+                }
+            ],
+            "x_mitre_technique_id": "T1069"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--5d4c8f31-a825-4fed-a7ec-8c782639ddba",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98939Z",
+            "modified": "2024-06-14T06:28:32.98939Z",
+            "name": "Impact",
+            "description": "Impact techniques involve actions taken by adversaries to achieve their goals through manipulation, disruption, or destruction of systems, data, or business processes within the target environment. The impact may vary depending on the adversaries' objectives, which could include disrupting operations, causing financial loss, or damaging the organization's reputation. Impact techniques can have severe consequences for victim organizations, leading to downtime, data loss, regulatory penalties, and other adverse outcomes.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0040/",
+                    "external_id": "TA0040"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0040"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--d7aaf185-a507-4dad-8e10-676b0a3fc548",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99039Z",
+            "modified": "2024-06-14T06:28:32.99039Z",
+            "name": "Data Destruction",
+            "description": "Data Destruction is a technique where adversaries delete, remove, or render data inaccessible within a compromised environment. Attackers aim to disrupt operations, hinder investigations, cover their tracks, or inflict damage by deleting or modifying critical files, databases, logs, or system configurations. This technique can have significant impacts on organizations, including loss of sensitive information, service disruptions, and challenges in recovery and forensic analysis.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1485/",
+                    "external_id": "T1485"
+                }
+            ],
+            "x_mitre_technique_id": "T1485"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--99687d50-6684-47cf-9d55-15b14a4be996",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99039Z",
+            "modified": "2024-06-14T06:28:32.99039Z",
+            "name": "Endpoint Denial of Service",
+            "description": "Endpoint Denial of Service is a technique where adversaries disrupt the availability of endpoint resources, such as workstations, servers, or mobile devices. Attackers overwhelm targeted endpoints with excessive network traffic, resource exhaustion, or software exploits to render them unresponsive or unusable.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1499/",
+                    "external_id": "T1499"
+                }
+            ],
+            "x_mitre_technique_id": "T1499"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--36845383-b85c-414d-b147-b44fb7acf9ee",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99139Z",
+            "modified": "2024-06-14T06:28:32.99139Z",
+            "name": "Inhibit System Recovery",
+            "description": "Inhibit System Recovery is a technique where adversaries prevent or hinder the recovery of systems after an attack or compromise. Attackers target system recovery mechanisms, backup processes, and other mechanisms that organizations rely on to restore affected systems to a known good state. By disrupting system recovery, adversaries aim to prolong the impact of their attack, hinder incident response efforts, and maintain persistence within the compromised environment.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1490/",
+                    "external_id": "T1490"
+                }
+            ],
+            "x_mitre_technique_id": "T1490"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--be05cdf4-3004-465a-a495-07af87d16d13",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99139Z",
+            "modified": "2024-06-14T06:28:32.99139Z",
+            "name": "Service Stop",
+            "description": "Service Stop is a technique where adversaries stop or disable essential system services on a target system. This action can disrupt critical functionalities, cause system instability, or lead to service unavailability. Adversaries may stop services as part of their attack chain to facilitate the execution of malicious payloads, evade detection, or hinder incident response efforts.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1489/",
+                    "external_id": "T1489"
+                }
+            ],
+            "x_mitre_technique_id": "T1489"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0ede25f0-5c52-4485-bda2-629aee66d389",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.961492Z",
+            "modified": "2024-06-14T06:28:32.961492Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "attack-pattern--ce98c948-4f98-4211-bf09-46199f82ad21"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--32194a3f-6c1c-4f65-bfdd-a63656ca6938",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.96286Z",
+            "modified": "2024-06-14T06:28:32.96286Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--ce98c948-4f98-4211-bf09-46199f82ad21",
+            "target_ref": "attack-pattern--b3f66b3f-c6f3-4b2f-b3b4-7031e782c401"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bfb18720-ef05-4f15-8674-ec88e9a2804f",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.963869Z",
+            "modified": "2024-06-14T06:28:32.963869Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--ce98c948-4f98-4211-bf09-46199f82ad21",
+            "target_ref": "attack-pattern--4e931aaf-6153-46ec-89de-1d8b7fb7ff04"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5c857a09-ad1c-45cd-91cd-ed16c6fcac7d",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.964869Z",
+            "modified": "2024-06-14T06:28:32.964869Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--ce98c948-4f98-4211-bf09-46199f82ad21",
+            "target_ref": "attack-pattern--1541207a-eee4-47e9-a9ad-bbc558ce1a3d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1a81defc-2eb7-43c4-b318-21e6de15e26f",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.965878Z",
+            "modified": "2024-06-14T06:28:32.965878Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "attack-pattern--dae0b673-56ab-41be-95a3-26510bb21bbf"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--edd4878b-efbf-4642-8990-0bb477206544",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.965878Z",
+            "modified": "2024-06-14T06:28:32.965878Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--dae0b673-56ab-41be-95a3-26510bb21bbf",
+            "target_ref": "attack-pattern--da49f922-6370-413a-a2d3-c7135fd52ba2"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0eee482e-147e-4e89-9276-8c492fb397f5",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.966878Z",
+            "modified": "2024-06-14T06:28:32.966878Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--dae0b673-56ab-41be-95a3-26510bb21bbf",
+            "target_ref": "attack-pattern--028e51ff-5ada-495c-8ac8-64e1b0428050"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4e169288-ddd5-4ad0-83ad-5c835a8654fd",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.967878Z",
+            "modified": "2024-06-14T06:28:32.967878Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "attack-pattern--0d7c2898-77f2-483e-bab5-4dba5d6367a2"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a13a6729-e500-4853-a3ee-1ec76be4fbe9",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.968878Z",
+            "modified": "2024-06-14T06:28:32.968878Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--0d7c2898-77f2-483e-bab5-4dba5d6367a2",
+            "target_ref": "attack-pattern--1d52fa00-1506-40bf-94ad-59884e391eb1"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a0b8d07e-ec49-4037-824d-2a523141a18a",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.969877Z",
+            "modified": "2024-06-14T06:28:32.969877Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--0d7c2898-77f2-483e-bab5-4dba5d6367a2",
+            "target_ref": "attack-pattern--812a9cb6-792e-4113-b832-fbf568062c92"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d7fd9a18-2c88-4d28-a3cf-4da90b7eaa95",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.970878Z",
+            "modified": "2024-06-14T06:28:32.970878Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--0d7c2898-77f2-483e-bab5-4dba5d6367a2",
+            "target_ref": "attack-pattern--26378df7-c435-433d-b8cf-59e0fb1e9bd6"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6ae2f85a-faa1-47b8-bc35-fb40a8c9099f",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.971877Z",
+            "modified": "2024-06-14T06:28:32.971877Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--0d7c2898-77f2-483e-bab5-4dba5d6367a2",
+            "target_ref": "attack-pattern--dad3a46b-ecb9-4c12-944f-90f32d84c742"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d8bc007e-00af-4773-9b02-c17b568fcd54",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.972878Z",
+            "modified": "2024-06-14T06:28:32.972878Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--0d7c2898-77f2-483e-bab5-4dba5d6367a2",
+            "target_ref": "attack-pattern--a792b223-495e-43ce-b329-fea11cc3c5ff"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3e561b7c-264f-4047-ac60-a93ae1a59e82",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.972878Z",
+            "modified": "2024-06-14T06:28:32.972878Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--0d7c2898-77f2-483e-bab5-4dba5d6367a2",
+            "target_ref": "attack-pattern--cf37eaf9-cdcc-49a9-9fd1-650c64f7712f"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--432cb623-6cca-42d2-9eb8-595d457678be",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.973878Z",
+            "modified": "2024-06-14T06:28:32.973878Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "attack-pattern--20674ab9-014c-4669-86c7-b874732dbc97"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--419c0b02-f9cf-4839-b84b-7b3b7be5f989",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.974877Z",
+            "modified": "2024-06-14T06:28:32.974877Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--20674ab9-014c-4669-86c7-b874732dbc97",
+            "target_ref": "attack-pattern--f06e95c4-6dda-4158-91d3-7e72cdfda62b"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7a58b534-980a-4792-a1da-19ebf121ddf9",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.97588Z",
+            "modified": "2024-06-14T06:28:32.97588Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--20674ab9-014c-4669-86c7-b874732dbc97",
+            "target_ref": "attack-pattern--361b34c4-265f-4742-824a-7ecce61e58f4"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b831a39a-da59-44c0-8b2c-7a125c985f25",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.97588Z",
+            "modified": "2024-06-14T06:28:32.97588Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--20674ab9-014c-4669-86c7-b874732dbc97",
+            "target_ref": "attack-pattern--fce22618-2cec-481f-9046-38d4df944494"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--22a080af-9257-4214-8a91-4f75b01f9687",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.976877Z",
+            "modified": "2024-06-14T06:28:32.976877Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--20674ab9-014c-4669-86c7-b874732dbc97",
+            "target_ref": "attack-pattern--915098b5-8743-4fe8-a8bb-0f3d473e7584"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9b9c8fea-35c1-4d36-8b89-c1e5d2468376",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.976877Z",
+            "modified": "2024-06-14T06:28:32.976877Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--20674ab9-014c-4669-86c7-b874732dbc97",
+            "target_ref": "attack-pattern--ad41c365-ed1f-47cd-a5db-87e77a635539"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c56bae35-d361-4dda-9c0a-4cb2fa84168a",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.977877Z",
+            "modified": "2024-06-14T06:28:32.977877Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "attack-pattern--90d59386-36c5-4a81-af9e-5fe73b4eef44"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f487a72a-2315-403c-a4f4-49aa0316553c",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.978879Z",
+            "modified": "2024-06-14T06:28:32.978879Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--90d59386-36c5-4a81-af9e-5fe73b4eef44",
+            "target_ref": "attack-pattern--24127f8c-4ce1-4ea1-b004-f3ef6d499092"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3022e622-4b26-4f66-b6f5-b04fc0c1c743",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.979877Z",
+            "modified": "2024-06-14T06:28:32.979877Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--90d59386-36c5-4a81-af9e-5fe73b4eef44",
+            "target_ref": "attack-pattern--2a7dad5d-e551-4914-b8a5-5e7ed7e9f6ea"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a10b2fa3-b625-4a14-bb5e-55462a8b2115",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.980385Z",
+            "modified": "2024-06-14T06:28:32.980385Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--90d59386-36c5-4a81-af9e-5fe73b4eef44",
+            "target_ref": "attack-pattern--3c78050e-b4a6-4bd5-88ea-536ed8606f95"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--07e90aab-09c6-4623-a2a0-0c473af8abe5",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.980385Z",
+            "modified": "2024-06-14T06:28:32.980385Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--90d59386-36c5-4a81-af9e-5fe73b4eef44",
+            "target_ref": "attack-pattern--b9099cad-a7ad-4f13-9547-dfda4c2baef6"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--497e9243-e539-4d63-9c47-f73f6e3850c0",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.981392Z",
+            "modified": "2024-06-14T06:28:32.981392Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--90d59386-36c5-4a81-af9e-5fe73b4eef44",
+            "target_ref": "attack-pattern--168cb31c-79df-4a8b-83d9-fb0e6e997965"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--960060e5-ca87-4527-abc5-62216722e604",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.982392Z",
+            "modified": "2024-06-14T06:28:32.982392Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--90d59386-36c5-4a81-af9e-5fe73b4eef44",
+            "target_ref": "attack-pattern--cbdb2835-957c-4f08-9d33-dac1ef9f3874"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6552f0e9-f983-45bc-93d7-7503530c1d71",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.983393Z",
+            "modified": "2024-06-14T06:28:32.983393Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--90d59386-36c5-4a81-af9e-5fe73b4eef44",
+            "target_ref": "attack-pattern--59f9c950-d797-427f-85ec-ce961111c08f"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d9b04490-692e-45ac-9475-0e53082b82cb",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.983393Z",
+            "modified": "2024-06-14T06:28:32.983393Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "attack-pattern--4cf6a8d0-6abd-423a-b935-656f115e9ab1"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--dde77a6a-c180-4cd7-a4b0-f67d6d231b96",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.984392Z",
+            "modified": "2024-06-14T06:28:32.984392Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--4cf6a8d0-6abd-423a-b935-656f115e9ab1",
+            "target_ref": "attack-pattern--eea8afb8-9417-4a79-b4b6-690b82780bd6"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--151f0e7a-616b-4010-8553-0d6d4d39f6b1",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.984392Z",
+            "modified": "2024-06-14T06:28:32.984392Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--4cf6a8d0-6abd-423a-b935-656f115e9ab1",
+            "target_ref": "attack-pattern--b8ee20bb-be12-4191-b961-66538cee6bc5"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a8c6afb4-c69a-436a-a403-b98b0bcf4c49",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.985391Z",
+            "modified": "2024-06-14T06:28:32.985391Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--4cf6a8d0-6abd-423a-b935-656f115e9ab1",
+            "target_ref": "attack-pattern--c1243644-342d-4020-b3c0-0bafe09c898d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ab148189-e06b-4b06-af5a-8da79aa757c0",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.986391Z",
+            "modified": "2024-06-14T06:28:32.986391Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--4cf6a8d0-6abd-423a-b935-656f115e9ab1",
+            "target_ref": "attack-pattern--4f3ede75-53b1-4a47-8b49-5046bb334265"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--64ccddad-1542-4c47-b0a6-9a538152d1fb",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98739Z",
+            "modified": "2024-06-14T06:28:32.98739Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "attack-pattern--b8b178cb-c947-4d10-8088-c44d05360a8c"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--070071a3-9dc6-4e1c-b0b2-508a74ed1b75",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98739Z",
+            "modified": "2024-06-14T06:28:32.98739Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--b8b178cb-c947-4d10-8088-c44d05360a8c",
+            "target_ref": "attack-pattern--4a134f3d-0b5d-47be-8356-6e4509d7662f"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--92285300-f386-4598-9131-250cae86e94f",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98839Z",
+            "modified": "2024-06-14T06:28:32.98839Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--b8b178cb-c947-4d10-8088-c44d05360a8c",
+            "target_ref": "attack-pattern--623543e6-5e27-440b-8c6c-4fec098785df"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--be3262c4-c5ae-4ce4-93e2-8f08f1629efb",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98839Z",
+            "modified": "2024-06-14T06:28:32.98839Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "attack-pattern--901b167c-5360-4eb9-b253-29a9cc76c237"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--da4eda15-19c1-4d40-b3d1-50e84e7d74cf",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98939Z",
+            "modified": "2024-06-14T06:28:32.98939Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--901b167c-5360-4eb9-b253-29a9cc76c237",
+            "target_ref": "attack-pattern--c94e68bc-db28-4369-bcb9-fdb6d2b51641"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0edcf55e-73d1-49ff-a5bc-991ee61db323",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.98939Z",
+            "modified": "2024-06-14T06:28:32.98939Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--901b167c-5360-4eb9-b253-29a9cc76c237",
+            "target_ref": "attack-pattern--79a41822-be03-46f7-a74a-047fe2185b4a"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6c315680-2040-48b3-9d87-4966a3c9cc57",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99039Z",
+            "modified": "2024-06-14T06:28:32.99039Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "attack-pattern--5d4c8f31-a825-4fed-a7ec-8c782639ddba"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0bfcc06a-a3ac-498c-bafa-d97548509871",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99039Z",
+            "modified": "2024-06-14T06:28:32.99039Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--5d4c8f31-a825-4fed-a7ec-8c782639ddba",
+            "target_ref": "attack-pattern--d7aaf185-a507-4dad-8e10-676b0a3fc548"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5a1cba32-6a63-4868-bf65-3dd05dc332ee",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99139Z",
+            "modified": "2024-06-14T06:28:32.99139Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--5d4c8f31-a825-4fed-a7ec-8c782639ddba",
+            "target_ref": "attack-pattern--99687d50-6684-47cf-9d55-15b14a4be996"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8153ae70-f145-490f-a044-fe0486276cd2",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99139Z",
+            "modified": "2024-06-14T06:28:32.99139Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--5d4c8f31-a825-4fed-a7ec-8c782639ddba",
+            "target_ref": "attack-pattern--36845383-b85c-414d-b147-b44fb7acf9ee"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cbf7be6b-905e-4593-b5b1-53a2fa2ea575",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99139Z",
+            "modified": "2024-06-14T06:28:32.99139Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--5d4c8f31-a825-4fed-a7ec-8c782639ddba",
+            "target_ref": "attack-pattern--be05cdf4-3004-465a-a495-07af87d16d13"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9bda1a8b-3770-459c-965f-00e89c59756d",
+            "created_by_ref": "identity--2d69c69b-396a-49c3-b3f6-cfcd1e5f25fc",
+            "created": "2024-06-14T06:28:32.99239Z",
+            "modified": "2024-06-14T06:28:32.99239Z",
+            "relationship_type": "related-to",
+            "source_ref": "identity--2d69c69b-396a-49c3-b3f6-cfcd1e5f25fc",
+            "target_ref": "infrastructure--ac918887-5a3b-4a15-ae64-170437a48abc"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--23ecbb05-fa6f-427f-9a59-29a76b6573c0",
+            "created_by_ref": "identity--2d69c69b-396a-49c3-b3f6-cfcd1e5f25fc",
+            "created": "2024-06-14T06:28:32.99239Z",
+            "modified": "2024-06-14T06:28:32.99239Z",
+            "relationship_type": "related-to",
+            "source_ref": "identity--2d69c69b-396a-49c3-b3f6-cfcd1e5f25fc",
+            "target_ref": "infrastructure--48ca4b9f-7654-4bc8-8b7d-f4881a84c2f5"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--841293eb-d674-4a70-9925-2379f953da17",
+            "created_by_ref": "identity--2d69c69b-396a-49c3-b3f6-cfcd1e5f25fc",
+            "created": "2024-06-14T06:28:32.99239Z",
+            "modified": "2024-06-14T06:28:32.99239Z",
+            "relationship_type": "related-to",
+            "source_ref": "identity--2d69c69b-396a-49c3-b3f6-cfcd1e5f25fc",
+            "target_ref": "infrastructure--724c125f-b6f2-4c43-81c0-11a1c47fb4b4"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e70ef3f6-9057-4fb5-8f3f-0fdc1fad48aa",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99239Z",
+            "modified": "2024-06-14T06:28:32.99239Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--db89f4ef-4df8-4901-b587-43fe6bb0b603",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--dde462e5-4e93-4d8f-bcdb-ea8d46daee1d",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.993389Z",
+            "modified": "2024-06-14T06:28:32.993389Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--14b17967-e584-43ca-b5ba-47a0be4197b9",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b1b2b639-2b7f-4951-83c9-95d811204e29",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.993389Z",
+            "modified": "2024-06-14T06:28:32.993389Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--f618c4cd-fb09-440a-b48f-d444b71b5f90",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--78b8413a-bf71-43a2-9993-e684d4f4168c",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.993389Z",
+            "modified": "2024-06-14T06:28:32.993389Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--6c35e388-c761-45e2-9b7a-2660aa5a8c33",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--93a9fe0e-bac6-4ae9-b32f-df1268d0d1d0",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.993389Z",
+            "modified": "2024-06-14T06:28:32.993389Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--e17cb5c5-3547-4de5-bd16-cd9de8c5a972",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6c82f6a5-e2c0-4a3f-a001-0352831590ce",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99439Z",
+            "modified": "2024-06-14T06:28:32.99439Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--0c58da03-71c7-4d59-b9a4-b36305c01e46",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d8aaa23a-437f-4701-8416-e2517abcfac2",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99439Z",
+            "modified": "2024-06-14T06:28:32.99439Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--c5bdadc3-da60-4efe-a2e4-59309b03824b",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--18326185-9475-4b71-95c9-bbc448ab12f8",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99439Z",
+            "modified": "2024-06-14T06:28:32.99439Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--ece86428-f70b-43d8-834b-54f9e1813bf4",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a819e35c-ffdc-4eaa-884e-bf01a33bb5c2",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99439Z",
+            "modified": "2024-06-14T06:28:32.99439Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--273e0110-473c-4b04-b617-c2e25317f44c",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0cb85df2-8408-463c-a7d0-fe0ae69d3732",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99539Z",
+            "modified": "2024-06-14T06:28:32.99539Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--00f159b2-1caa-4e48-9a28-6fa55466daa4",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fc800264-0968-4910-b9b0-dfaa7fc898f5",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99539Z",
+            "modified": "2024-06-14T06:28:32.99539Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--7784ae0d-0a04-41be-aafd-8ee46fcd9eae",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6abb4d53-1152-4efe-b589-cba04d7d5769",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.99539Z",
+            "modified": "2024-06-14T06:28:32.99539Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--a17b02bc-6adc-48aa-a2a9-f02e8c3c6fb2",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2e89ebee-df9e-467a-b8a6-c98938555a26",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.996392Z",
+            "modified": "2024-06-14T06:28:32.996392Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--075fcb09-5f08-4a04-8cb9-172a500fb4d1",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7dc865b6-3796-49cd-8772-520516eaa200",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.996392Z",
+            "modified": "2024-06-14T06:28:32.996392Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--bfb4b6ca-3aca-44bc-a9f0-05e67ece9f5a",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--da027edb-9f41-4b3e-8d45-33ce793eb48b",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.996392Z",
+            "modified": "2024-06-14T06:28:32.996392Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--55b11fcf-c81c-4888-8e5b-ffe09bd461d9",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--009c8d04-67fb-4841-bf82-9babf8260109",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.997393Z",
+            "modified": "2024-06-14T06:28:32.997393Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--18183c65-c08e-4a8f-9817-dad28f56c231",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fd56b421-70cc-4b33-9fd6-96dd43640e0e",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.997393Z",
+            "modified": "2024-06-14T06:28:32.997393Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--dd9a2db8-559c-4a26-8837-f0c64ac5f34e",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--eda686a8-b9ca-4bb0-9509-3891c22f6353",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.997393Z",
+            "modified": "2024-06-14T06:28:32.997393Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--4936eba0-48f4-4a81-afcf-2551720b8fd9",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c815dfd6-eb4b-45eb-b191-96630a7cfdda",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.997393Z",
+            "modified": "2024-06-14T06:28:32.997393Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--37fe67ee-b985-48d9-bfff-5bab9996d9c6",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1ab67061-abec-4aa1-ab93-5c7d9ce2d276",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.998391Z",
+            "modified": "2024-06-14T06:28:32.998391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--d2e30042-4941-4fd2-9525-d50d2e4547b2",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b1f03b1b-9eff-411d-adb1-361ad708c272",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.998391Z",
+            "modified": "2024-06-14T06:28:32.998391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--8a2a0dd7-f933-4643-ab53-43f1fedd77fd",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e265d356-ebb0-4e3f-b01c-bde43d040f88",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.998391Z",
+            "modified": "2024-06-14T06:28:32.998391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--e84b2cbc-4222-4dd6-8d02-9d1bf9fc394d",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5611c3c4-557f-4766-ae93-b6e24dc2e229",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.998391Z",
+            "modified": "2024-06-14T06:28:32.998391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--c1a5dae5-9512-46c0-9095-5e61626b0e9c",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2f5807e4-b241-4f2d-953b-bc6e99a006ef",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.998391Z",
+            "modified": "2024-06-14T06:28:32.998391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--b7241519-725c-434d-8b1a-67e1f3aa62f2",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7051e51c-3d1d-4c1c-99c1-ea9ecb49b1e6",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.999391Z",
+            "modified": "2024-06-14T06:28:32.999391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--a8baecb8-db68-46c0-a425-3b11dff91c57",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d80f0af7-8b49-48aa-b42b-97952d7005cb",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.999391Z",
+            "modified": "2024-06-14T06:28:32.999391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--7dc14e0a-cd90-4a63-a6a2-2583273a8fac",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5aaf40fa-50b7-4508-becf-47c6b4f8d163",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.999391Z",
+            "modified": "2024-06-14T06:28:32.999391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--b9200802-774e-4eb5-8bc9-561a31ad5347",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b8927cfc-3afa-4d20-9395-97005088ff0e",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:32.999391Z",
+            "modified": "2024-06-14T06:28:32.999391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--cb9901c2-4c94-42e6-a1f5-0a2895c54350",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d6bed25b-09a9-43c7-b7cc-f0966d0c5dee",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.000391Z",
+            "modified": "2024-06-14T06:28:33.000391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--fa27f82b-ff84-4fe4-ab92-045f9e5be141",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--77c3aec5-fc66-44f0-9109-7b59098065c3",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.000391Z",
+            "modified": "2024-06-14T06:28:33.000391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--ab6504be-3e05-465d-8696-e3ba1de2e537",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--018b67f6-154f-4e08-b572-509c20fbe46f",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.000391Z",
+            "modified": "2024-06-14T06:28:33.000391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--58a5ea48-8870-4ffc-bfd9-3e7ec25ff566",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8e2ce22f-0cff-4b1f-aed0-cb001d9215d8",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.000391Z",
+            "modified": "2024-06-14T06:28:33.000391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--d6751f38-cb6d-4037-9e5f-4f4bde4644a6",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cc76a725-820a-4df0-8a28-c762eb61e919",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.001391Z",
+            "modified": "2024-06-14T06:28:33.001391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--32d7c620-7da6-4f88-b649-2e809abea47b",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--62397ed5-79f0-4e39-9182-9addd07988d9",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.001391Z",
+            "modified": "2024-06-14T06:28:33.001391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--72aa29de-93bb-4b01-a131-f5c07822ad5e",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fa9d0de6-b44e-4b81-8887-9a84336ca215",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.001391Z",
+            "modified": "2024-06-14T06:28:33.001391Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--ee7e36d8-4671-4bb4-a8d4-d148b84a8305",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9c2766cb-5803-4781-a8d6-5da3797572b7",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.002392Z",
+            "modified": "2024-06-14T06:28:33.002392Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--6b99740f-bf29-4359-a58e-9c2a5136d30a",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ee44404f-8e93-4a40-b5e6-9bb5a8e74ddc",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.002392Z",
+            "modified": "2024-06-14T06:28:33.002392Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--a28a5872-0a44-4fcd-9292-5d71342a9707",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8aaac185-8dca-4cf3-9559-95bca382ceaa",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.002392Z",
+            "modified": "2024-06-14T06:28:33.002392Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--3e01285f-b652-45c2-b028-824e723aa988",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--68d7daf0-10fb-4e8d-9a75-2e7ec9a4aa93",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.003392Z",
+            "modified": "2024-06-14T06:28:33.003392Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--2a430ec7-b1c5-4ca9-ba6b-892f6b65eebc",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6a7fdbf7-513e-40a1-bf6f-bb55f47b5adb",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.003392Z",
+            "modified": "2024-06-14T06:28:33.003392Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--f6991c75-3aa9-4c77-9c70-e8c384f83d66",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--53aef8a2-7b03-489f-b2af-0112c3939a61",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.003392Z",
+            "modified": "2024-06-14T06:28:33.003392Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--70b0166d-ac07-427f-8015-545ec4da2682",
+            "target_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bdb57197-fc01-4a0e-be4f-3923bf6c4808",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.003392Z",
+            "modified": "2024-06-14T06:28:33.003392Z",
+            "relationship_type": "related-to",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "identity--2d69c69b-396a-49c3-b3f6-cfcd1e5f25fc"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1cd5bc10-74a0-4ad9-a03b-ec5225039ec7",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.004392Z",
+            "modified": "2024-06-14T06:28:33.004392Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "infrastructure--ac918887-5a3b-4a15-ae64-170437a48abc"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--53dd98fd-bc31-4326-80f8-8bd255b7f564",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.004392Z",
+            "modified": "2024-06-14T06:28:33.004392Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "infrastructure--8f43c34a-8c9e-46ff-97d6-6babb2833f55"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--510430c2-70dc-4c0a-bff7-8f9258f7c85a",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.004392Z",
+            "modified": "2024-06-14T06:28:33.004392Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "infrastructure--48ca4b9f-7654-4bc8-8b7d-f4881a84c2f5"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--88565c00-9495-469b-88e3-f2dd9c6f1efc",
+            "created_by_ref": "identity--2ba8c14e-a89c-4b0e-b0f9-e705a65af179",
+            "created": "2024-06-14T06:28:33.004392Z",
+            "modified": "2024-06-14T06:28:33.004392Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1dbc5ecf-95d6-4caf-98a8-f12104a0bf1d",
+            "target_ref": "infrastructure--724c125f-b6f2-4c43-81c0-11a1c47fb4b4"
+        }
+    ]
+}

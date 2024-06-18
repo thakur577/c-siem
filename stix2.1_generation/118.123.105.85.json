@@ -1,0 +1,636 @@
+{
+    "type": "bundle",
+    "id": "bundle--7b310bf4-bb53-4376-881e-fa9cf1c8d00f",
+    "objects": [
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--3ca65e7e-1664-47fa-8575-34ac7f61d81a",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.307909Z",
+            "modified": "2024-06-14T06:19:04.307909Z",
+            "name": "118.123.105.85",
+            "description": "Ensure that there is a stable and working network connection between the FortiGate and the remote peer. Check for any network issues or misconfigurations that might be causing the Phase 1 failure.\nConfirm that the security policies on the FortiGate are allowing traffic for the VPN connection and that the appropriate security policy rules are in place.",
+            "x_cdacsiem_alert": "FortiGate - IPsec Phase 1 Error"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--22820be2-2df9-405c-9559-5cf1cf967168",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.307909Z",
+            "modified": "2024-06-14T06:19:04.307909Z",
+            "name": "118.123.105.85",
+            "description": "Confirm that the security policies on the FortiGate allow traffic for the VPN connection and that the appropriate security policy rules are in place.\nReview firewall rules and access control lists to ensure that traffic related to the IPsec VPN is not being blocked by any rule.\nEnsure that both the local FortiGate and the remote peer's devices are running the latest firmware or software updates, as updates often include bug fixes and improvements related to IPsec functionality.",
+            "x_cdacsiem_alert": "FortiGate - Progress IPsec Phase 1 - Error"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--115bbeeb-6ca4-42ff-90a0-e8b631657b88",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.308912Z",
+            "modified": "2024-06-14T06:19:04.308912Z",
+            "name": "118.123.105.85",
+            "description": "Confirm that the security policies and firewall rules on the FortiGate allow traffic for the IPsec VPN connection. Check for any rules or settings that may be interfering with ESP traffic.\nEnsure that both the local FortiGate and the remote peer's devices are running the latest firmware or software updates, as updates may include bug fixes and improvements related to IPsec and ESP.",
+            "x_cdacsiem_alert": "FortiGate - IPsec ESP - Error"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.299915Z",
+            "modified": "2024-06-14T06:19:04.299915Z",
+            "name": "118.123.105.85",
+            "description": "This indicator indicates an attacker's IP captured on CDACSIEM.",
+            "pattern": "[ipv4-addr:value = '118.123.105.85']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-02-10T11:59:15Z",
+            "confidence": 61
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--af7542a7-96db-424b-9cd9-bff2315baf2a",
+            "value": "118.123.105.85"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.298914Z",
+            "modified": "2024-06-14T06:19:04.298914Z",
+            "name": "CDACSIEM"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--d95be0bf-25d1-475c-abfc-c895188ee526",
+            "created": "2024-06-14T06:19:04.299915Z",
+            "modified": "2024-06-14T06:19:04.299915Z",
+            "name": "APPLIED INFOSEC GROUP"
+        },
+        {
+            "type": "infrastructure",
+            "spec_version": "2.1",
+            "id": "infrastructure--c7834c2d-9df7-47e9-bfc0-58049ebfe42f",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.308912Z",
+            "modified": "2024-06-14T06:19:04.308912Z",
+            "name": "10.228.0.3",
+            "description": "Next Generation Firewall",
+            "infrastructure_types": [
+                "applied-infosec-group"
+            ]
+        },
+        {
+            "type": "location",
+            "spec_version": "2.1",
+            "id": "location--cae1fd35-b7f4-470c-b8e6-9327d2ad496b",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.308912Z",
+            "modified": "2024-06-14T06:19:04.308912Z",
+            "name": "China",
+            "latitude": 30.2638,
+            "longitude": 102.805,
+            "country": "CN",
+            "x_country": "China",
+            "x_ioc_value": "118.123.105.85",
+            "x_timezone": "Asia/Shanghai"
+        },
+        {
+            "type": "note",
+            "spec_version": "2.1",
+            "id": "note--c4b59e78-7b56-49f1-89d7-3f3b5fff84db",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.308912Z",
+            "modified": "2024-06-14T06:19:04.308912Z",
+            "content": "A brief note about incoming IOC.\n Type of IOC: IP Address | Value: 118.123.105.85",
+            "authors": [
+                "CDAC-SIEM",
+                "CDAC-Mohali"
+            ],
+            "object_refs": [
+                "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+            ]
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--41b63777-2597-472c-acd4-ccc749ba48b1",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.309911Z",
+            "modified": "2024-06-14T06:19:04.309911Z",
+            "name": "AbuseIPDB",
+            "description": "This is AbuseIPDB's report",
+            "published": "2024-05-31T08:16:30.966Z",
+            "object_refs": [
+                "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+            ],
+            "labels": [
+                "Bad Web Bot",
+                "Email Spam",
+                "IoT Targeted",
+                "Exploited Host",
+                "DNS Poisoning",
+                "Spoofing",
+                "SSH",
+                "DNS Compromise",
+                "DDoS Attack",
+                "Web App Attack",
+                "FTP Brute-Force",
+                "Web Spam",
+                "Brute-Force",
+                "Port Scan",
+                "Hacking",
+                "SQL Injection"
+            ],
+            "x_abuse_ipdb_report": {
+                "abuseConfidenceScore": 100,
+                "countryCode": "CN",
+                "countryName": "China",
+                "domain": "chinatelecom.com.cn",
+                "hostnames": [],
+                "ipAddress": "118.123.105.85",
+                "ipVersion": 4,
+                "isPublic": true,
+                "isTor": false,
+                "isWhitelisted": false,
+                "isp": "ChinaNet Sichuan Province Network",
+                "lastReportedAt": "2024-05-29T18:33:33+00:00",
+                "numDistinctUsers": 262,
+                "totalReports": 6195,
+                "usageType": "Data Center/Web Hosting/Transit"
+            },
+            "x_ioc_value": "118.123.105.85"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--191c534c-fd7b-4384-be03-4615a5878a19",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.310911Z",
+            "modified": "2024-06-14T06:19:04.310911Z",
+            "name": "AlienVault OTX",
+            "description": "This is AlienVault's report",
+            "published": "2024-05-31T08:17:06.229Z",
+            "object_refs": [
+                "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+            ],
+            "labels": [
+                "cyber security",
+                "blacklist",
+                "redis",
+                "mysql",
+                "ftp",
+                "qhoneypot",
+                "scanners",
+                "ntp",
+                "memcache",
+                "webscanner",
+                "Telnet",
+                "Port Scan",
+                "malicious",
+                "scanning",
+                "botnet",
+                "mssql",
+                "mirai",
+                "dhcp",
+                "socks5",
+                "scanner",
+                "probing",
+                "tcp/3306",
+                "udp/161",
+                "attack",
+                "Alaska",
+                "telnet",
+                "webscanner, bruteforce, web app attack",
+                "ssh",
+                "port 3306",
+                "oracle",
+                "Malicious IP",
+                "SSH",
+                "IPs Attacking Alaskan Hosts",
+                "smb",
+                "honeypot",
+                "imap",
+                "postgres",
+                "bruteforce",
+                "vnc",
+                "elasticsearch",
+                "badrequest",
+                "scan",
+                "tcp",
+                "webscan",
+                "ldap",
+                "port 161",
+                "login",
+                "phishing",
+                "Web Attack",
+                "vultr",
+                "snmp",
+                "Nextray",
+                "ioc"
+            ],
+            "x_alien_vault_otx_report": {
+                "general": {
+                    "base_indicator": {
+                        "access_reason": "",
+                        "indicator": "118.123.105.85",
+                        "access_type": "public",
+                        "content": "",
+                        "description": "",
+                        "id": 3392897098,
+                        "type": "IPv4",
+                        "title": ""
+                    },
+                    "indicator": "118.123.105.85",
+                    "pulse_info": {
+                        "pulse_names": [
+                            "ETIC Cybersecurity  2024-05-19  Port Scan",
+                            "ETIC Cybersecurity  2024-05-12  Port Scan",
+                            "Webscanners with Bad Requests - HTTP Status 400 - 1/20/2018 thru current day",
+                            "IP Addresses Logged by the Rosethorn PotNet",
+                            "Webscanners 2018-02-09  thru current day",
+                            "ETIC Cybersecurity  2024-05-22  Port Scan",
+                            "ETIC Cybersecurity  2024-05-02  Port Scan",
+                            "ETIC Cybersecurity  2024-05-13  Port Scan",
+                            "Ka's Honeypot visitors",
+                            "ETIC Cybersecurity  2024-05-14  Port Scan",
+                            "ETIC Cybersecurity  2024-05-20  Port Scan",
+                            "Malicious Hosts Attacking Alaska Targets - GRIS",
+                            "ETIC Cybersecurity  2024-05-08  Port Scan",
+                            "ETIC Cybersecurity  2024-05-09  Port Scan",
+                            "ETIC Cybersecurity  2024-05-06  Port Scan",
+                            "IOC Records Provided by @NextRayAI",
+                            "ETIC Cybersecurity  2024-05-11  Port Scan",
+                            "ETIC Cybersecurity  2024-04-30  Port Scan",
+                            "ETIC Cybersecurity  2024-05-21  Port Scan",
+                            "ETIC Cybersecurity  2024-05-18  Port Scan",
+                            "Vultr Paris (France) SNMP Attacker Hosts for 2024-04-24",
+                            "Vultr Paris (France) Redis Bruteforce Hosts for 2024-04-28",
+                            "Insulin honeypots - 2024-05-02",
+                            "2023 Port Scanners",
+                            "ETIC Cybersecurity  2024-05-10  Port Scan",
+                            "Compromised IPs 1",
+                            "ETIC Cybersecurity  2024-05-07  Port Scan",
+                            "\u7f51\u7edc\u626b\u63cf\u4eea",
+                            "ETIC Cybersecurity  2024-05-01  Port Scan",
+                            "Insulin honeypots - 2024-05-01",
+                            "ETIC Cybersecurity  2024-05-15  Port Scan",
+                            "Honeypot Visitors (TCP/3306) - 2024-04-28",
+                            "ETIC Cybersecurity  2024-05-17  Port Scan",
+                            "ETIC Cybersecurity  2024-05-16  Port Scan",
+                            "Honeypot Visitors (UDP/161) - 2024-04-12",
+                            "My Test Pulse",
+                            "Scan port 23 Telnet (S3#)"
+                        ]
+                    },
+                    "reputation": 0,
+                    "type": "IPv4",
+                    "type_title": "IPv4",
+                    "whois": "http://whois.domaintools.com/118.123.105.85"
+                }
+            },
+            "x_ioc_value": "118.123.105.85"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--5244a2ad-109d-4fb0-bba9-ff863ddabde1",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.31191Z",
+            "modified": "2024-06-14T06:19:04.31191Z",
+            "name": "VirusTotal",
+            "description": "This is VirusTotal's report",
+            "published": "2024-05-31T08:17:07.502Z",
+            "object_refs": [
+                "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+            ],
+            "x_ioc_value": "118.123.105.85",
+            "x_virus_total_report": {
+                "x_last_analysis_stats": {
+                    "harmless": 55,
+                    "malicious": 10,
+                    "suspicious": 1,
+                    "timeout": 0,
+                    "undetected": 27
+                }
+            }
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--26494372-c715-4a55-95f5-8f28d2f8b7ca",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.312909Z",
+            "modified": "2024-06-14T06:19:04.312909Z",
+            "name": "Maltiverse",
+            "description": "This is Maltiverse's report",
+            "published": "2024-05-31T08:17:08.482Z",
+            "object_refs": [
+                "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+            ],
+            "labels": [
+                "mail",
+                "attacker",
+                "joomla",
+                "rfi",
+                "sasl",
+                "malicious-activity",
+                "ssh",
+                "spam",
+                "pop3",
+                "ftp",
+                "apache",
+                "login",
+                "abuse",
+                "bot",
+                "imap",
+                "wordpress",
+                "bruteforce",
+                "ddos"
+            ],
+            "x_ioc_value": "118.123.105.85",
+            "x_maltiverse_report": {
+                "x_address": "No.31 ,jingrong street,beijing\n100032",
+                "x_as_name": "AS38283 CHINANET SiChuan Telecom Internet Data Center",
+                "x_as_number": "38283",
+                "x_asn_cidr": "118.123.105.0/24",
+                "x_asn_country_code": "CN",
+                "x_asn_date": "2007-09-12 00:00:00",
+                "x_asn_registry": "apnic",
+                "x_city": "Chengdu",
+                "x_classification": "malicious",
+                "x_country_code": "CN",
+                "x_ip_addr": "118.123.105.85",
+                "x_is_cdn": false,
+                "x_is_cnc": false,
+                "x_is_distributing_malware": false,
+                "x_is_hosting": false,
+                "x_is_iot_threat": false,
+                "x_is_known_attacker": true,
+                "x_is_known_scanner": false,
+                "x_is_mining_pool": false,
+                "x_is_open_proxy": false,
+                "x_is_sinkhole": false,
+                "x_is_tor_node": false,
+                "x_is_vpn_node": false
+            }
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--7da2b04e-742a-47af-b909-94bc2a81816f",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.312909Z",
+            "modified": "2024-06-14T06:19:04.312909Z",
+            "name": "BGP Circle",
+            "description": "This is BGP Circle's report",
+            "published": "2024-05-31T08:17:11.414Z",
+            "object_refs": [
+                "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+            ],
+            "x_bgp_circle": {
+                "finalRank": 0.0006672203044680963,
+                "last_analysis_date": "2024-05-31T08:17:11.414Z"
+            },
+            "x_ioc_value": "118.123.105.85"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--593e97c6-b4ea-4612-845b-2ac06be738e5",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.313911Z",
+            "modified": "2024-06-14T06:19:04.313911Z",
+            "name": "CDAC Honeypot 1",
+            "description": "This is CDAC Honeypot-1's report",
+            "published": "2024-05-31T08:17:17.439Z",
+            "object_refs": [
+                "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+            ],
+            "labels": [
+                "scan"
+            ],
+            "x_cdac_honeypot_report": {
+                "x_organization_sectors": [
+                    "Industrial",
+                    "Power-Energy",
+                    "IT-ITES",
+                    "Government",
+                    "Research-Academic",
+                    "Telecom"
+                ],
+                "x_organizations": [
+                    "RCFL-Mumbai-Maharashtra",
+                    "SLDC-New-Delhi-Delhi",
+                    "SDC-Patna-Bihar",
+                    "NIC-Bengaluru-Karnataka",
+                    "STPI-Bengaluru-Karnataka",
+                    "DCI-Vishakhapatnam-AndhraPradesh",
+                    "TejasNetworks-Bangalore-Karnataka",
+                    "GNDEC-Ludhiana-Punjab"
+                ]
+            },
+            "x_ioc_value": "118.123.105.85"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--fa904574-ee8f-4d86-9e92-682dced59a5b",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.313911Z",
+            "modified": "2024-06-14T06:19:04.313911Z",
+            "name": "CDAC Honepot 2",
+            "description": "This is CDAC Honeypot-2's report",
+            "published": "2024-05-31T08:17:19.025Z",
+            "object_refs": [
+                "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+            ],
+            "labels": [
+                "scan"
+            ],
+            "x_cdac_honeypot_2_report": {
+                "x_organization_sectors": [
+                    "government-national"
+                ],
+                "x_organizations": [
+                    "CDAC-Patna-Bihar"
+                ]
+            },
+            "x_ioc_value": "118.123.105.85"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--5ade0ff7-7e29-4b20-ba4e-72abbce9d28f",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.313911Z",
+            "modified": "2024-06-14T06:19:04.313911Z",
+            "first_observed": "2024-01-11T16:47:31Z",
+            "last_observed": "2024-02-10T11:59:15Z",
+            "number_observed": 2,
+            "object_refs": [
+                "ipv4-addr--af7542a7-96db-424b-9cd9-bff2315baf2a"
+            ],
+            "name": "FortiGate - IPsec Phase 1 Error"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--46aa8db3-bb10-45ac-9ee9-489d6f13bb5b",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.314912Z",
+            "modified": "2024-06-14T06:19:04.314912Z",
+            "first_observed": "2024-01-11T16:47:31Z",
+            "last_observed": "2024-02-10T11:59:15Z",
+            "number_observed": 2,
+            "object_refs": [
+                "ipv4-addr--af7542a7-96db-424b-9cd9-bff2315baf2a"
+            ],
+            "name": "FortiGate - Progress IPsec Phase 1 - Error"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--81113621-9177-42ff-b0ea-f5beff257f4a",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.314912Z",
+            "modified": "2024-06-14T06:19:04.314912Z",
+            "first_observed": "2024-01-29T22:10:09Z",
+            "last_observed": "2024-01-29T22:10:09Z",
+            "number_observed": 1,
+            "object_refs": [
+                "ipv4-addr--af7542a7-96db-424b-9cd9-bff2315baf2a"
+            ],
+            "name": "FortiGate - IPsec ESP - Error"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--dae6ad85-3721-433b-8067-fdb96d43947d",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.315912Z",
+            "modified": "2024-06-14T06:19:04.315912Z",
+            "name": "Command and Control",
+            "description": "Command and Control techniques involve adversaries establishing channels of communication between compromised systems and external command and control infrastructure operated by the adversaries. These channels allow adversaries to issue commands, transfer files, and receive instructions from a remote location, enabling them to remotely manage compromised systems and conduct further malicious activities while evading detection. Command and Control is a critical phase in many cyber attacks, enabling adversaries to maintain persistence, escalate privileges, and achieve their objectives within the target environment.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0011/",
+                    "external_id": "TA0011"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0011"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--4d2bdb09-f552-4cb2-aa7c-9e1867254d17",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.315912Z",
+            "modified": "2024-06-14T06:19:04.315912Z",
+            "name": "Encrypted Channel",
+            "description": "Encrypted Channel is a technique where adversaries use encryption to secure communication channels between a compromised system and a remote server or command and control (C2) infrastructure. This technique involves encrypting data packets, commands, or payloads transmitted over the network to prevent interception, eavesdropping, or analysis by defenders.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1573/",
+                    "external_id": "T1573"
+                }
+            ],
+            "x_mitre_technique_id": "T1573"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--dc29a2ab-1d20-4399-8c0a-76d24ed8fc99",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.315912Z",
+            "modified": "2024-06-14T06:19:04.315912Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737",
+            "target_ref": "attack-pattern--dae6ad85-3721-433b-8067-fdb96d43947d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4aa2f8eb-09c5-47f3-97e7-6663c0d4450c",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.316912Z",
+            "modified": "2024-06-14T06:19:04.316912Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--dae6ad85-3721-433b-8067-fdb96d43947d",
+            "target_ref": "attack-pattern--4d2bdb09-f552-4cb2-aa7c-9e1867254d17"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--80ddc6e5-abde-4632-9aeb-e2891615c206",
+            "created_by_ref": "identity--d95be0bf-25d1-475c-abfc-c895188ee526",
+            "created": "2024-06-14T06:19:04.316912Z",
+            "modified": "2024-06-14T06:19:04.316912Z",
+            "relationship_type": "related-to",
+            "source_ref": "identity--d95be0bf-25d1-475c-abfc-c895188ee526",
+            "target_ref": "infrastructure--c7834c2d-9df7-47e9-bfc0-58049ebfe42f"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--02f5960c-505c-4bc0-a044-04eb543b42e5",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.316912Z",
+            "modified": "2024-06-14T06:19:04.316912Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--3ca65e7e-1664-47fa-8575-34ac7f61d81a",
+            "target_ref": "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--54c37f5d-0266-4557-b72c-81d0044a4129",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.316912Z",
+            "modified": "2024-06-14T06:19:04.316912Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--22820be2-2df9-405c-9559-5cf1cf967168",
+            "target_ref": "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--de4c46d0-e9cc-46cd-b22b-661e947eab63",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.317911Z",
+            "modified": "2024-06-14T06:19:04.317911Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--115bbeeb-6ca4-42ff-90a0-e8b631657b88",
+            "target_ref": "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d92ee85a-141a-4f94-8310-6b824c687b95",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.317911Z",
+            "modified": "2024-06-14T06:19:04.317911Z",
+            "relationship_type": "related-to",
+            "source_ref": "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737",
+            "target_ref": "identity--d95be0bf-25d1-475c-abfc-c895188ee526"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--980fb98a-f880-4ca9-89d5-3d36478a57a6",
+            "created_by_ref": "identity--1af15a8e-55b5-4b5e-a361-8d11f8b9d053",
+            "created": "2024-06-14T06:19:04.317911Z",
+            "modified": "2024-06-14T06:19:04.317911Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--03c857a4-54fe-4ecd-bd91-8563577f7737",
+            "target_ref": "infrastructure--c7834c2d-9df7-47e9-bfc0-58049ebfe42f"
+        }
+    ]
+}

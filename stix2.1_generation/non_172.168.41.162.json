@@ -1,0 +1,75 @@
+{
+    "success": true,
+    "data": {
+        "indicator": {
+            "ioc_type": "IP",
+            "ioc_value": "172.168.41.162",
+            "valid_from": "2024-06-05T05:39:16.000Z",
+            "valid_until": null
+        },
+        "location": {
+            "timezone": "America/Chicago",
+            "latitude": 41.5868,
+            "ip": "172.168.41.162",
+            "country_name": "United States",
+            "country_code2": "US",
+            "country_code3": null,
+            "continent_code": "NA",
+            "longitude": -93.625
+        },
+        "attack_pattern": [
+            {
+                "title": "Reconnaissance",
+                "description": "Reconnaissance is a tactic that encompasses techniques used by adversaries to gather information about a target network, its systems, and its users. Reconnaissance techniques are often the initial steps in the cyber attack lifecycle, where threat actors seek to gain knowledge that helps them plan and execute further stages of the attack. This tactic focuses on understanding the target environment, identifying potential vulnerabilities, and selecting the most effective attack vectors.",
+                "tacticID": "TA0043",
+                "reference_url": "https://attack.mitre.org/tactics/TA0043/",
+                "techniques": [
+                    {
+                        "title": "Active Scanning",
+                        "techniqueID": "T1595",
+                        "reference_url": "https://attack.mitre.org/techniques/T1595/",
+                        "description": "Active Scanning is a technique used by adversaries to actively probe and enumerate systems, services, or vulnerabilities on a target network. This technique involves sending specific network packets or requests to target systems to elicit responses that reveal information about the network's configuration and potential weaknesses. Active scanning is often a critical step in the reconnaissance phase of an attack, where adversaries seek to identify potential entry points and vulnerabilities for exploitation."
+                    }
+                ]
+            }
+        ],
+        "campaign": null,
+        "course_of_action": [
+            {
+                "alert": "Fortigate - Scanning Activity",
+                "remediation": "Deploy intrusion detection and prevention systems (IDPS) to monitor network traffic for signs of scanning activity and block or alert on suspicious behavior indicative of reconnaissance or exploitation attempts.\nConfigure firewall rules on the FortiGate device to restrict incoming and outgoing traffic, limiting the exposure of services and resources to potential scanning or exploitation by unauthorized users."
+            }
+        ],
+        "identity": [
+            "APPLIED INFOSEC GROUP"
+        ],
+        "infrastructure": [
+            {
+                "destination_ip": "10.228.0.3",
+                "dest_name": "Next Generation Firewall",
+                "host_group": "APPLIED INFOSEC GROUP"
+            }
+        ],
+        "note": {
+            "type": "note",
+            "content": "A brief note about incoming IOC.\n Type of IOC: IP Address | Value: 172.168.41.162",
+            "authors": [
+                "CDAC-SIEM",
+                "CDAC-Mohali"
+            ]
+        },
+        "observed_data": [
+            {
+                "alert": "Fortigate - Scanning Activity",
+                "first_observed": "2024-06-03T03:44:29.000Z",
+                "last_observed": "2024-06-05T05:39:16.000Z",
+                "number_observed": 4
+            }
+        ],
+        "vulnerability": {
+            "cves": [],
+            "capecs": []
+        }
+    },
+    "message": "IOC history fro STIX object mapping"
+}

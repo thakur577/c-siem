@@ -1,0 +1,749 @@
+{
+    "success": true,
+    "data": {
+        "indicator": {
+            "ioc_type": "IP",
+            "ioc_value": "10.228.12.194",
+            "valid_from": "2024-06-14T03:45:34.000Z",
+            "valid_until": null
+        },
+        "location": {},
+        "attack_pattern": [
+            {
+                "title": "Initial Access",
+                "description": "Adversaries use techniques to gain entry into a victim's environment. This stage marks the beginning of the intrusion campaign and is often achieved through exploiting vulnerabilities, misconfigurations, or weaknesses in systems or networks. Adversaries may also leverage social engineering tactics, such as phishing emails or malicious links, to trick users into providing credentials or downloading malicious files.",
+                "tacticID": "TA0001",
+                "reference_url": "https://attack.mitre.org/tactics/TA0001/",
+                "techniques": [
+                    {
+                        "title": "External Remote Services",
+                        "techniqueID": "T1133",
+                        "reference_url": "https://attack.mitre.org/techniques/T1133/",
+                        "description": "Adversaries exploit external-facing remote services, such as web servers, email servers, or VPNs, to gain initial access to a victim's environment. This tactic focuses on the exploitation of services that are accessible from the internet, providing adversaries with a potential entry point into the target organization."
+                    },
+                    {
+                        "title": "Phishing",
+                        "techniqueID": "T1566",
+                        "reference_url": "https://attack.mitre.org/techniques/T1566/",
+                        "description": "Adversaries use deceptive emails or messages to trick users into divulging sensitive information, such as credentials, personal details, or financial information. Phishing attacks often rely on social engineering tactics to manipulate users' trust or emotions, leading them to click on malicious links, download malicious attachments, or provide sensitive information."
+                    },
+                    {
+                        "title": "Valid Accounts",
+                        "techniqueID": "T1078",
+                        "reference_url": "https://attack.mitre.org/techniques/T1078/",
+                        "description": "Adversaries use legitimate credentials or accounts to gain unauthorized access, move laterally, or achieve their objectives within a target environment. This tactic exploits the presence of valid user accounts or credentials to blend in with normal user activity and evade detection. Adversaries may obtain valid credentials through various means, such as phishing, password spraying, credential stuffing, or brute force attacks."
+                    }
+                ]
+            },
+            {
+                "title": "Execution",
+                "description": "Adversaries use techniques to run malicious code or commands on a target system or environment. This tactic covers various methods adversaries employ to execute their malicious payloads, such as files, scripts, or commands, to achieve their objectives within the target environment. Execution techniques may include exploiting vulnerabilities, abusing legitimate system utilities, or tricking users into executing malicious files or scripts.",
+                "tacticID": "TA0002",
+                "reference_url": "https://attack.mitre.org/tactics/TA0002/",
+                "techniques": [
+                    {
+                        "title": "Scheduled Task/Job",
+                        "techniqueID": "T1053",
+                        "reference_url": "https://attack.mitre.org/techniques/T1053/",
+                        "description": "Adversaries use Scheduled Task/Job techniques to create and manage scheduled tasks or jobs on a target system. Scheduled tasks/jobs allow for the execution of commands or scripts at specified times, intervals, or events. Adversaries may abuse the scheduling functionality provided by the operating system to establish persistence, execute arbitrary code, escalate privileges, or achieve other malicious objectives."
+                    },
+                    {
+                        "title": "Software Deployment Tools",
+                        "techniqueID": "T1072",
+                        "reference_url": "https://attack.mitre.org/techniques/T1072/",
+                        "description": "Adversaries abuse legitimate software deployment tools to deliver and execute malicious payloads on target systems. Software deployment tools, such as Microsoft System Center Configuration Manager (SCCM), Puppet, Chef, Ansible, or SaltStack, are used by organizations to automate software installation, configuration, and management across distributed systems."
+                    }
+                ]
+            },
+            {
+                "title": "Persistence",
+                "description": "Adversaries use persistence techniques to maintain their presence and access on a compromised system across system reboots or user logins. These techniques often involve establishing mechanisms, such as scheduled tasks, services, Registry modifications, or backdoors, that allow adversaries to maintain control over the system and evade detection. By establishing persistence, adversaries ensure that they can continue their malicious activities, maintain access to the compromised system, and maintain a foothold for future operations.",
+                "tacticID": "TA0003",
+                "reference_url": "https://attack.mitre.org/tactics/TA0003/",
+                "techniques": [
+                    {
+                        "title": "Boot or Logon Autostart Execution",
+                        "techniqueID": "T1547",
+                        "reference_url": "https://attack.mitre.org/techniques/T1547/",
+                        "description": "Boot or Logon Autostart Execution involves adversaries configuring various mechanisms to ensure that their malicious payloads or commands are executed automatically when a compromised system boots up or when a user logs on. By leveraging these autostart mechanisms, adversaries can achieve persistence, allowing their malicious activities to continue running even after system reboots or user logouts."
+                    },
+                    {
+                        "title": "External Remote Services",
+                        "techniqueID": "T1133",
+                        "reference_url": "https://attack.mitre.org/techniques/T1133/",
+                        "description": "Adversaries use the External Remote Services technique to leverage remote services hosted outside of the target organization's environment to maintain a persistent presence and enable command and control (C2) communications."
+                    },
+                    {
+                        "title": "Hijack Execution Flow",
+                        "techniqueID": "T1574",
+                        "reference_url": "https://attack.mitre.org/techniques/T1574/",
+                        "description": "Adversaries use the Hijack Execution Flow technique to divert the normal execution flow of a process to malicious code by manipulating the process or system environment. This technique can be achieved through various means, such as DLL injection, DLL search order hijacking, or modifying process memory. By hijacking the execution flow of a process, adversaries can force it to execute malicious code, evade detection, achieve persistence, or escalate privileges."
+                    },
+                    {
+                        "title": "Modify Authentication Process",
+                        "techniqueID": "T1556",
+                        "reference_url": "https://attack.mitre.org/techniques/T1556/",
+                        "description": "Modify Authentication Process technique involves adversaries altering the authentication flow or mechanisms within a system to gain unauthorized access, escalate privileges, or bypass security controls. By tampering with the authentication process, adversaries can manipulate how users are validated and granted access to resources, potentially compromising the security of the system."
+                    },
+                    {
+                        "title": "Scheduled Task/Job",
+                        "techniqueID": "T1053",
+                        "reference_url": "https://attack.mitre.org/techniques/T1053/",
+                        "description": "Adversaries may abuse scheduled tasks/jobs to execute programs at system startup or on a scheduled basis for persistence, to conduct remote execution of malware, or to achieve privilege escalation if the scheduled task/job runs at a higher permission level. Scheduled tasks/jobs can be used to initiate other techniques, such as launching malware as a persistence mechanism or using the task scheduler service to run a process at a specified time."
+                    },
+                    {
+                        "title": "Valid Accounts",
+                        "techniqueID": "T1078",
+                        "reference_url": "https://attack.mitre.org/techniques/T1078/",
+                        "description": "Valid accounts refer to user accounts or credentials that are legitimately created and authorized within an organization's network environment. These accounts are typically associated with legitimate users, such as employees, administrators, or service accounts, and have permissions and privileges granted based on the user's role and responsibilities within the organization."
+                    }
+                ]
+            },
+            {
+                "title": "Privilege Escalation",
+                "description": "Privilege escalation involves exploiting vulnerabilities or misconfigurations to gain higher levels of access or permissions within a system, network, or application environment. This tactic is employed by adversaries to elevate their privileges beyond what they initially had upon gaining access to a target system. By obtaining higher privileges, adversaries can perform more advanced and potentially malicious actions, such as accessing sensitive data, installing persistent backdoors, or tampering with critical system settings.",
+                "tacticID": "TA0004",
+                "reference_url": "https://attack.mitre.org/tactics/TA0004/",
+                "techniques": [
+                    {
+                        "title": "Boot or Logon Autostart Execution",
+                        "techniqueID": "T1547",
+                        "reference_url": "https://attack.mitre.org/techniques/T1547/",
+                        "description": "Boot or Logon Autostart Execution involves adversaries configuring mechanisms to automatically execute malicious payloads, scripts, or commands when a compromised system boots up or when a user logs on. These autostart mechanisms are designed to ensure that the adversary's code runs without manual intervention, allowing them to maintain access to compromised systems and continue their malicious activities undetected."
+                    },
+                    {
+                        "title": "Exploitation for Privilege Escalation",
+                        "techniqueID": "T1068",
+                        "reference_url": "https://attack.mitre.org/techniques/T1068/",
+                        "description": "Exploitation for Privilege Escalation involves adversaries exploiting vulnerabilities or weaknesses in software, operating systems, or configurations to elevate their privileges from a lower level of access to a higher one. This tactic is commonly employed by adversaries to gain additional permissions, such as administrative or system-level privileges, which enable them to access sensitive data, execute arbitrary code, or perform other malicious actions within the target environment."
+                    },
+                    {
+                        "title": "Hijack Execution Flow",
+                        "techniqueID": "T1574",
+                        "reference_url": "https://attack.mitre.org/techniques/T1574/",
+                        "description": "Hijack Execution Flow refers to the tactic used by adversaries to manipulate the execution flow of a process or application to execute malicious code or achieve their goals. Adversaries may exploit vulnerabilities, design flaws, or misconfigurations in software to redirect the normal execution path and gain control over the program's behavior. This technique allows adversaries to execute arbitrary commands, load and execute malicious payloads, or bypass security controls without triggering detection mechanisms."
+                    },
+                    {
+                        "title": "Scheduled Task/Job",
+                        "techniqueID": "T1053",
+                        "reference_url": "https://attack.mitre.org/techniques/T1053/",
+                        "description": "Scheduled Task/Job refers to the tactic used by adversaries to create, modify, or abuse scheduled tasks or jobs on a target system to achieve their objectives. Scheduled tasks are automated processes configured to run at predetermined times or intervals, such as daily, weekly, or upon specific events, such as user logon or system startup. Adversaries commonly use scheduled tasks to establish persistence, execute payloads, and maintain access to compromised systems without attracting attention."
+                    },
+                    {
+                        "title": "Valid Accounts",
+                        "techniqueID": "T1078",
+                        "reference_url": "https://attack.mitre.org/techniques/T1078/",
+                        "description": "Valid Accounts tactic refers to the practice of adversaries using legitimate user accounts or credentials to gain access to systems, applications, or data within a target environment. Adversaries may obtain valid account credentials through various means, including social engineering, phishing attacks, password spraying, or exploiting misconfigured access controls."
+                    }
+                ]
+            },
+            {
+                "title": "Defense Evasion",
+                "description": "Defense Evasion techniques are employed by adversaries to bypass or neutralize security controls, detection mechanisms, and mitigations implemented by defenders. These techniques aim to conceal malicious activities, evade detection by security solutions, and maintain persistent access to target systems and networks. Defense Evasion tactics are critical for adversaries to achieve their objectives while minimizing the risk of detection and attribution.",
+                "tacticID": "TA0005",
+                "reference_url": "https://attack.mitre.org/tactics/TA0005/",
+                "techniques": [
+                    {
+                        "title": "Hijack Execution Flow",
+                        "techniqueID": "T1574",
+                        "reference_url": "https://attack.mitre.org/techniques/T1574/",
+                        "description": "Hijack Execution Flow refers to the tactic used by adversaries to redirect the normal execution flow of a program, process, or thread to execute malicious code or achieve their objectives. Adversaries may exploit vulnerabilities, design flaws, or insecure configurations within software applications or operating systems to manipulate the execution flow and gain unauthorized access, escalate privileges, or bypass security controls."
+                    },
+                    {
+                        "title": "Impair Defenses",
+                        "techniqueID": "T1562",
+                        "reference_url": "https://attack.mitre.org/techniques/T1562/",
+                        "description": "Impair Defenses refers to the tactic used by adversaries to disable, bypass, or evade security controls and mechanisms within a target environment. Adversaries may employ various techniques to impair defenses, including disabling or bypassing antivirus software, evading intrusion detection systems, circumventing firewalls, or neutralizing endpoint protection solutions."
+                    },
+                    {
+                        "title": "Indicator Removal",
+                        "techniqueID": "T1070",
+                        "reference_url": "https://attack.mitre.org/techniques/T1070/",
+                        "description": "Indicator Removal on Host refers to the technique used by adversaries to delete or manipulate artifacts, such as log files, event logs, forensic evidence, or other indicators of compromise (IOCs), on compromised systems to cover their tracks and evade detection. Adversaries attempt to remove traces of their presence or activities from compromised systems to hinder incident response efforts, forensic analysis, and threat detection mechanisms."
+                    },
+                    {
+                        "title": "Masquerading",
+                        "techniqueID": "T1036",
+                        "reference_url": "https://attack.mitre.org/techniques/T1036/",
+                        "description": "Masquerading refers to the tactic used by adversaries to disguise malicious activities, payloads, or entities as legitimate processes, services, or files to evade detection by defenders. Adversaries may employ various techniques to masquerade as trusted entities, including renaming files, processes, or services, modifying metadata, or impersonating legitimate applications or system components."
+                    },
+                    {
+                        "title": "Modify Authentication Process",
+                        "techniqueID": "T1556",
+                        "reference_url": "https://attack.mitre.org/techniques/T1556/",
+                        "description": "Modify Authentication Process refers to the tactic used by adversaries to alter the authentication mechanisms or processes within a target environment to gain unauthorized access or undermine security controls. Adversaries may exploit vulnerabilities or weaknesses in authentication systems, protocols, or components to manipulate the authentication process and achieve their objectives."
+                    },
+                    {
+                        "title": "Obfuscated Files or Information",
+                        "techniqueID": "T1027",
+                        "reference_url": "https://attack.mitre.org/techniques/T1027/",
+                        "description": "Obfuscated Files or Information refers to the tactic used by adversaries to disguise files, data, or commands to evade detection by security controls and analysts. Adversaries employ various obfuscation techniques to obscure the content, purpose, or functionality of files, scripts, or communication channels, making them difficult to analyze or detect using traditional security mechanisms."
+                    },
+                    {
+                        "title": "Valid Accounts",
+                        "techniqueID": "T1078",
+                        "reference_url": "https://attack.mitre.org/techniques/T1078/",
+                        "description": "Valid Accounts is a technique where attackers use compromised or legitimately obtained credentials to gain unauthorized access to systems and resources within an organization. By leveraging valid account credentials, attackers can move laterally across the network, access sensitive data, execute commands, and evade detection."
+                    }
+                ]
+            },
+            {
+                "title": "Credential Access",
+                "description": "Credential Access techniques involve adversaries obtaining legitimate credentials or authentication tokens from various sources within the target environment. This can include stealing credentials through techniques such as phishing, brute force attacks, or credential dumping, as well as exploiting vulnerabilities or misconfigurations to obtain privileged credentials. ",
+                "tacticID": "TA0006",
+                "reference_url": "https://attack.mitre.org/tactics/TA0006/",
+                "techniques": [
+                    {
+                        "title": "Brute Force",
+                        "techniqueID": "T1110",
+                        "reference_url": "https://attack.mitre.org/techniques/T1110/",
+                        "description": "Brute Force is a technique where attackers systematically try different combinations of usernames and passwords to gain unauthorized access to systems, accounts, or services. This method relies on the attacker's ability to guess or generate potential passwords until the correct one is discovered."
+                    },
+                    {
+                        "title": "Credentials from Password Stores",
+                        "techniqueID": "T1555",
+                        "reference_url": "https://attack.mitre.org/techniques/T1555/",
+                        "description": "Credentials from Password Stores is a technique where attackers target password manager applications or similar repositories to obtain stored credentials. Password stores are used to securely manage and store passwords, but if compromised, they can provide attackers with a wealth of sensitive information."
+                    },
+                    {
+                        "title": "Modify Authentication Process",
+                        "techniqueID": "T1556",
+                        "reference_url": "https://attack.mitre.org/techniques/T1556/",
+                        "description": "Modify Authentication Process is a technique where attackers alter or manipulate the standard authentication procedures or mechanisms to gain unauthorized access. This technique allows attackers to modify the behavior of the authentication process, potentially bypassing security controls, stealing credentials, or impersonating legitimate users."
+                    },
+                    {
+                        "title": "Unsecured Credentials",
+                        "techniqueID": "T1552",
+                        "reference_url": "https://attack.mitre.org/techniques/T1552/",
+                        "description": "Unsecured Credentials is a technique where attackers exploit the presence of sensitive credentials that are stored, transmitted, or managed in an insecure manner. This includes scenarios where passwords are stored in plaintext, transmitted over unencrypted channels, or stored in easily accessible locations. Attackers may obtain these credentials through methods such as credential dumping, sniffing network traffic, or finding exposed files with sensitive data."
+                    }
+                ]
+            },
+            {
+                "title": "Lateral Movement",
+                "description": "Lateral Movement techniques involve adversaries traversing the network, typically from one compromised system to another, to gain access to additional resources, escalate privileges, and further their objectives. Adversaries may exploit vulnerabilities, misconfigurations, or weak access controls to move laterally within the network, aiming to evade detection and maintain persistence. Lateral Movement is a critical phase in many cyber attacks, enabling adversaries to expand their foothold and maximize the impact of their activities within the target environment.",
+                "tacticID": "TA0008",
+                "reference_url": "https://attack.mitre.org/tactics/TA0008/",
+                "techniques": [
+                    {
+                        "title": "Remote Services",
+                        "techniqueID": "T1021",
+                        "reference_url": "https://attack.mitre.org/techniques/T1021/",
+                        "description": "Remote Services is a technique used by adversaries to gain initial access to a system or network by exploiting vulnerabilities or weaknesses in legitimate remote service protocols. These services include protocols such as Remote Desktop Protocol (RDP), Secure Shell (SSH), Virtual Network Computing (VNC), and other remote administration tools. Adversaries leverage these protocols to establish a remote connection to target systems, allowing them to interact with the system's resources, execute commands, and potentially compromise the system."
+                    },
+                    {
+                        "title": "Software Deployment Tools",
+                        "techniqueID": "T1072",
+                        "reference_url": "https://attack.mitre.org/techniques/T1072/",
+                        "description": "Software Deployment Tools are legitimate utilities and services used by organizations to remotely install, update, and manage software on multiple systems within a network. These tools streamline the deployment process, improve efficiency, and ensure consistency in software configurations across systems. Adversaries may abuse these tools to execute arbitrary commands, deploy malicious software, or achieve other malicious objectives."
+                    }
+                ]
+            },
+            {
+                "title": "Discovery",
+                "description": "Discovery techniques involve adversaries gathering information about the target environment, including network infrastructure, systems, applications, users, and security controls. This information gathering phase enables adversaries to identify vulnerabilities, misconfigurations, or weaknesses that can be exploited to achieve their objectives. Discovery techniques can include reconnaissance activities, such as scanning, enumeration, and fingerprinting, as well as querying internal systems or external sources for information about the target environment.",
+                "tacticID": "TA0007",
+                "reference_url": "https://attack.mitre.org/tactics/TA0007/",
+                "techniques": [
+                    {
+                        "title": "Account Discovery",
+                        "techniqueID": "T1087",
+                        "reference_url": "https://attack.mitre.org/techniques/T1087/",
+                        "description": "Account Discovery is a technique where attackers gather information about user accounts, including usernames, group memberships, and other account-related details on a targeted system. This information is valuable for understanding the network environment, identifying privileged accounts, and planning further stages of the attack. Attackers may use various methods to discover user accounts, such as querying system directories, enumerating users via network protocols, or searching for credential repositories."
+                    },
+                    {
+                        "title": "Permission Groups Discovery",
+                        "techniqueID": "T1069",
+                        "reference_url": "https://attack.mitre.org/techniques/T1069/",
+                        "description": "Peripheral Device Discovery is a technique where adversaries identify and gather information about external hardware devices connected to a target system. This technique involves detecting and enumerating peripheral devices such as USB drives, printers, cameras, keyboards, mice, and other devices connected via USB, Thunderbolt, Bluetooth, or other interfaces. Adversaries may perform peripheral device discovery to understand the target's hardware configuration, identify potential points of entry or infection, gather information for further exploitation, or plan for data exfiltration."
+                    }
+                ]
+            },
+            {
+                "title": "Impact",
+                "description": "Impact techniques involve actions taken by adversaries to achieve their goals through manipulation, disruption, or destruction of systems, data, or business processes within the target environment. The impact may vary depending on the adversaries' objectives, which could include disrupting operations, causing financial loss, or damaging the organization's reputation. Impact techniques can have severe consequences for victim organizations, leading to downtime, data loss, regulatory penalties, and other adverse outcomes.",
+                "tacticID": "TA0040",
+                "reference_url": "https://attack.mitre.org/tactics/TA0040/",
+                "techniques": [
+                    {
+                        "title": "Data Destruction",
+                        "techniqueID": "T1485",
+                        "reference_url": "https://attack.mitre.org/techniques/T1485/",
+                        "description": "Data Destruction is a technique where adversaries delete, remove, or render data inaccessible within a compromised environment. Attackers aim to disrupt operations, hinder investigations, cover their tracks, or inflict damage by deleting or modifying critical files, databases, logs, or system configurations. This technique can have significant impacts on organizations, including loss of sensitive information, service disruptions, and challenges in recovery and forensic analysis."
+                    },
+                    {
+                        "title": "Endpoint Denial of Service",
+                        "techniqueID": "T1499",
+                        "reference_url": "https://attack.mitre.org/techniques/T1499/",
+                        "description": "Endpoint Denial of Service is a technique where adversaries disrupt the availability of endpoint resources, such as workstations, servers, or mobile devices. Attackers overwhelm targeted endpoints with excessive network traffic, resource exhaustion, or software exploits to render them unresponsive or unusable."
+                    },
+                    {
+                        "title": "Inhibit System Recovery",
+                        "techniqueID": "T1490",
+                        "reference_url": "https://attack.mitre.org/techniques/T1490/",
+                        "description": "Inhibit System Recovery is a technique where adversaries prevent or hinder the recovery of systems after an attack or compromise. Attackers target system recovery mechanisms, backup processes, and other mechanisms that organizations rely on to restore affected systems to a known good state. By disrupting system recovery, adversaries aim to prolong the impact of their attack, hinder incident response efforts, and maintain persistence within the compromised environment."
+                    },
+                    {
+                        "title": "Service Stop",
+                        "techniqueID": "T1489",
+                        "reference_url": "https://attack.mitre.org/techniques/T1489/",
+                        "description": "Service Stop is a technique where adversaries stop or disable essential system services on a target system. This action can disrupt critical functionalities, cause system instability, or lead to service unavailability. Adversaries may stop services as part of their attack chain to facilitate the execution of malicious payloads, evade detection, or hinder incident response efforts."
+                    }
+                ]
+            }
+        ],
+        "campaign": null,
+        "course_of_action": [
+            {
+                "alert": "Windows - Successful Login Attempt",
+                "remediation": "Implement MFA to add an additional layer of security. Even if login credentials are compromised, an attacker would still need a second form of authentication.\nEnforce account lockout policies to temporarily lock user accounts after a certain number of unsuccessful login attempts. This helps prevent brute-force attacks.\nEncourage or enforce regular password changes to reduce the risk of attackers using long-term compromised credentials."
+            },
+            {
+                "alert": "Windows - Security Enabled Local Group Membership Enumerated",
+                "remediation": "Implement network segmentation to limit lateral movement within the network. This can help contain potential threats if an attacker gains access to information about group memberships.\nKeep the Windows operating system and applications up to date with security patches to mitigate known vulnerabilities that could be exploited to gain access to group membership information."
+            },
+            {
+                "alert": "Windows - Special Privileges Assigned",
+                "remediation": "-Keep operating systems, applications, and software up to date with the latest security patches. This helps address known vulnerabilities that attackers could exploit for privilege escalation.\n- Implement strong password policies, enforce the use of complex passwords, and enable multi-factor authentication (MFA) for user accounts. Additionally, use role-based access controls (RBAC) to ensure that users only have access to the resources necessary for their roles."
+            },
+            {
+                "alert": "Windows - Auditing Settings Object Changed",
+                "remediation": "Implement strict access controls and permissions for auditing settings to ensure that only authorized personnel can modify them. Use role-based access control (RBAC) to manage permissions effectively.\nConduct periodic audits of auditing settings to ensure they align with security policies and regulatory requirements. Address any unauthorized or incorrect changes promptly."
+            },
+            {
+                "alert": "Windows - Failed Login Attempt",
+                "remediation": "Establish an account lockout policy that temporarily locks user accounts after a certain number of consecutive failed login attempts. This policy helps prevent brute-force attacks by limiting the number of login attempts within a specific time period. However, ensure that the lockout duration and threshold are balanced to avoid inconveniencing legitimate users."
+            },
+            {
+                "alert": "Windows - Connection Failed - Bad Username or Password",
+                "remediation": "-Check the account status to ensure it is active and not locked or disabled. If the account is locked or disabled, follow the appropriate procedures to unlock or reactivate it.\n-Verify that the user has the necessary permissions and privileges to access the system, application, or resource. If the user's account lacks the required permissions, adjust the permissions accordingly."
+            },
+            {
+                "alert": "Windows - Account Logged Off",
+                "remediation": "Implement MFA to add an extra layer of security. Even if an attacker gains access to login credentials, they may be unable to complete the authentication process without the second factor.\nImplement proper access controls to restrict user access to only what is necessary for their roles. Review and update access permissions regularly."
+            },
+            {
+                "alert": "Windows - Key File Operation",
+                "remediation": "Regularly review the Windows event logs for \"Key File Operation\" events and related messages. Look for error messages or warnings that may indicate problems with key operations.\nKeep your operating system, encryption software, and security tools up to date with the latest security patches and updates to mitigate vulnerabilities."
+            },
+            {
+                "alert": "Windows - Account Log Off Attempt",
+                "remediation": "If the user account has any active network connections, such as mapped network drives or remote sessions, it is important to properly disconnect from these resources before initiating a log off attempt. This can involve closing open files, disconnecting network drives, or logging out of remote sessions."
+            },
+            {
+                "alert": "Windows - User's Local Group Membership Enumerated ",
+                "remediation": "Enforce strong authentication methods, such as multi-factor authentication (MFA), to prevent unauthorized access to user information or systems.\nApply the principle of least privilege when assigning group memberships to users. Ensure that users are only members of groups that are necessary for their roles and responsibilities."
+            },
+            {
+                "alert": "Windows - RDP Connection Attempt",
+                "remediation": "-Implement strong password policies or consider using multi-factor authentication (MFA) for RDP connections. MFA adds an extra layer of security by requiring additional verification, such as a temporary code sent to a mobile device, in addition to a password.\n-Regularly update the RDP client and server software to ensure you have the latest security patches and bug fixes. Software updates often include security enhancements that protect against known vulnerabilities."
+            },
+            {
+                "alert": "Windows - Cryptographic Operation",
+                "remediation": "Safeguard cryptographic keys and ensure that they are stored securely. Implement key rotation and destruction policies to protect against key compromise.\nKeep your Windows operating system and cryptographic libraries up to date with the latest security patches and updates to address known vulnerabilities."
+            },
+            {
+                "alert": "Windows - Key Migration Operation",
+                "remediation": "Enable detailed auditing and logging of key migration operations. This helps in tracking and reviewing the migration process and can be valuable for troubleshooting.\nRestrict access to key migration operations to authorized personnel only. Use role-based access control to limit who can perform these operations."
+            },
+            {
+                "alert": "Windows - Logon Attempted Explicit Credentials",
+                "remediation": "- Monitor this event with the “Subject\\Security ID” or “Account Whose Credentials Were Used\\Security ID” that corresponds to the high-value account or accounts.\n- When you monitor for anomalies or malicious actions, use the “Subject\\Security ID” and “Account Whose Credentials Were Used\\Security ID” (with other information) to monitor how or when a particular account is being used.\n- Monitor this event with the “Subject\\Security ID” or “Account Whose Credentials Were Used\\Security ID” that correspond to the accounts that should never be used.\n- If this event corresponds to a “allow list-only” action, review the “Subject\\Security ID” and “Account Whose Credentials Were Used\\Security ID” for accounts that are outside the allow list.\n- Monitor for the “Subject\\Account Domain” or “Account Whose Credentials Were Used\\Security ID” corresponding to accounts from another domain or “external” accounts.\n- Monitor the target Computer: (or other target devices) for actions performed by the “Subject\\Security ID” or “Account Whose Credentials Were Used\\Security ID” that you are concerned about.\nFor example, you might monitor to ensure that “Account Whose Credentials Were Used\\Security ID” is not used to log on to a certain computer.\n- Monitor “Subject\\Account Name” and “Account Whose Credentials Were Used\\Security ID” for names that don’t comply with naming conventions."
+            },
+            {
+                "alert": "Windows - System Crash",
+                "remediation": "-Verify that all hardware components, such as memory modules, hard drives, and power supply units, are properly connected and functioning correctly. Look for any signs of physical damage or overheating. Replace any faulty hardware if necessary.\n-Keep your operating system and software applications up to date with the latest patches and updates. Software updates often include bug fixes and stability improvements that can help prevent crashes."
+            },
+            {
+                "alert": "Windows - Multi-transport Connection Attempt",
+                "remediation": "Use a combination of transport protocols such as TCP/IP, UDP, or HTTP to establish the remote desktop connection. This diversification allows for flexibility and resilience, as different protocols may perform better under varying network conditions."
+            },
+            {
+                "alert": "Windows - Application Crash",
+                "remediation": "Ensure that both the application and the operating system are up to date with the latest patches and updates. Developers often release fixes for known issues.\nImplement robust error logging within the application to capture information about the crash. This can aid developers in diagnosing and fixing the problem.\nIf crashes persist, perform hardware diagnostics to identify and resolve any underlying hardware issues."
+            },
+            {
+                "alert": "Windows - RDP Connection Made",
+                "remediation": "-Enforce strong password policies and consider implementing multi-factor authentication (MFA) for RDP connections. MFA adds an extra layer of security by requiring users to provide additional verification, such as a temporary code sent to a mobile device, in addition to their password.\n-Isolate RDP traffic within a secure network segment or VLAN (Virtual Local Area Network) to limit potential exposure to unauthorized access attempts and reduce the attack surface."
+            },
+            {
+                "alert": "FortiGate - Rating Error Occurred - Warning",
+                "remediation": "Ensure that your FortiGate device is regularly updating its URL database to include new websites and categorizations. Schedule automatic updates to keep the database current.\nEnsure that your FortiGate firewall is running the latest firmware version. Firmware updates often include bug fixes and improvements related to URL filtering and categorization."
+            },
+            {
+                "alert": "Windows - Attempt Query Existence Blank Password Account",
+                "remediation": "Enforce strong password policies across the network to prevent the creation of accounts with blank passwords. Require complex, non-blank passwords for all accounts.\nKeep the Windows operating system and associated software up to date with security patches to mitigate known vulnerabilities that could be exploited to manipulate account configurations.Implement regular auditing and monitoring of user accounts and password policies to detect and address any anomalies or unauthorized account configurations."
+            },
+            {
+                "alert": "FortiGate - SSL Anomaly Certificate Resign Untrusted",
+                "remediation": "Implement Certificate Transparency (CT) mechanisms to enhance the transparency of certificate issuance. CT can help detect unauthorized or malicious certificates more effectively.\nImplement security policies that enforce strict certificate validation and handling. Ensure that policies align with security best practices and take appropriate action when anomalies are detected."
+            },
+            {
+                "alert": "Windows - Windows Starting Up",
+                "remediation": "Keep the Windows operating system up-to-date with the latest security patches and updates.\nUse reputable anti-malware software to scan and remove any malware that might be affecting the startup process."
+            },
+            {
+                "alert": "Windows - Windows Firewall Service Started",
+                "remediation": "If you suspect that the Windows Firewall may be causing issues, review the firewall rules to ensure that they are correctly configured. You can access the Windows Firewall settings by going to the Control Panel > System and Security > Windows Defender Firewall."
+            },
+            {
+                "alert": "Windows - Windows Firewall Driver Started",
+                "remediation": "Ensure that your Windows operating system is up to date with the latest security updates and patches. Windows updates often include fixes for known firewall-related issues.\nWindows includes built-in troubleshooters that can detect and fix common firewall issues. Run the Windows Firewall troubleshooter to see if it can identify and resolve any problems.\nGo to Settings > Update & Security > Troubleshoot > Additional troubleshooters > Windows Firewall."
+            },
+            {
+                "alert": "Windows - Boot Configuration Data Loaded",
+                "remediation": "If the system is not booting properly or if you encounter other errors along with the \"BCD Loaded\" message, you can try using Windows Startup Repair or Recovery options. These tools can help diagnose and repair boot-related issues.\nRunning a disk check using the CHKDSK command can help identify and fix file system errors that might be causing boot issues.\nIf the issue started after recent changes, such as software installations or updates, you can try using System Restore to revert the system to a previous state where it was functioning correctly."
+            },
+            {
+                "alert": "Windows - Per-User Audit Policy Table Created",
+                "remediation": "Ensure that you have proper log management and monitoring in place. Use a Security Information and Event Management (SIEM) system or log aggregation tool to centralize and analyze your logs. This will help you filter out the noise and focus on important security events."
+            },
+            {
+                "alert": "Windows - Event logging service shutting down",
+                "remediation": "Ensure that the services on which the Event Log service depends are running correctly. The Event Log service relies on the Remote Procedure Call (RPC) service and the DCOM Server Process Launcher service.\nRun a thorough antivirus and antimalware scan to rule out the possibility of malware affecting the stability of the Event Log service."
+            },
+            {
+                "alert": "Windows - Primary Token Assigned Process",
+                "remediation": "Implement strong access control mechanisms and user permissions to restrict access to sensitive resources and data. Ensure that only authorized users or processes can access certain resources.\nKeep your Windows system up to date with the latest security patches and updates to address known vulnerabilities related to token assignments and privilege escalation."
+            },
+            {
+                "alert": "Windows - Attempt Register Security Event",
+                "remediation": "Ensure that you have proper security auditing and monitoring in place. Regularly review and analyze your Windows event logs for known security events and anomalies. Consider using a Security Information and Event Management (SIEM) system for more comprehensive log analysis."
+            },
+            {
+                "alert": "Windows - Attempt Unregister Security Event",
+                "remediation": "Implement strict access controls and permissions to prevent unauthorized individuals from unregistering security events. Limit access to this functionality to trusted and authorized personnel.\nContinuously monitor and audit changes to security event configurations. Detect and respond to any unauthorized attempts to unregister security events promptly."
+            },
+            {
+                "alert": "Windows - User Initiated Logoff",
+                "remediation": "-If your user account has any active network connections, such as mapped network drives or remote sessions, properly disconnect from these resources before initiating a logoff. Close open files, disconnect network drives, or log out of remote sessions as necessary.\n-If you are connected to the computer or device via a remote desktop session, initiate the logoff from within the remote session itself. This ensures that the remote session is properly terminated, freeing up system resources and maintaining security."
+            },
+            {
+                "alert": "Windows - System time Changed",
+                "remediation": "Make sure the firewall is enabled before you go online. You can also use a hardware firewall of  Cisco, Sophos, or Fortinet and other companies, depending on your requirement, which also has a built-in firewall that protects your network. If you have a larger business, you can integrate an additional business networking firewall."
+            },
+            {
+                "alert": "Windows - Failed Code Integrity Checks",
+                "remediation": "-If possible, isolate the affected system or application from the network to prevent further damage or compromise. This can involve disconnecting the system from the network or segregating it within a secure network zone to limit the potential impact on other systems.\n-Restore the affected system or application from a trusted backup source. Ensure that the backup is known to be free from the tampered code. This helps to revert the system to a known-good state before the code integrity checks failed."
+            },
+            {
+                "alert": "Windows - Code Integrity Disk Device Error",
+                "remediation": "Sometimes, temporary issues can be resolved by simply restarting your computer. Try rebooting to see if the error persists.\nCheck Disk is a Windows utility that can scan and repair disk-related issues. Here's how to run it:\nOpen a Command Prompt as an administrator by pressing Win + X and selecting \"Windows Terminal (Admin)\" or \"Command Prompt (Admin).\"\nType chkdsk /f and press Enter. This command will schedule a disk check the next time you restart your computer. Confirm the action and restart your PC."
+            },
+            {
+                "alert": "Windows - Multi-transport Connection Made",
+                "remediation": "-Determine the appropriate combination of transport protocols to be used for the multi-transport connection. This may involve selecting protocols such as TCP/IP, UDP, HTTP, or others based on the specific requirements of your network environment.\n-Prioritize the usage of transport protocols based on factors such as network conditions, security requirements, or performance considerations. For example, prefer the use of a direct TCP/IP connection but fall back to alternative protocols like UDP or HTTP if necessary."
+            },
+            {
+                "alert": "Windows - User Account Changed",
+                "remediation": "-Some organizations monitor every 4738 events.\n-If you have critical user computer accounts (for example, domain administrator accounts or service accounts) for which you need to monitor each change, monitor this event with the “Target Account\\Account Name” that corresponds to the critical account or accounts.\n-If you have user accounts for which any change in the services list on the Delegation tab should be monitored, monitor this event when AllowedToDelegateTo is not -. This value means the services list was changed.\n"
+            },
+            {
+                "alert": "Windows - Admin User Remote Logon",
+                "remediation": "-Implement strong authentication mechanisms, such as multi-factor authentication (MFA), to enhance the security of remote logon sessions. MFA adds an additional layer of protection by requiring multiple forms of authentication, reducing the risk of unauthorized access even if credentials are compromised.\n-Use secure network protocols, such as SSH (Secure Shell) or VPN (Virtual Private Network), for remote logon sessions. These protocols provide encryption and secure communication channels, protecting the confidentiality and integrity of remote logon sessions."
+            },
+            {
+                "alert": "Windows - RDP Login from Localhost",
+                "remediation": "Implement strong access controls on the system to prevent unauthorized access, even from localhost. This includes using strong passwords, enabling multi-factor authentication (MFA), and restricting RDP access to only authorized users or groups.\nDeploy firewalls and network monitoring solutions to detect and block suspicious network traffic, including attempts to establish RDP sessions from localhost. These security measures can help detect and prevent unauthorized access attempts."
+            },
+            {
+                "alert": "Windows - Remote Logon Detected",
+                "remediation": "Thoroughly review the logs and alerts associated with the remote logon event. Analyze the log data to gather relevant information, such as the source IP address, time of logon, user account, and any additional details available. This analysis can help determine the legitimacy of the logon and the potential risks associated with it."
+            },
+            {
+                "alert": "Windows - Unexpected System Shutdown",
+                "remediation": "-Ensure that all hardware components, such as RAM, graphics card, and hard drives, are properly connected. Loose connections can cause power interruptions and lead to unexpected shutdowns.\n-Outdated or incompatible drivers and software can cause system instability and unexpected shutdowns. Update your drivers to the latest versions and ensure that your operating system and applications are up to date."
+            },
+            {
+                "alert": "Windows - Security Enabled Local Group Deleted",
+                "remediation": "Enhance security auditing and monitoring to detect and alert on changes to group memberships and deletions promptly. Implement alerts for critical group deletions.\nEnforce change control procedures and access controls to prevent unauthorized or accidental group deletions. Implement stricter permissions for group management."
+            }
+        ],
+        "identity": [
+            "APPLIED INFOSEC GROUP"
+        ],
+        "infrastructure": [
+            {
+                "destination_ip": "10.228.12.48",
+                "dest_name": "Anupinder Singh (Windows)",
+                "host_group": "APPLIED INFOSEC GROUP"
+            },
+            {
+                "destination_ip": "10.228.12.194",
+                "dest_name": "N/A",
+                "host_group": "N/A"
+            },
+            {
+                "destination_ip": "10.228.0.3",
+                "dest_name": "Next Generation Firewall",
+                "host_group": "APPLIED INFOSEC GROUP"
+            },
+            {
+                "destination_ip": "10.228.0.101",
+                "dest_name": "Recruitment Portal",
+                "host_group": "APPLIED INFOSEC GROUP"
+            }
+        ],
+        "note": {
+            "type": "note",
+            "content": "A brief note about incoming IOC.\n Type of IOC: IP Address | Value: 10.228.12.194",
+            "authors": [
+                "CDAC-SIEM",
+                "CDAC-Mohali"
+            ]
+        },
+        "observed_data": [
+            {
+                "alert": "Windows - Successful Login Attempt",
+                "first_observed": "2023-10-12T04:42:07.000Z",
+                "last_observed": "2024-06-14T03:45:34.000Z",
+                "number_observed": 168416
+            },
+            {
+                "alert": "Windows - Security Enabled Local Group Membership Enumerated",
+                "first_observed": "2023-10-12T08:23:37.000Z",
+                "last_observed": "2024-04-30T10:16:14.000Z",
+                "number_observed": 17611
+            },
+            {
+                "alert": "Windows - Special Privileges Assigned",
+                "first_observed": "2024-03-01T05:01:21.000Z",
+                "last_observed": "2024-04-16T11:08:59.000Z",
+                "number_observed": 12517
+            },
+            {
+                "alert": "Windows - Auditing Settings Object Changed",
+                "first_observed": "2023-10-27T08:28:41.000Z",
+                "last_observed": "2024-04-12T04:11:31.000Z",
+                "number_observed": 7673
+            },
+            {
+                "alert": "Windows - Failed Login Attempt",
+                "first_observed": "2024-01-01T03:16:49.000Z",
+                "last_observed": "2024-05-29T10:25:09.000Z",
+                "number_observed": 4525
+            },
+            {
+                "alert": "Windows - Connection Failed - Bad Username or Password",
+                "first_observed": "2024-01-10T16:58:18.000Z",
+                "last_observed": "2024-01-16T04:56:54.000Z",
+                "number_observed": 3767
+            },
+            {
+                "alert": "Windows - Account Logged Off",
+                "first_observed": "2023-10-12T08:34:18.000Z",
+                "last_observed": "2024-04-30T08:32:56.000Z",
+                "number_observed": 1698
+            },
+            {
+                "alert": "Windows - Key File Operation",
+                "first_observed": "2023-10-13T03:55:17.000Z",
+                "last_observed": "2024-04-30T09:32:56.000Z",
+                "number_observed": 1580
+            },
+            {
+                "alert": "Windows - Account Log Off Attempt",
+                "first_observed": "2023-10-12T08:34:18.000Z",
+                "last_observed": "2024-04-15T10:07:58.000Z",
+                "number_observed": 1512
+            },
+            {
+                "alert": "Windows - User's Local Group Membership Enumerated ",
+                "first_observed": "2023-10-12T07:31:24.000Z",
+                "last_observed": "2024-04-15T22:10:24.000Z",
+                "number_observed": 1298
+            },
+            {
+                "alert": "Windows - RDP Connection Attempt",
+                "first_observed": "2023-10-21T21:45:16.000Z",
+                "last_observed": "2024-04-30T10:12:56.000Z",
+                "number_observed": 1167
+            },
+            {
+                "alert": "Windows - Cryptographic Operation",
+                "first_observed": "2023-10-13T03:55:17.000Z",
+                "last_observed": "2024-04-15T04:22:33.000Z",
+                "number_observed": 808
+            },
+            {
+                "alert": "Windows - Key Migration Operation",
+                "first_observed": "2023-10-13T03:55:17.000Z",
+                "last_observed": "2024-04-15T04:22:33.000Z",
+                "number_observed": 505
+            },
+            {
+                "alert": "Windows - Logon Attempted Explicit Credentials",
+                "first_observed": "2023-10-30T10:16:43.000Z",
+                "last_observed": "2024-05-16T06:02:37.000Z",
+                "number_observed": 497
+            },
+            {
+                "alert": "Windows - System Crash",
+                "first_observed": "2023-05-29T04:37:58.000Z",
+                "last_observed": "2024-04-30T09:31:12.000Z",
+                "number_observed": 403
+            },
+            {
+                "alert": "Windows - Multi-transport Connection Attempt",
+                "first_observed": "2023-10-18T03:26:11.000Z",
+                "last_observed": "2024-04-30T09:31:21.000Z",
+                "number_observed": 276
+            },
+            {
+                "alert": "Windows - Application Crash",
+                "first_observed": "2023-10-20T20:07:52.000Z",
+                "last_observed": "2024-04-29T07:25:56.000Z",
+                "number_observed": 203
+            },
+            {
+                "alert": "Windows - RDP Connection Made",
+                "first_observed": "2023-10-30T10:17:10.000Z",
+                "last_observed": "2024-04-30T09:31:22.000Z",
+                "number_observed": 164
+            },
+            {
+                "alert": "FortiGate - Rating Error Occurred - Warning",
+                "first_observed": "2023-10-15T23:13:35.000Z",
+                "last_observed": "2023-10-16T06:03:51.000Z",
+                "number_observed": 159
+            },
+            {
+                "alert": "Windows - Attempt Query Existence Blank Password Account",
+                "first_observed": "2023-10-18T05:09:21.000Z",
+                "last_observed": "2024-04-30T09:31:29.000Z",
+                "number_observed": 108
+            },
+            {
+                "alert": "FortiGate - SSL Anomaly Certificate Resign Untrusted",
+                "first_observed": "2023-10-15T23:13:35.000Z",
+                "last_observed": "2023-10-16T06:03:51.000Z",
+                "number_observed": 83
+            },
+            {
+                "alert": "Windows - Windows Starting Up",
+                "first_observed": "2023-10-30T10:16:42.000Z",
+                "last_observed": "2024-04-29T08:37:19.000Z",
+                "number_observed": 70
+            },
+            {
+                "alert": "Windows - Windows Firewall Service Started",
+                "first_observed": "2023-10-30T10:17:15.000Z",
+                "last_observed": "2024-04-29T08:37:23.000Z",
+                "number_observed": 70
+            },
+            {
+                "alert": "Windows - Windows Firewall Driver Started",
+                "first_observed": "2023-10-30T10:16:59.000Z",
+                "last_observed": "2024-04-29T08:37:21.000Z",
+                "number_observed": 70
+            },
+            {
+                "alert": "Windows - Boot Configuration Data Loaded",
+                "first_observed": "2023-10-30T10:16:09.000Z",
+                "last_observed": "2024-04-29T08:36:59.000Z",
+                "number_observed": 65
+            },
+            {
+                "alert": "Windows - Per-User Audit Policy Table Created",
+                "first_observed": "2023-10-30T10:16:43.000Z",
+                "last_observed": "2024-04-29T08:37:20.000Z",
+                "number_observed": 65
+            },
+            {
+                "alert": "Windows - Event logging service shutting down",
+                "first_observed": "2023-10-30T10:13:35.000Z",
+                "last_observed": "2024-04-26T11:22:45.000Z",
+                "number_observed": 58
+            },
+            {
+                "alert": "Windows - Primary Token Assigned Process",
+                "first_observed": "2023-10-30T10:16:09.000Z",
+                "last_observed": "2024-04-29T08:36:59.000Z",
+                "number_observed": 46
+            },
+            {
+                "alert": "Windows - Attempt Register Security Event",
+                "first_observed": "2023-10-18T17:24:02.000Z",
+                "last_observed": "2024-04-30T10:12:15.000Z",
+                "number_observed": 44
+            },
+            {
+                "alert": "Windows - Attempt Unregister Security Event",
+                "first_observed": "2023-10-18T17:24:02.000Z",
+                "last_observed": "2024-04-30T10:12:15.000Z",
+                "number_observed": 44
+            },
+            {
+                "alert": "Windows - User Initiated Logoff",
+                "first_observed": "2023-10-30T10:13:19.000Z",
+                "last_observed": "2024-04-26T11:22:35.000Z",
+                "number_observed": 28
+            },
+            {
+                "alert": "Windows - System time Changed",
+                "first_observed": "2023-10-22T11:21:06.000Z",
+                "last_observed": "2023-12-29T07:21:35.000Z",
+                "number_observed": 14
+            },
+            {
+                "alert": "Windows - Failed Code Integrity Checks",
+                "first_observed": "2024-04-23T11:44:56.000Z",
+                "last_observed": "2024-04-24T04:08:39.000Z",
+                "number_observed": 8
+            },
+            {
+                "alert": "Windows - Code Integrity Disk Device Error",
+                "first_observed": "2024-04-23T11:44:56.000Z",
+                "last_observed": "2024-04-24T04:08:39.000Z",
+                "number_observed": 8
+            },
+            {
+                "alert": "Windows - Multi-transport Connection Made",
+                "first_observed": "2023-10-30T05:33:03.000Z",
+                "last_observed": "2024-04-15T10:32:13.000Z",
+                "number_observed": 7
+            },
+            {
+                "alert": "Windows - User Account Changed",
+                "first_observed": "2024-04-18T03:37:30.000Z",
+                "last_observed": "2024-04-18T03:37:30.000Z",
+                "number_observed": 1
+            },
+            {
+                "alert": "Windows - Admin User Remote Logon",
+                "first_observed": "2024-05-16T06:02:37.000Z",
+                "last_observed": "2024-05-16T06:02:37.000Z",
+                "number_observed": 1
+            },
+            {
+                "alert": "Windows - RDP Login from Localhost",
+                "first_observed": "2024-05-16T06:02:37.000Z",
+                "last_observed": "2024-05-16T06:02:37.000Z",
+                "number_observed": 1
+            },
+            {
+                "alert": "Windows - Remote Logon Detected",
+                "first_observed": "2024-05-16T06:02:37.000Z",
+                "last_observed": "2024-05-16T06:02:37.000Z",
+                "number_observed": 1
+            },
+            {
+                "alert": "Windows - Unexpected System Shutdown",
+                "first_observed": "2024-01-04T09:16:56.000Z",
+                "last_observed": "2024-01-04T09:16:56.000Z",
+                "number_observed": 1
+            },
+            {
+                "alert": "Windows - Security Enabled Local Group Deleted",
+                "first_observed": "2023-11-09T07:32:46.000Z",
+                "last_observed": "2023-11-09T07:32:46.000Z",
+                "number_observed": 1
+            }
+        ],
+        "vulnerability": {
+            "cves": [],
+            "capecs": []
+        }
+    },
+    "message": "IOC history fro STIX object mapping"
+}

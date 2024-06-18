@@ -1,0 +1,429 @@
+{
+    "type": "bundle",
+    "id": "bundle--757a7bc9-10e1-42cd-bf52-ffe594371c00",
+    "objects": [
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--2419b99e-eff3-4f73-a44a-3cb99e76b06f",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:03.996438Z",
+            "modified": "2024-06-14T06:05:03.996438Z",
+            "name": "23.154.177.20",
+            "description": "-Enforce strong password policies for admin accounts. Encourage the use of multi-factor authentication (MFA) to enhance security.\n-Configure firewall rules to restrict access to the administrative interface only from trusted IP addresses or networks.\n-Utilize intrusion prevention systems (IPS) or intrusion detection systems (IDS) to monitor and block suspicious login attempts.",
+            "x_cdacsiem_alert": "FortiGate - Admin Login Failed"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:03.984552Z",
+            "modified": "2024-06-14T06:05:03.984552Z",
+            "name": "23.154.177.20",
+            "description": "This indicator indicates an attacker's IP captured on CDACSIEM.",
+            "pattern": "[ipv4-addr:value = '23.154.177.20']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-05-25T02:34:03Z",
+            "confidence": 64
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--0a09c189-732e-4182-aab2-0d27d954d96f",
+            "value": "23.154.177.20"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:03.983542Z",
+            "modified": "2024-06-14T06:05:03.983542Z",
+            "name": "CDACSIEM"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--99435cf3-e1d9-4b7e-91d8-9abf4e95d93b",
+            "created": "2024-06-14T06:05:03.984552Z",
+            "modified": "2024-06-14T06:05:03.984552Z",
+            "name": "APPLIED INFOSEC GROUP"
+        },
+        {
+            "type": "infrastructure",
+            "spec_version": "2.1",
+            "id": "infrastructure--79cb5f71-bbbb-4585-a494-ad0a57fcfd69",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:03.997445Z",
+            "modified": "2024-06-14T06:05:03.997445Z",
+            "name": "10.228.0.3",
+            "description": "Next Generation Firewall",
+            "infrastructure_types": [
+                "applied-infosec-group"
+            ]
+        },
+        {
+            "type": "location",
+            "spec_version": "2.1",
+            "id": "location--2a8f90d2-b402-4261-9a43-40ce7fa11615",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:03.997445Z",
+            "modified": "2024-06-14T06:05:03.997445Z",
+            "name": "Finland",
+            "latitude": 60.1699,
+            "longitude": 24.9384,
+            "country": "FI",
+            "x_country": "Finland",
+            "x_ioc_value": "23.154.177.20",
+            "x_timezone": "Europe/Helsinki"
+        },
+        {
+            "type": "note",
+            "spec_version": "2.1",
+            "id": "note--6105a13d-d3c4-4828-ba1f-300f19754f09",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:03.998444Z",
+            "modified": "2024-06-14T06:05:03.998444Z",
+            "content": "A brief note about incoming IOC.\n Type of IOC: IP Address | Value: 23.154.177.20",
+            "authors": [
+                "CDAC-SIEM",
+                "CDAC-Mohali"
+            ],
+            "object_refs": [
+                "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989"
+            ]
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--b5859fd9-662c-4209-85a8-fca8f0292e60",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:03.999442Z",
+            "modified": "2024-06-14T06:05:03.999442Z",
+            "name": "AbuseIPDB",
+            "description": "This is AbuseIPDB's report",
+            "published": "2024-05-25T03:15:02.355Z",
+            "object_refs": [
+                "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989"
+            ],
+            "labels": [
+                "Web Spam",
+                "Brute-Force",
+                "Open Proxy",
+                "Bad Web Bot",
+                "Email Spam",
+                "SSH",
+                "Hacking",
+                "SQL Injection",
+                "VPN IP",
+                "DDoS Attack",
+                "Exploited Host",
+                "Port Scan",
+                "Web App Attack",
+                "IoT Targeted",
+                "Blog Spam"
+            ],
+            "x_abuse_ipdb_report": {
+                "abuseConfidenceScore": 85,
+                "countryCode": "US",
+                "countryName": "United States of America",
+                "domain": "ulayer.net",
+                "hostnames": [],
+                "ipAddress": "23.154.177.20",
+                "ipVersion": 4,
+                "isPublic": true,
+                "isTor": true,
+                "isWhitelisted": false,
+                "isp": "Universal Layer LLC",
+                "lastReportedAt": "2024-05-24T13:09:29+00:00",
+                "numDistinctUsers": 45,
+                "totalReports": 92,
+                "usageType": "Data Center/Web Hosting/Transit"
+            },
+            "x_ioc_value": "23.154.177.20"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--d393dc2b-fb43-4769-aeb6-bca3262e48d6",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:04.000443Z",
+            "modified": "2024-06-14T06:05:04.000443Z",
+            "name": "AlienVault OTX",
+            "description": "This is AlienVault's report",
+            "published": "2024-05-25T03:15:43.17Z",
+            "object_refs": [
+                "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989"
+            ],
+            "labels": [
+                "phishing",
+                "scanner",
+                "bot",
+                "indicator",
+                "attack",
+                "indicator type",
+                "SSH",
+                "description ip",
+                "cyber security",
+                "ioc",
+                "ddos",
+                "malicious",
+                "Nextray",
+                "Telnet",
+                "description",
+                "cve202229266",
+                "login"
+            ],
+            "x_alien_vault_otx_report": {
+                "general": {
+                    "base_indicator": {
+                        "access_reason": "",
+                        "indicator": "23.154.177.20",
+                        "access_type": "public",
+                        "content": "",
+                        "description": "",
+                        "id": 3350890364,
+                        "type": "IPv4",
+                        "title": ""
+                    },
+                    "indicator": "23.154.177.20",
+                    "pulse_info": {
+                        "pulse_names": [
+                            "IOCs - 20231221216 - ANIA Threat Feeds - IP Segment 1",
+                            "IOCs - 202312212158 - ANIA Threat Feeds - IP Segment 8",
+                            "IOCs - 202312212054 - ANIA Threat Feeds - IP Segment 0",
+                            "IOCs - 20237211735 - ANIA Threat Feeds - IP Segment 0",
+                            "Possible Bot IP addresses",
+                            "IOCs - 202312212149 - ANIA Threat Feeds - IP Segment 7",
+                            "IOC Records \u2192Provided by @NextRayAI",
+                            "Ka's Honeypot visitors",
+                            "IOCs - 202312212128 - ANIA Threat Feeds - IP Segment 4",
+                            "HIVE           (Pulse created by RVS_i_am)",
+                            "IOCs - 20237211825 - ANIA Threat Feeds - IP Segment 8",
+                            "IOC Records Provided by @NextRayAI",
+                            "IOCs - 20237211819 - ANIA Threat Feeds - IP Segment 7",
+                            "IOCs - 202312212121 - ANIA Threat Feeds - IP Segment 3",
+                            "HIVE",
+                            "IOCs - 2023721186 - ANIA Threat Feeds - IP Segment 5",
+                            "IOCs - 202312212134 - ANIA Threat Feeds - IP Segment 5",
+                            "IOC Records \u2192 Provided by @NextRayAI",
+                            "IOCs Industriales",
+                            "IOCs - 202312162321 - ANIA Threat Feeds - IP Segment 7",
+                            "TOR EXIT NODE JAN 24",
+                            "IOCs - 2023721181 - ANIA Threat Feeds - IP Segment 4",
+                            "srg",
+                            "PurpleSynapz",
+                            "IOCs - 202312212116 - ANIA Threat Feeds - IP Segment 2"
+                        ]
+                    },
+                    "reputation": 0,
+                    "type": "IPv4",
+                    "type_title": "IPv4",
+                    "whois": "http://whois.domaintools.com/23.154.177.20"
+                }
+            },
+            "x_ioc_value": "23.154.177.20"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--6a011d1f-0d3d-48f5-9423-07b72a3f6e00",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:04.000443Z",
+            "modified": "2024-06-14T06:05:04.000443Z",
+            "name": "VirusTotal",
+            "description": "This is VirusTotal's report",
+            "published": "2024-05-25T03:15:45.246Z",
+            "object_refs": [
+                "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989"
+            ],
+            "labels": [
+                "tor"
+            ],
+            "x_ioc_value": "23.154.177.20",
+            "x_virus_total_report": {
+                "x_last_analysis_stats": {
+                    "harmless": 58,
+                    "malicious": 8,
+                    "suspicious": 2,
+                    "timeout": 0,
+                    "undetected": 25
+                }
+            }
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--48c5e139-a877-42ee-8c3d-843d940cd4dc",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:04.001446Z",
+            "modified": "2024-06-14T06:05:04.001446Z",
+            "name": "Maltiverse",
+            "description": "This is Maltiverse's report",
+            "published": "2024-05-25T03:15:46.814Z",
+            "object_refs": [
+                "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989"
+            ],
+            "labels": [
+                "rfi",
+                "bruteforce",
+                "abuse",
+                "bot",
+                "login",
+                "malicious-activity",
+                "ddos",
+                "joomla",
+                "wordpress",
+                "apache",
+                "attacker",
+                "tor",
+                "anonymization"
+            ],
+            "x_ioc_value": "23.154.177.20",
+            "x_maltiverse_report": {
+                "x_address": "30 N Gould St Ste R",
+                "x_as_name": "AS399532 Universal Layer LLC",
+                "x_as_number": "399532",
+                "x_asn_cidr": "23.154.177.0/24",
+                "x_asn_country_code": "US",
+                "x_asn_date": "2021-04-02 00:00:00",
+                "x_asn_registry": "arin",
+                "x_city": "Sheridan",
+                "x_classification": "malicious",
+                "x_country_code": "US",
+                "x_ip_addr": "23.154.177.20",
+                "x_is_cdn": false,
+                "x_is_cnc": false,
+                "x_is_distributing_malware": false,
+                "x_is_hosting": false,
+                "x_is_iot_threat": false,
+                "x_is_known_attacker": true,
+                "x_is_known_scanner": false,
+                "x_is_mining_pool": false,
+                "x_is_open_proxy": false,
+                "x_is_sinkhole": false,
+                "x_is_tor_node": true,
+                "x_is_vpn_node": false
+            }
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--18dcdd02-b058-48dc-b982-03ee9412a868",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:04.002444Z",
+            "modified": "2024-06-14T06:05:04.002444Z",
+            "name": "CDAC Honeypot 1",
+            "description": "This is CDAC Honeypot-1's report",
+            "published": "2024-05-25T03:15:48.007Z",
+            "object_refs": [
+                "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989"
+            ],
+            "labels": [
+                "scan",
+                "attack_log",
+                "connect"
+            ],
+            "x_cdac_honeypot_report": {
+                "x_organization_sectors": [
+                    "Power-Energy",
+                    "Industrial",
+                    "Government"
+                ],
+                "x_organizations": [
+                    "TANGEDCO-Chennai-TamilNadu",
+                    "North Eastern Police Academy-Shillong-Meghalaya",
+                    "NFL-Nagal-Punjab"
+                ]
+            },
+            "x_ioc_value": "23.154.177.20"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--ca625361-955a-4d66-b372-a1a380c84f86",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:04.002444Z",
+            "modified": "2024-06-14T06:05:04.002444Z",
+            "name": "CDAC Honepot 2",
+            "description": "This is CDAC Honeypot-2's report",
+            "published": "2024-05-25T03:15:52.19Z",
+            "object_refs": [
+                "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989"
+            ],
+            "labels": [
+                "bruteforce",
+                "connect"
+            ],
+            "x_cdac_honeypot_2_report": {
+                "x_organization_sectors": [
+                    "Research-Academic"
+                ],
+                "x_organizations": [
+                    "CDAC-Mohali-Punjab"
+                ]
+            },
+            "x_ioc_value": "23.154.177.20"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--1e749aa0-4268-4a91-b3eb-291bc0f50359",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:04.003445Z",
+            "modified": "2024-06-14T06:05:04.003445Z",
+            "first_observed": "2024-05-25T02:34:03Z",
+            "last_observed": "2024-05-25T02:34:03Z",
+            "number_observed": 1,
+            "object_refs": [
+                "ipv4-addr--0a09c189-732e-4182-aab2-0d27d954d96f"
+            ],
+            "name": "FortiGate - Admin Login Failed"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--39f0c138-104b-4730-a3b3-a7cc97351a86",
+            "created_by_ref": "identity--99435cf3-e1d9-4b7e-91d8-9abf4e95d93b",
+            "created": "2024-06-14T06:05:04.004442Z",
+            "modified": "2024-06-14T06:05:04.004442Z",
+            "relationship_type": "related-to",
+            "source_ref": "identity--99435cf3-e1d9-4b7e-91d8-9abf4e95d93b",
+            "target_ref": "infrastructure--79cb5f71-bbbb-4585-a494-ad0a57fcfd69"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6c6a99a9-36f5-445e-990c-61af313cd2ab",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:04.004442Z",
+            "modified": "2024-06-14T06:05:04.004442Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--2419b99e-eff3-4f73-a44a-3cb99e76b06f",
+            "target_ref": "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--693d2748-b46f-48ba-8815-62fa06da34f6",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:04.005441Z",
+            "modified": "2024-06-14T06:05:04.005441Z",
+            "relationship_type": "related-to",
+            "source_ref": "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989",
+            "target_ref": "identity--99435cf3-e1d9-4b7e-91d8-9abf4e95d93b"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3b0e8bd2-1a77-40e9-8302-aa4a44201885",
+            "created_by_ref": "identity--188e3211-f9e4-4b11-8644-6d086afcd037",
+            "created": "2024-06-14T06:05:04.005441Z",
+            "modified": "2024-06-14T06:05:04.005441Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--9d8f3996-0826-4fa5-9150-a2a272c12989",
+            "target_ref": "infrastructure--79cb5f71-bbbb-4585-a494-ad0a57fcfd69"
+        }
+    ]
+}

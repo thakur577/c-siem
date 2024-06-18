@@ -1,0 +1,215 @@
+{
+    "type": "bundle",
+    "id": "bundle--413cdfc8-8a8e-4533-964c-d1260e5e00ec",
+    "objects": [
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--e98db117-047c-40e2-aec6-b649dcc0f4c3",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.512998Z",
+            "modified": "2024-06-14T06:15:22.512998Z",
+            "name": "172.168.41.162",
+            "description": "Deploy intrusion detection and prevention systems (IDPS) to monitor network traffic for signs of scanning activity and block or alert on suspicious behavior indicative of reconnaissance or exploitation attempts.\nConfigure firewall rules on the FortiGate device to restrict incoming and outgoing traffic, limiting the exposure of services and resources to potential scanning or exploitation by unauthorized users.",
+            "x_cdacsiem_alert": "Fortigate - Scanning Activity"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e19f7ff0-a074-46be-bf1c-5a1e307267ca",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.502499Z",
+            "modified": "2024-06-14T06:15:22.502499Z",
+            "name": "172.168.41.162",
+            "description": "This indicator indicates an attacker's IP captured on CDACSIEM.",
+            "pattern": "[ipv4-addr:value = '172.168.41.162']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-06-05T05:39:16Z",
+            "confidence": 0
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--42d7fdc3-7fbb-48cf-903d-d1267c820f11",
+            "value": "172.168.41.162"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.500503Z",
+            "modified": "2024-06-14T06:15:22.500503Z",
+            "name": "CDACSIEM"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--47290c38-809b-4167-9cb8-7412ec19e425",
+            "created": "2024-06-14T06:15:22.5015Z",
+            "modified": "2024-06-14T06:15:22.5015Z",
+            "name": "APPLIED INFOSEC GROUP"
+        },
+        {
+            "type": "infrastructure",
+            "spec_version": "2.1",
+            "id": "infrastructure--3320adae-9e30-4f85-a3be-69bbd8d1cdea",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.513997Z",
+            "modified": "2024-06-14T06:15:22.513997Z",
+            "name": "10.228.0.3",
+            "description": "Next Generation Firewall",
+            "infrastructure_types": [
+                "applied-infosec-group"
+            ]
+        },
+        {
+            "type": "location",
+            "spec_version": "2.1",
+            "id": "location--3686e9f0-f2bc-4563-aba4-42cd516d60b1",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.513997Z",
+            "modified": "2024-06-14T06:15:22.513997Z",
+            "name": "United States",
+            "latitude": 41.5868,
+            "longitude": -93.625,
+            "country": "US",
+            "x_country": "United States",
+            "x_ioc_value": "172.168.41.162",
+            "x_timezone": "America/Chicago"
+        },
+        {
+            "type": "note",
+            "spec_version": "2.1",
+            "id": "note--0a03ec13-ee75-47c8-9089-c3bd1590b7b6",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.514997Z",
+            "modified": "2024-06-14T06:15:22.514997Z",
+            "content": "A brief note about incoming IOC.\n Type of IOC: IP Address | Value: 172.168.41.162",
+            "authors": [
+                "CDAC-SIEM",
+                "CDAC-Mohali"
+            ],
+            "object_refs": [
+                "indicator--e19f7ff0-a074-46be-bf1c-5a1e307267ca"
+            ]
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--19a91ab9-210e-4253-8589-2e1c64d18ed1",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.514997Z",
+            "modified": "2024-06-14T06:15:22.514997Z",
+            "first_observed": "2024-06-03T03:44:29Z",
+            "last_observed": "2024-06-05T05:39:16Z",
+            "number_observed": 4,
+            "object_refs": [
+                "ipv4-addr--42d7fdc3-7fbb-48cf-903d-d1267c820f11"
+            ],
+            "name": "Fortigate - Scanning Activity"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--53aa0447-859e-4a7a-875b-51f1f2e7bb14",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.515998Z",
+            "modified": "2024-06-14T06:15:22.515998Z",
+            "name": "Reconnaissance",
+            "description": "Reconnaissance is a tactic that encompasses techniques used by adversaries to gather information about a target network, its systems, and its users. Reconnaissance techniques are often the initial steps in the cyber attack lifecycle, where threat actors seek to gain knowledge that helps them plan and execute further stages of the attack. This tactic focuses on understanding the target environment, identifying potential vulnerabilities, and selecting the most effective attack vectors.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0043/",
+                    "external_id": "TA0043"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0043"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--09fea16e-2e64-44de-af77-4d8e617e9954",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.516998Z",
+            "modified": "2024-06-14T06:15:22.516998Z",
+            "name": "Active Scanning",
+            "description": "Active Scanning is a technique used by adversaries to actively probe and enumerate systems, services, or vulnerabilities on a target network. This technique involves sending specific network packets or requests to target systems to elicit responses that reveal information about the network's configuration and potential weaknesses. Active scanning is often a critical step in the reconnaissance phase of an attack, where adversaries seek to identify potential entry points and vulnerabilities for exploitation.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1595/",
+                    "external_id": "T1595"
+                }
+            ],
+            "x_mitre_technique_id": "T1595"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0f23166c-f0d0-4762-87d9-32e853aaac55",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.515998Z",
+            "modified": "2024-06-14T06:15:22.515998Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e19f7ff0-a074-46be-bf1c-5a1e307267ca",
+            "target_ref": "attack-pattern--53aa0447-859e-4a7a-875b-51f1f2e7bb14"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fddf0278-50a7-4e81-a8a2-cc7f34486273",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.516998Z",
+            "modified": "2024-06-14T06:15:22.516998Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--53aa0447-859e-4a7a-875b-51f1f2e7bb14",
+            "target_ref": "attack-pattern--09fea16e-2e64-44de-af77-4d8e617e9954"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fc32d7bb-fab9-408f-9249-ece9dbe97111",
+            "created_by_ref": "identity--47290c38-809b-4167-9cb8-7412ec19e425",
+            "created": "2024-06-14T06:15:22.517997Z",
+            "modified": "2024-06-14T06:15:22.517997Z",
+            "relationship_type": "related-to",
+            "source_ref": "identity--47290c38-809b-4167-9cb8-7412ec19e425",
+            "target_ref": "infrastructure--3320adae-9e30-4f85-a3be-69bbd8d1cdea"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5b8640d1-ce84-4d90-b809-d571d156a896",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.517997Z",
+            "modified": "2024-06-14T06:15:22.517997Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--e98db117-047c-40e2-aec6-b649dcc0f4c3",
+            "target_ref": "indicator--e19f7ff0-a074-46be-bf1c-5a1e307267ca"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cd6fc1a5-c431-4bc5-bd89-33c9d197fbda",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.517997Z",
+            "modified": "2024-06-14T06:15:22.517997Z",
+            "relationship_type": "related-to",
+            "source_ref": "indicator--e19f7ff0-a074-46be-bf1c-5a1e307267ca",
+            "target_ref": "identity--47290c38-809b-4167-9cb8-7412ec19e425"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1d601183-cc9d-4fe1-96a6-e0200ffe596a",
+            "created_by_ref": "identity--f34a280a-8eef-4780-a6ae-12250b68cb12",
+            "created": "2024-06-14T06:15:22.518998Z",
+            "modified": "2024-06-14T06:15:22.518998Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e19f7ff0-a074-46be-bf1c-5a1e307267ca",
+            "target_ref": "infrastructure--3320adae-9e30-4f85-a3be-69bbd8d1cdea"
+        }
+    ]
+}

@@ -1,0 +1,627 @@
+{
+    "type": "bundle",
+    "id": "bundle--43aa7a3b-6ce8-43e1-b855-e6d87415cc3a",
+    "objects": [
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--144ebbab-4618-4e73-a708-24b27f3ca923",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.205413Z",
+            "modified": "2024-06-14T06:22:41.205413Z",
+            "name": "45.128.232.196",
+            "description": "Keep all software, including operating systems, applications, and firmware, up-to-date with the latest security patches to mitigate known RCI vulnerabilities. Fortigate periodically releases firmware updates that address security vulnerabilities, so it's crucial to apply these updates promptly.\nImplement strict input validation and sanitization mechanisms in web applications and network services to prevent malicious command injection. Filter and validate user input to ensure that only expected and safe characters are accepted.",
+            "x_cdacsiem_alert": "Fortigate - Command Injection"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--3f377b33-d8ac-4738-aa80-351fc0135434",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.205413Z",
+            "modified": "2024-06-14T06:22:41.205413Z",
+            "name": "45.128.232.196",
+            "description": "Keep all software, including operating systems, applications, and libraries, up-to-date with the latest security patches to mitigate known buffer overflow vulnerabilities. Fortigate periodically releases firmware updates that address security vulnerabilities, so it's crucial to apply these updates promptly.\nConfigure IPS policies on Fortigate to detect and block buffer overflow attacks. IPS can analyze network traffic for patterns indicative of buffer overflow exploits and block malicious traffic in real-time.\nUse compiler-based or runtime-based stack protection mechanisms, such as stack canaries or Address Space Layout Randomization (ASLR), to detect and prevent buffer overflow attacks at runtime.",
+            "x_cdacsiem_alert": "Fortigate - Buffer Overflow Attack"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.194411Z",
+            "modified": "2024-06-14T06:22:41.194411Z",
+            "name": "45.128.232.196",
+            "description": "This indicator indicates an attacker's IP captured on CDACSIEM.",
+            "pattern": "[ipv4-addr:value = '45.128.232.196']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2024-06-13T13:00:24Z",
+            "confidence": 54
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--2f0b8c6d-2329-4ec7-8b38-75bdab9e839a",
+            "value": "45.128.232.196"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.193412Z",
+            "modified": "2024-06-14T06:22:41.193412Z",
+            "name": "CDACSIEM"
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--2a2c7ea4-e4d7-410a-952a-76d62d7bf86a",
+            "created": "2024-06-14T06:22:41.194411Z",
+            "modified": "2024-06-14T06:22:41.194411Z",
+            "name": "APPLIED INFOSEC GROUP"
+        },
+        {
+            "type": "infrastructure",
+            "spec_version": "2.1",
+            "id": "infrastructure--af7cbf34-f3c2-451a-b92f-bff7a96421a2",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.206512Z",
+            "modified": "2024-06-14T06:22:41.206512Z",
+            "name": "10.228.0.3",
+            "description": "Next Generation Firewall",
+            "infrastructure_types": [
+                "applied-infosec-group"
+            ]
+        },
+        {
+            "type": "location",
+            "spec_version": "2.1",
+            "id": "location--9d6e6600-6be2-46fc-a917-bcb6c76cc49d",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.206512Z",
+            "modified": "2024-06-14T06:22:41.206512Z",
+            "name": "The Netherlands",
+            "latitude": 50.8933,
+            "longitude": 6.05805,
+            "country": "NL",
+            "x_country": "The Netherlands",
+            "x_ioc_value": "45.128.232.196",
+            "x_timezone": "Europe/Amsterdam"
+        },
+        {
+            "type": "note",
+            "spec_version": "2.1",
+            "id": "note--1ad48110-f5c3-403c-9e58-d946cbfdd184",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.207509Z",
+            "modified": "2024-06-14T06:22:41.207509Z",
+            "content": "A brief note about incoming IOC.\n Type of IOC: IP Address | Value: 45.128.232.196",
+            "authors": [
+                "CDAC-SIEM",
+                "CDAC-Mohali"
+            ],
+            "object_refs": [
+                "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f"
+            ]
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--c79b64e5-34b1-4ed8-be1d-f01823f075a1",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.207509Z",
+            "modified": "2024-06-14T06:22:41.207509Z",
+            "name": "AbuseIPDB",
+            "description": "This is AbuseIPDB's report",
+            "published": "2024-05-31T07:32:20.172Z",
+            "object_refs": [
+                "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f"
+            ],
+            "labels": [
+                "Web App Attack",
+                "DDoS Attack",
+                "Exploited Host",
+                "Email Spam",
+                "IoT Targeted",
+                "SQL Injection",
+                "SSH",
+                "Bad Web Bot",
+                "Hacking",
+                "Port Scan",
+                "Web Spam",
+                "Brute-Force",
+                "Phishing"
+            ],
+            "x_abuse_ipdb_report": {
+                "abuseConfidenceScore": 100,
+                "countryCode": "NL",
+                "countryName": "Netherlands (Kingdom of the)",
+                "domain": "pfcloud.io",
+                "hostnames": [],
+                "ipAddress": "45.128.232.196",
+                "ipVersion": 4,
+                "isPublic": true,
+                "isTor": false,
+                "isWhitelisted": false,
+                "isp": "PFCloud",
+                "lastReportedAt": "2024-05-31T00:00:58+00:00",
+                "numDistinctUsers": 157,
+                "totalReports": 475,
+                "usageType": "Data Center/Web Hosting/Transit"
+            },
+            "x_ioc_value": "45.128.232.196"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--4372e540-26b5-4dd7-86db-a8cc4c516bf7",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.208516Z",
+            "modified": "2024-06-14T06:22:41.208516Z",
+            "name": "AlienVault OTX",
+            "description": "This is AlienVault's report",
+            "published": "2024-05-31T07:32:56.545Z",
+            "object_refs": [
+                "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f"
+            ],
+            "labels": [
+                "mauqes",
+                "script",
+                "blacklist",
+                "geofenced",
+                "32-bit",
+                "dropped-by-SmokeLoader",
+                "njRAT",
+                "gafgyt",
+                "Password-protected",
+                "x86-64",
+                "ua-wget",
+                "rar",
+                "Malicious IP",
+                "tcp/23",
+                "exe",
+                "elf",
+                "dropped-by-PrivateLoader",
+                "Stealc",
+                "port 23",
+                "2024",
+                "tcp/80",
+                "badrequest",
+                "Skype",
+                "zip",
+                "encrypted",
+                "scanning",
+                "scan",
+                "botnet",
+                "mirai",
+                "32",
+                "Telnet",
+                "bruteforce",
+                "webscanner, bruteforce, web app attack",
+                "webscanner",
+                "telnet",
+                "Mozi",
+                "discord",
+                "pwd-beta_EKhZFa",
+                "123",
+                "USA",
+                "mips",
+                "SocGholish",
+                "mrpcgamess2024",
+                "port 80",
+                "probing",
+                "intel",
+                "arm",
+                "webscan",
+                "http",
+                "64-bit",
+                "tcp",
+                "honeypot"
+            ],
+            "x_alien_vault_otx_report": {
+                "general": {
+                    "base_indicator": {
+                        "access_reason": "",
+                        "indicator": "45.128.232.196",
+                        "access_type": "public",
+                        "content": "",
+                        "description": "",
+                        "id": 3854561424,
+                        "type": "IPv4",
+                        "title": ""
+                    },
+                    "indicator": "45.128.232.196",
+                    "pulse_info": {
+                        "pulse_names": [
+                            "Honeypot Visitors (TCP/23) - 2024-03-10",
+                            "ETIC Cybersecurity  2024-03-11  Port Scan",
+                            "ETIC Cybersecurity  2024-03-31  Port Scan",
+                            "ETIC Cybersecurity  2024-05-24  Port Scan",
+                            "ETIC Cybersecurity  2024-04-17  Port Scan",
+                            "ETIC Cybersecurity  2024-04-15  Port Scan",
+                            "Scan port 81 Skype (S3#)",
+                            "URLHaus data - 10-03-2024",
+                            "ETIC Cybersecurity  2024-04-21  Port Scan",
+                            "ETIC Cybersecurity  2024-03-10  Port Scan",
+                            "ETIC Cybersecurity  2024-03-09  Port Scan",
+                            "ETIC Cybersecurity  2024-04-24  Port Scan",
+                            "Honeypot Visitors (TCP/80) - 2024-05-16",
+                            "Honeypot Visitors (TCP/23) - 2024-03-09",
+                            "Honeypot Visitors (TCP/80) - 2024-04-21",
+                            "Scan port 23 Telnet (S3#)",
+                            "ETIC Cybersecurity  2024-04-04  Port Scan",
+                            "Honeypot Visitors (TCP/80) - 2024-05-24",
+                            "Webscanners with Bad Requests - HTTP Status 400 - 1/20/2018 thru current day",
+                            "Honeypot Visitors (TCP/23) - 2024-03-11",
+                            "IP Addresses Logged by the Rosethorn PotNet",
+                            "Telnet honeypot logs for 2024-03-10",
+                            "Webscanners 2018-02-09  thru current day"
+                        ]
+                    },
+                    "reputation": 0,
+                    "type": "IPv4",
+                    "type_title": "IPv4",
+                    "whois": "http://whois.domaintools.com/45.128.232.196"
+                }
+            },
+            "x_ioc_value": "45.128.232.196"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--3a683050-98f6-444c-9a68-1f6436f5a31a",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.208516Z",
+            "modified": "2024-06-14T06:22:41.208516Z",
+            "name": "VirusTotal",
+            "description": "This is VirusTotal's report",
+            "published": "2024-05-31T07:32:57.771Z",
+            "object_refs": [
+                "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f"
+            ],
+            "x_ioc_value": "45.128.232.196",
+            "x_virus_total_report": {
+                "x_last_analysis_stats": {
+                    "harmless": 54,
+                    "malicious": 11,
+                    "suspicious": 3,
+                    "timeout": 0,
+                    "undetected": 25
+                }
+            }
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--1fe99c52-b915-4016-9da4-90688548cc57",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.209506Z",
+            "modified": "2024-06-14T06:22:41.209506Z",
+            "name": "Maltiverse",
+            "description": "This is Maltiverse's report",
+            "published": "2024-05-31T07:32:59.036Z",
+            "object_refs": [
+                "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f"
+            ],
+            "labels": [
+                "",
+                "malicious-activity"
+            ],
+            "x_ioc_value": "45.128.232.196",
+            "x_maltiverse_report": {
+                "x_address": "Lilienstrae 5, 94051 Hauzenberg",
+                "x_as_name": "",
+                "x_as_number": "",
+                "x_asn_cidr": "45.128.232.0/24",
+                "x_asn_country_code": "BG",
+                "x_asn_date": "2019-07-12 00:00:00",
+                "x_asn_registry": "ripencc",
+                "x_city": "",
+                "x_classification": "suspicious",
+                "x_country_code": "",
+                "x_ip_addr": "45.128.232.196",
+                "x_is_cdn": false,
+                "x_is_cnc": false,
+                "x_is_distributing_malware": true,
+                "x_is_hosting": false,
+                "x_is_iot_threat": false,
+                "x_is_known_attacker": false,
+                "x_is_known_scanner": false,
+                "x_is_mining_pool": false,
+                "x_is_open_proxy": false,
+                "x_is_sinkhole": false,
+                "x_is_tor_node": false,
+                "x_is_vpn_node": false
+            }
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--28236fd8-fc46-4c06-bd56-36ffac2ed30a",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.209506Z",
+            "modified": "2024-06-14T06:22:41.209506Z",
+            "name": "BGP Circle",
+            "description": "This is BGP Circle's report",
+            "published": "2024-05-31T07:33:00.689Z",
+            "object_refs": [
+                "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f"
+            ],
+            "x_bgp_circle": {
+                "finalRank": 0.0023828125,
+                "last_analysis_date": "2024-05-31T07:33:00.689Z"
+            },
+            "x_ioc_value": "45.128.232.196"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--4e22d3f9-1abf-4ac5-bb85-3e3043dbd748",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.209506Z",
+            "modified": "2024-06-14T06:22:41.209506Z",
+            "name": "CDAC Honeypot 1",
+            "description": "This is CDAC Honeypot-1's report",
+            "published": "2024-05-31T07:33:01.373Z",
+            "object_refs": [
+                "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f"
+            ],
+            "labels": [
+                "attack_log",
+                "bruteforce",
+                "connect",
+                "scan"
+            ],
+            "x_cdac_honeypot_report": {
+                "x_organization_sectors": [
+                    "Government",
+                    "Power-Energy",
+                    "government",
+                    "Industrial"
+                ],
+                "x_organizations": [
+                    "VadodaraSmartcity-Vadodara-Gujarat",
+                    "Belagavi-SmartCity-Bengaluru-Karnataka",
+                    "HCL-Kolkata-West Bengal",
+                    "RCFL-Mumbai-Maharashtra",
+                    "SLDC-Kochi-Kerala",
+                    "NFL-Noida-Uttar-Pradesh",
+                    "TSC-Thiruvananthapuram-Kerala"
+                ]
+            },
+            "x_ioc_value": "45.128.232.196"
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--95bfaece-490a-454e-8068-2e7026f3c07c",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.210517Z",
+            "modified": "2024-06-14T06:22:41.210517Z",
+            "name": "CDAC Honepot 2",
+            "description": "This is CDAC Honeypot-2's report",
+            "published": "2024-05-31T07:33:02.069Z",
+            "object_refs": [
+                "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f"
+            ],
+            "labels": [
+                "connect",
+                "scan"
+            ],
+            "x_cdac_honeypot_2_report": {
+                "x_organization_sectors": [
+                    "government-national",
+                    "government"
+                ],
+                "x_organizations": [
+                    "CDAC-Patna-Bihar",
+                    "CDAC-Mohali-Punjab",
+                    "CDAC-Mumbai-Maharashtra"
+                ]
+            },
+            "x_ioc_value": "45.128.232.196"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--342f124f-4084-4083-923b-affd219a8cda",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.210517Z",
+            "modified": "2024-06-14T06:22:41.210517Z",
+            "first_observed": "2024-03-10T21:45:39Z",
+            "last_observed": "2024-06-13T13:00:24Z",
+            "number_observed": 467,
+            "object_refs": [
+                "ipv4-addr--2f0b8c6d-2329-4ec7-8b38-75bdab9e839a"
+            ],
+            "name": "Fortigate - Command Injection"
+        },
+        {
+            "type": "observed-data",
+            "spec_version": "2.1",
+            "id": "observed-data--560d7aee-2322-48c1-b872-33eeff91aed5",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.210517Z",
+            "modified": "2024-06-14T06:22:41.210517Z",
+            "first_observed": "2024-05-16T10:26:26Z",
+            "last_observed": "2024-05-18T06:16:04Z",
+            "number_observed": 7,
+            "object_refs": [
+                "ipv4-addr--2f0b8c6d-2329-4ec7-8b38-75bdab9e839a"
+            ],
+            "name": "Fortigate - Buffer Overflow Attack"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--0a9aa31b-338a-46ac-97e0-d8783ba7b887",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.21151Z",
+            "modified": "2024-06-14T06:22:41.21151Z",
+            "name": "Initial Access",
+            "description": "Adversaries use techniques to gain entry into a victim's environment. This stage marks the beginning of the intrusion campaign and is often achieved through exploiting vulnerabilities, misconfigurations, or weaknesses in systems or networks. Adversaries may also leverage social engineering tactics, such as phishing emails or malicious links, to trick users into providing credentials or downloading malicious files.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0001/",
+                    "external_id": "TA0001"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0001"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--51a769fa-2842-4cc8-ba16-54c8adfc3fd1",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.21151Z",
+            "modified": "2024-06-14T06:22:41.21151Z",
+            "name": "Exploit Public-Facing Application",
+            "description": "Adversaries exploit vulnerabilities in publicly accessible applications, such as web servers, web applications, or other internet-facing services, to gain unauthorized access to a victim's environment. Public-facing applications are often targeted by adversaries due to their accessibility from the internet, making them potential entry points for intrusion.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1190/",
+                    "external_id": "T1190"
+                }
+            ],
+            "x_mitre_technique_id": "T1190"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--46fa97cf-2736-43cc-98e0-ef3e508bd71f",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.212508Z",
+            "modified": "2024-06-14T06:22:41.212508Z",
+            "name": "Execution",
+            "description": "Adversaries use techniques to run malicious code or commands on a target system or environment. This tactic covers various methods adversaries employ to execute their malicious payloads, such as files, scripts, or commands, to achieve their objectives within the target environment. Execution techniques may include exploiting vulnerabilities, abusing legitimate system utilities, or tricking users into executing malicious files or scripts.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/tactics/TA0002/",
+                    "external_id": "TA0002"
+                }
+            ],
+            "x_mitre_tactic_id": "TA0002"
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--8e3aba8a-ace7-40b8-a289-e6c6f038a75c",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.212508Z",
+            "modified": "2024-06-14T06:22:41.212508Z",
+            "name": "Command and Scripting Interpreter",
+            "description": "Adversaries use command-line interfaces (CLI) or scripting languages to execute commands, scripts, or malicious code on a target system. These techniques allow adversaries to interact with the operating system, run tools, manipulate files, and perform various actions to achieve their objectives within the target environment.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1059/",
+                    "external_id": "T1059"
+                }
+            ],
+            "x_mitre_technique_id": "T1059"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--76ba6c69-da7c-4043-97b0-bbedbc64a35d",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.21151Z",
+            "modified": "2024-06-14T06:22:41.21151Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f",
+            "target_ref": "attack-pattern--0a9aa31b-338a-46ac-97e0-d8783ba7b887"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0bd42027-f7e1-4f27-bc7b-b0db6be5b98f",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.212508Z",
+            "modified": "2024-06-14T06:22:41.212508Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--0a9aa31b-338a-46ac-97e0-d8783ba7b887",
+            "target_ref": "attack-pattern--51a769fa-2842-4cc8-ba16-54c8adfc3fd1"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8984d543-222d-484f-96a9-4621bb582015",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.212508Z",
+            "modified": "2024-06-14T06:22:41.212508Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f",
+            "target_ref": "attack-pattern--46fa97cf-2736-43cc-98e0-ef3e508bd71f"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fdc82c08-d7f2-4449-99ee-0e64fefb2cc4",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.213527Z",
+            "modified": "2024-06-14T06:22:41.213527Z",
+            "relationship_type": "uses",
+            "source_ref": "attack-pattern--46fa97cf-2736-43cc-98e0-ef3e508bd71f",
+            "target_ref": "attack-pattern--8e3aba8a-ace7-40b8-a289-e6c6f038a75c"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d54decb1-aeb3-4113-b0e2-9c45c32bd643",
+            "created_by_ref": "identity--2a2c7ea4-e4d7-410a-952a-76d62d7bf86a",
+            "created": "2024-06-14T06:22:41.213527Z",
+            "modified": "2024-06-14T06:22:41.213527Z",
+            "relationship_type": "related-to",
+            "source_ref": "identity--2a2c7ea4-e4d7-410a-952a-76d62d7bf86a",
+            "target_ref": "infrastructure--af7cbf34-f3c2-451a-b92f-bff7a96421a2"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--32cbd38a-f1cc-47d5-8228-9da401f914c2",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.213527Z",
+            "modified": "2024-06-14T06:22:41.213527Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--144ebbab-4618-4e73-a708-24b27f3ca923",
+            "target_ref": "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--29699770-d8c8-4dc3-8672-8016cd5a41c3",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.213527Z",
+            "modified": "2024-06-14T06:22:41.213527Z",
+            "relationship_type": "mitigates",
+            "source_ref": "course-of-action--3f377b33-d8ac-4738-aa80-351fc0135434",
+            "target_ref": "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3e7c9d08-1eed-49f9-b74a-4b2550d5fcaa",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.214514Z",
+            "modified": "2024-06-14T06:22:41.214514Z",
+            "relationship_type": "related-to",
+            "source_ref": "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f",
+            "target_ref": "identity--2a2c7ea4-e4d7-410a-952a-76d62d7bf86a"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--947d8ab3-9acf-41de-b549-6ebed9ba0bc7",
+            "created_by_ref": "identity--bd36d560-7361-4e2e-87ad-346d505fd0ab",
+            "created": "2024-06-14T06:22:41.214514Z",
+            "modified": "2024-06-14T06:22:41.214514Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d76a37f3-509c-4cc8-9d04-96b102c08e7f",
+            "target_ref": "infrastructure--af7cbf34-f3c2-451a-b92f-bff7a96421a2"
+        }
+    ]
+}
